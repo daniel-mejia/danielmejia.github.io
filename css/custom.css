@@ -53,3 +53,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2613313e', e
 
     opacity: 1;
 }
+
+.bg-primary .list-inline i {
+    color: #fff;
+}
