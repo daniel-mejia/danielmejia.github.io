@@ -21,27 +21,31 @@
     border: 2px solid #13313E;
 }
 
+.btn-white {
+    border-color: #fff;
+}
+
 .btn:visited {
     color: #13313E;
 }
 
 .btn:hover {
-  background: #13313E;
+    background: #13313E;
+}
+
+.btn-white:visited {
+    color: #fff;
+}
+
+.btn-white:visited:hover {
+    color: #13313E;
+    background: #fff;
 }
 
 input[type="submit"],
 button[type="submit"] {
     border: 2px solid #13313E;
     background: #13313E;
-}
-
-.btn-filled {
-  background: #13313E;
-}
-
-.image-bg .btn.btn-filled,
-.image-bg .btn-filled:visited {
-  border-color: #13313E;
 }
 
 .overlay:before {
