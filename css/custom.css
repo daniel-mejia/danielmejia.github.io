@@ -70,3 +70,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2613313e', e
 .menu > li ul {
     background: #13313E;
 }
+
+a {
+    color: #50A5DC;
+}
+
+a:hover, 
+a:focus {
+    color: #79beeb;
+}
