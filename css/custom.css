@@ -1,20 +1,25 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
 
 
-.bg-primary .list-inline i {
-  color: #27627D;
+.bg-primary {
+    background: #27627D !important;
 }
 
-.bg-primary {
-  background: #13313E !important;
+.bg-primary .btn:hover {
+    background: #fff;
+    color: #13313E;
 }
 
 .bg-dark {
-  background: #27627D;
+    background: #13313E;
+}
+
+.bg-dark .back-to-top:hover {
+    background: #fff;
 }
 
 .color-primary {
-  color: #13313E !important;
+    color: #13313E !important;
 }
 
 .btn {
