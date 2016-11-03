@@ -79,4 +79,7 @@ a:focus {
     height: 75px;
 }
  
+.controls-inside .flex-control-nav {
+    bottom: -50px;
+}
 
