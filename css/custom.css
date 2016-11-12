@@ -22,16 +22,15 @@
     color: #13313E !important;
 }
 
-.btn {
+.btn,
+.btn:visited, 
+.btn:hover {
     border: 2px solid #13313E;
+    color: #13313E;
 }
 
 .btn-white {
     border-color: #fff;
-}
-
-.btn:visited {
-    color: #13313E;
 }
 
 .btn:hover {
@@ -40,6 +39,7 @@
 
 .btn-white:visited {
     color: #fff;
+    border: 2px solid #fff;
 }
 
 .btn-white:visited:hover {
