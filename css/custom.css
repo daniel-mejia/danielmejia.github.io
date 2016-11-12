@@ -93,3 +93,11 @@ ol.lead li {
     line-height: 40px;
 }
 
+.image-caption .caption:before {
+    background: none;
+}
+
+.image-caption .caption {
+    text-align: center;
+}
+
