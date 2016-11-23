@@ -23,8 +23,7 @@
 }
 
 .btn,
-.btn:visited, 
-.btn:hover {
+.btn:visited {
     border: 2px solid #13313E;
     color: #13313E;
 }
@@ -35,6 +34,7 @@
 
 .btn:hover {
     background: #13313E;
+    color: #fff;
 }
 
 .btn-white:visited {
