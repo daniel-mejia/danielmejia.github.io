@@ -104,3 +104,31 @@ ol.lead li {
 .t15 {
     top: 15px;
 }
+
+blockquote.small {
+    font-size: 1.15em; 
+    line-height: 2em;
+    padding: 15px;
+}
+
+.bg-secondary blockquote {
+    border-color: #27627D;
+}
+
+.button-tabs .active .tab-title {
+    background: #27627D;
+}
+
+.button-tabs .active .tab-title:hover
+{
+  background:#27627D;
+}
+
+.finding-icon {
+    max-height: 40px; 
+    padding-right: 20px;
+}
+
+.icon {
+    color: white;
+}
