@@ -231,13 +231,23 @@
                             </div>
 		                </div>
 		                <div class="col-sm-6 col-md-5 col-md-offset-1">
-		                    <form action="mailto:hello@daniel-mejia.com?Subject=ice cream?" method="post" enctype="text/plain" class="form-email" data-success="Thanks for your submission, we will be in touch shortly." data-error="Please fill all fields correctly.">
+<!--
+		                    
+                            <form action="mailto:hello@daniel-mejia.com?Subject=ice cream?" method="post" enctype="text/plain" class="form-email" data-success="Thanks for your submission, we will be in touch shortly." data-error="Please fill all fields correctly.">
 		                        <input type="text" class="validate-required" name="name" placeholder="Your Name">
 		                        <input type="text" class="validate-required validate-email" name="email" placeholder="Email Address">
 		                        <textarea class="validate-required" name="message" rows="4" placeholder="Message"></textarea>
-		                        <div class="g-recaptcha" data-sitekey="6LdNXCgUAAAAAGwHWgqq6awLMEExuc43JPauG2Ya"></div>
 		                        <button type="submit">Send Message</button>
 		                    </form>
+-->
+		                    
+		                    <form action="https://formspree.io/hello@daniel-mejia.com" method="POST" class="form-email" data-success="Thanks for your submission, we will be in touch shortly." data-error="Please fill all fields correctly.">
+                                <input type="text" name="name" class="validate-required" placeholder="Your Name" placeholder="Email Address">
+                                <input type="email" name="_replyto" class="validate-required validate-email" placeholder="Email Address">
+                                <textarea name="message" rows="4" placeholder="Message" class="validate-required"></textarea>
+                                <input type="text" name="_gotcha" style="display:none" />
+                                <input type="submit" value="Send Message">
+                            </form>
 		                </div>
 		            </div>   
 		        </div>
