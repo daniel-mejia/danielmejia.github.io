@@ -147,3 +147,18 @@ input[type="email"] {
 input[type="email"]:focus {
     outline: 1px solid #ccc;
 }
+
+@media (max-width: 990px) {
+    .menu > li > ul {
+        background: #f5f5f5;
+    }
+    
+    .menu > li > ul li a {
+        color: #292929;
+        opacity: 0.75;
+    }
+}
+
+
+
+
