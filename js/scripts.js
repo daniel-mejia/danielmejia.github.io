@@ -29,13 +29,6 @@ $(document).ready(function() {
                 offset = offset*1;
             }
             
-            smoothScroll.init({
-                selector: '.inner-link',
-                selectorHeader: null,
-                speed: 750,
-                easing: 'easeInOutCubic',
-                offset: offset
-            });
         }
 
     // Update scroll variable for scrolling functions
