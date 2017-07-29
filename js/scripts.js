@@ -28,7 +28,6 @@ $(document).ready(function() {
                 offset = $('body').attr('data-smooth-scroll-offset');
                 offset = offset*1;
             }
-            
         }
 
     // Update scroll variable for scrolling functions
