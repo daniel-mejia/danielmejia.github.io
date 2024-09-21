@@ -93,6 +93,30 @@ ol.lead li {
     line-height: 40px;
 }
 
+ol.marker {
+    list-style: none;
+    counter-reset: num;
+}
+
+ol.marker li {
+    counter-increment: num;
+
+}
+
+ol.marker li:before {
+    content: counter(num) "";
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    background-color: #0F6D7D;
+    border-radius: 100%;
+    text-align: center;
+    margin-right: 16px;
+    margin-left: -60px;
+    display: inline-flex;
+    list-style-position: outside;
+}
+
 .image-caption .caption:before {
     background: none;
 }
