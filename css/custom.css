@@ -38,13 +38,13 @@
 }
 
 .btn-white:visited {
-    color: #fff;
-    border: 2px solid #fff;
+    color: #FFE082;
+    border: 2px solid #FFE082;
 }
 
 .btn-white:visited:hover {
     color: #13313E;
-    background: #fff;
+    background: #FFE082;
 }
 
 input[type="submit"],
@@ -66,14 +66,30 @@ button[type="submit"] {
     background: #13313E;
 }
 
-a {
-    color: #50A5DC;
-}
-
-a:hover, 
-a:focus {
+.bg-dark a {
     color: #79beeb;
 }
+
+.bg-dark a:hover,  
+.bg-dark a:focus {
+    color: #FFE082;
+}
+
+.menu > li > ul li a:hover {
+    color: #FFE082;
+} 
+
+.bg-dark .back-to-top {
+    border: 2px solid #FFE082;
+    color: #FFE082;
+    opacity: .8;
+}
+
+.bg-dark .back-to-top:hover {
+    color: #13313E;
+    background-color: #FFE082;
+}
+
 
 .logo {
     height: 75px;
@@ -153,8 +169,13 @@ blockquote.small {
     padding-right: 20px;
 }
 
-.icon {
-    color: white;
+.bg-dark .icon {
+    color: #FFE082;
+}
+
+.bg-dark .social-list a, .image-bg .social-list a {
+    opacity: .8;
+    color: #FFE082;
 }
 
 input[type="email"] {
