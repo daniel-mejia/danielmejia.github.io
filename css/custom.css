@@ -202,6 +202,10 @@ input[type="email"]:focus {
         color: #292929;
         opacity: 0.75;
     }
+    
+    .text-center-sm {
+    text-align: center;
+    }
 }
 
 /*** Fonts ***/
@@ -216,6 +220,8 @@ input[type="email"]:focus {
     font-size: 18px; 
     line-height: 26px; 
 }
+
+
 
 
 
