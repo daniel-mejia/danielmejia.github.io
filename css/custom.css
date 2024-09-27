@@ -241,6 +241,10 @@ input[type="email"]:focus {
 
 /*** Fonts ***/
 
+section.cover div ul li a i {
+    font-size: 2rem;
+}
+
 section.cover h1, 
 section.cover h2 {
     font-family: 'Helvetica Neue','Roboto','Raleway', 'Helvetica', 'Arial', sans-serif;
@@ -251,11 +255,8 @@ section.cover h2 {
     font-weight: 200;
 }
 
-.font-size-16.uppercase {
-    font-size: 16px; 
-    line-height: 24px; 
-    font-weight: 400;
-    letter-spacing: 2px;
+.font-size-64 {
+    font-size: 64px;   
 }
 
 .font-size-18 {
@@ -263,13 +264,21 @@ section.cover h2 {
     line-height: 26px; 
 }
 
-.font-size-64 {
-    font-size: 64px;   
+.font-size-16.uppercase {
+    font-size: 16px; 
+    line-height: 24px; 
+    font-weight: 400;
+    letter-spacing: 2px;
 }
 
-section.cover div ul li a i {
-    font-size: 2rem;
+.font-size-12 {
+    font-size: 12px; 
 }
+
+
+
+
+
 
 
 
