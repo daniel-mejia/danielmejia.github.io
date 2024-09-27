@@ -14,6 +14,11 @@
     background: #13313E;
 }
 
+.bg-dark a:hover {
+    font-weight: 400;
+    color: #FFE082;
+}
+
 .bg-dark .back-to-top:hover {
     background: #FFE082;
 }
@@ -67,12 +72,38 @@ button[type="submit"] {
 }
 
 .bg-dark a {
-    color: #79beeb;
+    font-weight: 400;
+    color: #FFE082;
 }
 
+/*
 .bg-dark a:hover,  
 .bg-dark a:focus {
     color: #FFE082;
+    text-decoration: underline;
+}
+*/
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #FFE082;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFE082;
+  transition: all 0.3s ease;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
 }
 
 .menu > li > ul li a:hover {
@@ -209,6 +240,17 @@ input[type="email"]:focus {
 }
 
 /*** Fonts ***/
+
+section.cover h1, 
+section.cover h2 {
+    font-family: 'Helvetica Neue','Roboto','Raleway', 'Helvetica', 'Arial', sans-serif;
+}
+
+ 
+section.cover h2 {
+    font-weight: 200;
+}
+
 .font-size-16.uppercase {
     font-size: 16px; 
     line-height: 24px; 
@@ -219,6 +261,14 @@ input[type="email"]:focus {
 .font-size-18 {
     font-size: 18px; 
     line-height: 26px; 
+}
+
+.font-size-64 {
+    font-size: 64px;   
+}
+
+section.cover div ul li a i {
+    font-size: 2rem;
 }
 
 
