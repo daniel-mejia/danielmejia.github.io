@@ -99,28 +99,27 @@ nav.transparent.fixed ul.menu li p {
     color: #13313E;
 }
 
+
 .btn:hover {
     background: #13313E;
     color: #fff;
 }
 
 
-.bg-primary > .btn-gold .btn,
+.bg-primary a.btn-gold,
 .bg-dark .back-to-top {
     color: #FFE082;
     border-color: #FFE082;
 }
 
-.bg-primary > .btn-gold .btn:hover,
-.bg-primary > .btn-gold .btn:visited,
+.bg-primary a.btn-gold:hover,
 .bg-dark .back-to-top:hover {
     background: #FFE082;
-    color: #13313E;
 }
 
-.bg-primary > .btn-gold .btn:hover,
 .bg-dark .back-to-top:hover,
 .bg-primary .btn:hover {
+    color: #13313E;
     text-decoration: none;
 }
 
