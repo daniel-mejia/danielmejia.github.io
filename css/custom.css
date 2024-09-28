@@ -82,17 +82,8 @@ nav.transparent.fixed ul.menu li p {
     background: #27627D !important;
 }
 
-.bg-primary .btn:hover {
-    background: #fff;
-    color: #13313E;
-}
-
 .bg-dark {
     background: #13313E;
-}
-
-.bg-dark .back-to-top:hover {
-    background: #FFE082;
 }
 
 .color-primary {
@@ -100,6 +91,21 @@ nav.transparent.fixed ul.menu li p {
 }
 
 /**** Buttons ****/
+
+bg-primary .btn {
+    color: #FFE082;
+    border-color: #FFE082;
+}
+
+.bg-dark .back-to-top:hover {
+    background: #FFE082;
+}
+
+.bg-primary .btn:hover {
+    background: #fff;
+    color: #13313E;
+}
+
 .btn,
 .btn:visited {
     border: 2px solid #13313E;
