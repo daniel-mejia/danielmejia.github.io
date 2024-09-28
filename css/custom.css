@@ -132,10 +132,12 @@ button[type="submit"] {
     font-style: italic;
 }
 
-ol.lead li {
-    list-style-position: inside;
+div.lead li {
+    list-style-position: outside;
     font-size: 16px;
-    line-height: 40px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 8px 0;
 }
 
 ol.marker {
@@ -175,10 +177,14 @@ ol.marker li:before {
 }
 
 blockquote.small {
-    color: #626262;
+    color: #757575;
     font-size: 1.15em; 
     line-height: 2em;
     padding: 15px;
+}
+
+blockquote {
+    color: #757575;
 }
 
 .bg-secondary blockquote {
@@ -258,22 +264,35 @@ section.cover h2 {
     font-size: 64px;   
 }
 
+.font-size-32 {
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.font-size-24 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+
 .font-size-18 {
     font-size: 18px; 
     line-height: 26px; 
 }
 
-.font-size-16.uppercase {
+.font-size-16 {
     font-size: 16px; 
     line-height: 24px; 
-    font-weight: 400;
-    letter-spacing: 2px;
 }
 
 .font-size-12 {
-    font-size: 12px; 
+    font-size: 12px;
+    line-height: 24px;
 }
 
+.lttr-spacing-2 {
+    letter-spacing: 2px;    
+}
 
 
 
