@@ -65,6 +65,11 @@ ul.menu li p {
     white-space: normal;
 }
 
+nav.bg-dark ul.menu li p {
+    color: #fff;
+    opacity: .7;
+}
+
 nav.transparent.fixed ul.menu li p {
     color: #292929;
     opacity: .5;
