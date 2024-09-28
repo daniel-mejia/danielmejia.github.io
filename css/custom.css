@@ -1,5 +1,12 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
 
+.bg-secondary a {
+    color: #27627D;
+}
+
+.bg-secondary a:hover {
+    text-decoration: underline;
+}
 
 .bg-primary {
     background: #27627D !important;
@@ -168,6 +175,7 @@ ol.marker li:before {
 }
 
 blockquote.small {
+    color: #626262;
     font-size: 1.15em; 
     line-height: 2em;
     padding: 15px;
