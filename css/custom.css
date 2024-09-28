@@ -1,5 +1,8 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
 
+
+/**** Anchors ****/
+
 a {
     color: #27627D;
 }
@@ -8,6 +11,20 @@ section a:hover {
     color: #27627D;
     text-decoration: underline;
 }
+
+.bg-primary p a,
+.bg-primary p a:hover {
+    font-weight: 400;
+    color: #FFE082;
+}
+
+
+.bg-dark span a,
+.bg-dark a:hover {
+    font-weight: 600;
+    color: #FFE082;
+}
+
 
 .bg-primary {
     background: #27627D !important;
@@ -72,14 +89,6 @@ button[type="submit"] {
 
 .menu > li ul {
     background: #13313E;
-}
-
-.bg-primary p a,
-.bg-primary p a:hover,
-.bg-dark span a,
-.bg-dark a:hover {
-    font-weight: 400;
-    color: #FFE082;
 }
 
 .hover-underline-animation {
