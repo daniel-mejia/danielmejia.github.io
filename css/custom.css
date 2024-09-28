@@ -105,24 +105,24 @@ nav.transparent.fixed ul.menu li p {
 }
 
 
-.bg-primary .btn-gold,
+.bg-primary > .btn-gold .btn,
 .bg-dark .back-to-top {
     color: #FFE082;
     border-color: #FFE082;
 }
 
-.bg-primary .btn-gold:hover,
+.bg-primary > .btn-gold .btn:hover,
+.bg-primary > .btn-gold .btn:visited,
 .bg-dark .back-to-top:hover {
     background: #FFE082;
+    color: #13313E;
 }
 
-.bg-primary .btn-gold .btn:hover,
+.bg-primary > .btn-gold .btn:hover,
 .bg-dark .back-to-top:hover,
 .bg-primary .btn:hover {
-    color: #13313E;
     text-decoration: none;
 }
-
 
 input[type="submit"],
 button[type="submit"] {
