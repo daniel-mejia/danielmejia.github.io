@@ -287,7 +287,12 @@ section.cover h2 {
 
 .font-size-18 {
     font-size: 18px; 
-    line-height: 26px; 
+    line-height: 26px;
+}
+
+.font-size-14 {
+    font-size: 14px; 
+    line-height: 22px; 
 }
 
 .font-size-16 {
