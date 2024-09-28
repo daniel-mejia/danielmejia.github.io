@@ -1,10 +1,11 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
 
-.bg-secondary a {
+a {
     color: #27627D;
 }
 
-.bg-secondary a:hover {
+section a:hover {
+    color: #27627D;
     text-decoration: underline;
 }
 
@@ -132,7 +133,8 @@ button[type="submit"] {
     font-style: italic;
 }
 
-div.lead li {
+div.lead li,
+div.lead p {
     list-style-position: outside;
     font-size: 16px;
     font-weight: 400;
@@ -177,14 +179,14 @@ ol.marker li:before {
 }
 
 blockquote.small {
-    color: #757575;
+    color: #595959;
     font-size: 1.15em; 
     line-height: 2em;
     padding: 15px;
 }
 
 blockquote {
-    color: #757575;
+    color: #595959;
 }
 
 .bg-secondary blockquote {
@@ -195,8 +197,7 @@ blockquote {
     background: #27627D;
 }
 
-.button-tabs .active .tab-title:hover
-{
+.button-tabs .active .tab-title:hover {
   background:#27627D;
 }
 
