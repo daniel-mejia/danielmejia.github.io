@@ -5,25 +5,73 @@
 
 a {
     color: #27627D;
+    font-weight: 600;
 }
 
 section a:hover {
-    color: #27627D;
+    color: #13313E;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.bg-primary a,
+.bg-dark a,
+footer.bg-dark span,
+footer.bg-dark span a {
+    color: #FFE082;
+}
+
+.bg-primary a:hover,
+.bg-dark a:hover,
+footer.bg-dark span a:hover {
+    color: #FFE082;
+    opacity: 1;
     text-decoration: underline;
 }
 
-.bg-primary p a,
-.bg-primary p a:hover {
-    font-weight: 400;
+.bg-dark .social-list a, 
+.image-bg .social-list a {
+    opacity: .8;
     color: #FFE082;
 }
 
-.bg-dark span a,
-.bg-dark a:hover {
+.bg-dark .social-list a:hover, 
+.image-bg .social-list a:hover {
+    color: #FFE082;
+    opacity: 1;
+}
+
+
+/**** Menu ****/
+
+.menu > li ul {
+    background: #13313E;
+}
+
+ul.menu > li a:hover {
+    color: #FFE082;
+}
+
+ul.menu li p {
+    font-size: 11px;
+    text-transform: uppercase;
     font-weight: 600;
-    color: #FFE082;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 0;  
+    -webkit-transition: all 0.3s ease;
+    max-width: 100%;
+    white-space: normal;
 }
 
+nav.transparent.fixed ul.menu li p {
+    color: #292929;
+    opacity: .5;
+}
+
+
+/**** Background colors ****/
 
 .bg-primary {
     background: #27627D !important;
@@ -46,6 +94,7 @@ section a:hover {
     color: #13313E !important;
 }
 
+/**** Buttons ****/
 .btn,
 .btn:visited {
     border: 2px solid #13313E;
@@ -86,63 +135,6 @@ button[type="submit"] {
     color: #fff;
 }
 
-.menu > li ul {
-    background: #13313E;
-}
-
-
-
-
-ul.menu > li a:hover {
-    color: #FFE082;
-}
-
-
-
-
-
-.menu li p {
-    font-size: 11px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #fff;
-    margin: 0;
-  
-  
-    -webkit-transition: all 0.3s ease;
-    max-width: 100%;
-    white-space: normal;
-}
-
-
-
-
-
-
-.hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: #FFE082;
-    font-weight: 400;
-}
-
-.hover-underline-animation::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background-color: #FFE082;
-  transition: all 0.3s ease;
-}
-
-.hover-underline-animation:hover::after {
-  transform: scaleX(1);
-}
-
 .bg-dark .back-to-top {
     border: 2px solid #FFE082;
     color: #FFE082;
@@ -153,7 +145,6 @@ ul.menu > li a:hover {
     color: #13313E;
     background-color: #FFE082;
 }
-
 
 .logo {
     height: 75px;
@@ -244,11 +235,6 @@ blockquote {
     color: #FFE082;
 }
 
-.bg-dark .social-list a, .image-bg .social-list a {
-    opacity: .8;
-    color: #FFE082;
-}
-
 input[type="email"] {
     background: #f5f5f5;
     border: none;
@@ -289,7 +275,6 @@ section.cover h1,
 section.cover h2 {
     font-family: 'Helvetica Neue','Roboto','Raleway', 'Helvetica', 'Arial', sans-serif;
 }
-
  
 section.cover h2 {
     font-weight: 200;
@@ -330,7 +315,7 @@ section.cover h2 {
     line-height: 24px;
 }
 
-.lttr-spacing-2 {
+div .lttr-spacing-2 {
     letter-spacing: 2px;    
 }
 
