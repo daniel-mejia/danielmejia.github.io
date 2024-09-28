@@ -51,6 +51,7 @@ footer.bg-dark span a:hover {
 
 ul.menu > li a:hover {
     color: #FFE082;
+    text-decoration: underline;
 }
 
 ul.menu li p {
@@ -92,28 +93,10 @@ nav.transparent.fixed ul.menu li p {
 
 /**** Buttons ****/
 
-bg-primary .btn {
-    color: #FFE082;
-    border-color: #FFE082;
-}
-
-.bg-dark .back-to-top:hover {
-    background: #FFE082;
-}
-
-.bg-primary .btn:hover {
-    background: #fff;
-    color: #13313E;
-}
-
 .btn,
 .btn:visited {
     border: 2px solid #13313E;
     color: #13313E;
-}
-
-.btn-white {
-    border-color: #fff;
 }
 
 .btn:hover {
@@ -121,15 +104,25 @@ bg-primary .btn {
     color: #fff;
 }
 
-.btn-white:visited {
+
+.bg-primary .btn-gold,
+.bg-dark .back-to-top {
     color: #FFE082;
-    border: 2px solid #FFE082;
+    border-color: #FFE082;
 }
 
-.btn-white:visited:hover {
-    color: #13313E;
+.bg-primary .btn-gold:hover,
+.bg-dark .back-to-top:hover {
     background: #FFE082;
 }
+
+.bg-primary .btn-gold .btn:hover,
+.bg-dark .back-to-top:hover,
+.bg-primary .btn:hover {
+    color: #13313E;
+    text-decoration: none;
+}
+
 
 input[type="submit"],
 button[type="submit"] {
@@ -144,17 +137,6 @@ button[type="submit"] {
 
 .bg-primary .list-inline i {
     color: #fff;
-}
-
-.bg-dark .back-to-top {
-    border: 2px solid #FFE082;
-    color: #FFE082;
-    opacity: .8;
-}
-
-.bg-dark .back-to-top:hover {
-    color: #13313E;
-    background-color: #FFE082;
 }
 
 .logo {
