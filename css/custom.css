@@ -130,12 +130,16 @@ button[type="submit"] {
 }
 
 .overlay:before {
-    background: rgba(19,49,62, 0.5 ) 0%; 
+    background: rgba(19,49,62, 0.9 ) 0%; 
     opacity: 1;
 }
 
 .bg-primary .list-inline i {
     color: #fff;
+}
+
+section.cover .list-inline > li {
+    padding: 0 16px;
 }
 
 .logo {
@@ -242,21 +246,6 @@ input[type="email"]:focus {
     outline: 1px solid #ccc;
 }
 
-@media (max-width: 990px) {
-    .menu > li > ul {
-        background: #f5f5f5;
-    }
-    
-    .menu > li > ul li a {
-        color: #292929;
-        opacity: 0.75;
-    }
-    
-    .text-center-sm {
-    text-align: center;
-    }
-}
-
 /*** Fonts ***/
 
 section.cover div ul li a i {
@@ -272,10 +261,6 @@ section.cover h2 {
     font-weight: 200;
 }
 
-.font-size-64 {
-    font-size: 64px;   
-}
-
 .font-size-32 {
     font-size: 32px;
     line-height: 40px;
@@ -285,7 +270,6 @@ section.cover h2 {
     font-size: 24px;
     line-height: 32px;
 }
-
 
 .font-size-18 {
     font-size: 18px; 
@@ -311,12 +295,28 @@ div .lttr-spacing-2 {
     letter-spacing: 2px;    
 }
 
+/************ max-width: 990px ************/
 
-
-
-
-
-
-
-
+@media (max-width: 990px) {
+    .menu > li > ul {
+        background: #f5f5f5;
+    }
+    
+    .menu > li > ul li a {
+        color: #292929;
+        opacity: 0.75;
+    }
+    
+    .text-center-sm {
+    text-align: center;
+    }
+    
+    .txt-sm-48 {
+        font-size: 48px;
+    }
+    
+    .txt-sm-24 {
+        font-size: 24px;
+    }
+}
 
