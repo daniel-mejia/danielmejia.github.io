@@ -129,8 +129,8 @@ button[type="submit"] {
     background: #13313E;
 }
 
-.overlay:before {
-    background: rgba(19,49,62, 0.8 ) 0%; 
+.home > .overlay:before {
+    background: rgba(19,49,62, 0.6 ) 0%; 
     opacity: 1;
 }
 
@@ -319,4 +319,11 @@ div .lttr-spacing-2 {
         font-size: 24px;
     }
 }
+
+
+
+/************ Scrollspy ************/
+
+
+
 
