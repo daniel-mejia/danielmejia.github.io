@@ -307,6 +307,11 @@ div .lttr-spacing-2 {
         opacity: 0.75;
     }
     
+    .menu > li > ul li a:hover {
+        color: #292929;
+        text-decoration: underline;
+    }
+    
     .text-center-sm {
     text-align: center;
     }
@@ -319,11 +324,3 @@ div .lttr-spacing-2 {
         font-size: 24px;
     }
 }
-
-
-
-/************ Scrollspy ************/
-
-
-
-
