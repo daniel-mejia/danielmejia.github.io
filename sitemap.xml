@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
-    <loc>http://daniel-mejia.com/</loc> 
+    <loc>http://danielmejia.me/</loc> 
   </url>
   <url>
-    <loc>http://daniel-mejia.com/#about</loc> 
+    <loc>http://danielmejia.me/#about</loc> 
   </url>
   <url>
-      <loc>http://daniel-mejia.com/#contact</loc>
+      <loc>http://danielmejia.me/emotilink</loc>
   </url>
   <url>
-      <loc>http://daniel-mejia.com/the-graide-network.html</loc>
+      <loc>http://danielmejia.me/the-graide-network.html</loc>
   </url>
   <url>
-      <loc>http://daniel-mejia.com/coach.html</loc>
+      <loc>http://danielmejia.me/coach.html</loc>
+  </url>
+  <url>
+      <loc>http://danielmejia.me/#contact</loc>
+  </url>
+  <url>
+      <loc>http://danielmejia.me/Resume</loc>
   </url>
 </urlset>
