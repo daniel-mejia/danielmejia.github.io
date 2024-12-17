@@ -96,7 +96,7 @@ button[type="submit"] {
 }
 
 .home > .overlay:before {
-    background: rgba(19,49,62, 0.6 ) 0%; 
+    background: rgba(19,49,62, 0.7 ) 0%; 
     opacity: 1;
 }
 
@@ -120,13 +120,17 @@ section.cover .list-inline > li {
     font-style: italic;
 }
 
-div.lead li,
-div.lead p {
+section ul.lead {
     list-style-position: outside;
+}
+
+div.lead li,
+div.lead p,
+ul.lead li {
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
-    padding: 8px 0;
+    line-height: 32px;
+    padding-bottom: 32px;
 }
 
 ol.marker {
@@ -273,37 +277,9 @@ ul.menu li p {
     text-transform: none;
 }
 
-
-.sidebar .nav li a {
-    text-transform: none;
-    color: #292929;
-    opacity: .5;
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    vertical-align: middle;
-    border-radius: 0;
-}
-
-.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-    background: #f8f8f8;
-    color: #292929;
-    opacity: 1;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-
 ul.menu > li a:hover {
     color: #FFE082;
     text-decoration: underline;
-}
-
-ul.menu > li a:focus,
-.sidebar .nav li a:focus {
-    outline: thin dotted;
-    outline-color: inherit;
-    outline-offset: -1px;
 }
 
 ul.menu li p,
@@ -312,7 +288,8 @@ ul.menu li button {
     font-weight: 600;
     letter-spacing: 1px;
     color: #fff;
-    margin: 0;  
+    margin: 0;
+    transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     max-width: 100%;
     white-space: normal;
@@ -348,14 +325,49 @@ nav.transparent.fixed ul.menu li p {
     padding-left: 0;
 }
 
-.sidebar {
+nav.sidebar {
     position: fixed;
     height: calc(100vh - 10px);
     overflow-y: auto;
-    padding-top: 0px;
-    padding-right: 0;
+    padding: 0;
     background-color: #fff;
     float: left;
+}
+
+nav.sidebar .nav li a, .nav .sub-nav li a {
+    color: #292929;
+    opacity: .6;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 0;
+    position: relative;
+    display: block;
+    padding: 8px 16px;
+    line-height: 2;
+}
+
+nav.sidebar .nav > li.active a, 
+nav.sidebar .nav > li a:hover,
+nav.sidebar .nav > li a:focus,
+nav.sidebar .nav > ul.sub-nav > li.active > a,
+nav.sidebar .nav > ul.sub-nav > li a:hover,
+nav.sidebar .nav > ul.sub-nav > li a:focus {
+    background-color: #f8f8f8;
+    color: #13313E;
+    opacity: 1;
+}
+
+.nav ul.sub-nav {
+    margin-left: 12px;
+}
+
+
+ul.menu > li a:focus,
+.sidebar .nav li a:focus {
+    outline: thin dotted;
+    outline-color: inherit;
+    outline-offset: -1px;
 }
 
 .nav {
@@ -367,10 +379,10 @@ nav.transparent.fixed ul.menu li p {
     width: 90%;
 }
 
-.sidebar li i {
-    margin-right: 8px;
-}
 
+.sidebar li i {
+    margin: 4px;
+}
 
 /************ max-width: 990px ************/
 

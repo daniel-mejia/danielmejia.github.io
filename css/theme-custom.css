@@ -403,7 +403,6 @@ h6.uppercase,
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   line-height: 24px;
-  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
@@ -469,15 +468,12 @@ a:hover {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   line-height: 24px;
-  font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 2px;
   font-weight: 700;
   letter-spacing: 1px;
   background: #333347;
   border-radius: 0;
   padding: 6px 12px;
-  font-size: 10px;
   vertical-align: middle;
 }
 blockquote {
@@ -855,11 +851,13 @@ body.btn-rounded .btn {
 }
 /*!---------- 7. NAVIGATION ----------*/
 .nav-container {
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   max-width: 100%;
 }
 nav {
   background: #fff;
+  backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   max-width: 100%;
 }
@@ -1028,17 +1026,17 @@ nav.bg-dark .logo-dark {
 }
 .menu > li:hover > ul {
   opacity: 1;
-  transform: translate3d(0, 0px, 0);
-  -webkit-transform: translate3d(0, 0px, 0);
-  -moz-transform: translate3d(0, 0px, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
   visibility: visible;
 }
 .menu > li > ul > li:hover > ul,
 .has-dropdown:hover .mega-menu ul {
   opacity: 1;
-  transform: translate3d(0, 0px, 0);
-  -webkit-transform: translate3d(0, 0px, 0);
-  -moz-transform: translate3d(0, 0px, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
   visibility: visible;
 }
 .mega-menu {
