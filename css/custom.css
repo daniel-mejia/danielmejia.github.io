@@ -344,7 +344,7 @@ nav.sidebar .nav li a, .nav .sub-nav li a {
     position: relative;
     display: block;
     padding: 8px 16px;
-    line-height: 2;
+    line-height: 1.5;
 }
 
 nav.sidebar .nav > li.active a, 
