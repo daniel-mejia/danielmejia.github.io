@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Image Modal</title>
+        <!--- stylesheets --->
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    </head>
+    <body>        
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        
+                        <!-- Modal -->
+                        <div id="image-modal" class="modal">
+                          <span class="close">&times;</span>
+                          <img src="img/soma-desktop-mockup.png" alt="Journey Map" class="modal-content" loading="lazy">
+                        </div>
+                        <!-- Image with caption -->
+                        <figure class="image-container">
+                            <img src="img/soma-desktop-mockup.png" alt="Journey Map" id="image" class="clickable-image" caption="Journey Map" loading="lazy">
+                            <figcaption>
+                            View the FigJam file: 
+                                <a href="https://www.figma.com/file/your-figjam-link" target="_blank" rel="noopener noreferrer">
+                              Open in FigJam
+                                </a>  
+                            </figcaption>
+                        </figure>
+                    
+                    </div>
+                </div>
+            </div>
+        </section>        
+        <script src="js/custom.js"></script>
+    </body>
+</html>
