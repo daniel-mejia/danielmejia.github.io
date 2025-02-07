@@ -150,7 +150,7 @@ ol.marker li:before {
     content: counter(num) "";
     color: white;
     font-weight: bold;
-    padding: 8px 16px;
+    padding: 8px 18px;
     background-color: #0F6D7D;
     border-radius: 100%;
     text-align: center;
@@ -517,6 +517,10 @@ from {
 
 figcaption {
   margin-top: 8px;
+}
+
+section {
+    padding: 64px;
 }
 
 footer {
