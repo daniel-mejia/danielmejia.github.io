@@ -95,7 +95,7 @@ footer.bg-dark span a:hover {
 
 input[type="submit"],
 button[type="submit"] {
-    border: 2px solid #13313E;
+    border: 2px solid #27627D;
     background: #13313E;
 }
 
@@ -409,45 +409,6 @@ ul.menu > li a:focus,
     margin: 4px;
 }
 
-/************ max-width: 990px ************/
-
-@media (max-width: 990px) {
-    .menu > li > ul {
-        background: #f5f5f5;
-    }
-    
-    .menu > li > ul li a {
-        color: #292929;
-        opacity: 0.75;
-    }
-    
-    .menu > li > ul li a:hover {
-        color: #292929;
-        text-decoration: underline;
-    }
-    
-    .text-center-sm {
-    text-align: center;
-    }
-    
-    .txt-sm-48 {
-        font-size: 48px;
-    }
-    
-    .txt-sm-24 {
-        font-size: 24px;
-    }
-    
-    .main-content {
-        width: 100%;
-    }
-    
-    nav.sidebar, nav#navbar-example::before {
-        display: none;        
-    }
-    
-}
-
 /* Modal container */
 .modal {
   display: none; /* Hidden by default */
@@ -527,4 +488,92 @@ footer {
     padding: 56px 0;
     z-index: 100;
 }
+
+
+/************ max-width: 990px ************/
+
+@media (max-width: 990px) {
+    .menu > li > ul {
+        background: #f5f5f5;
+    }
+    
+    .menu > li > ul li a {
+        color: #292929;
+        opacity: 0.75;
+    }
+    
+    .menu > li > ul li a:hover {
+        color: #292929;
+        text-decoration: underline;
+    }
+    
+    .text-center-sm {
+    text-align: center;
+    }
+    
+    .txt-sm-48 {
+        font-size: 48px;
+    }
+    
+    .txt-sm-24 {
+        font-size: 24px;
+    }
+    
+    .main-content {
+        width: 100%;
+    }
+    
+    nav.sidebar, nav#navbar-example::before {
+        display: none;        
+    }    
+}
+
+iframe.figjam {
+   border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 450px; 
+}
+
+/************ max-width: 990px ************/
+
+@media (max-width: 767px) {
+    section {
+        padding: 60px 20px;
+    }
+    
+    div.container {
+        padding: 0;
+    }
+    
+    p.lead {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    h4 {
+        font-size: 20px;
+    }
+    
+    .fulloverlay:before {
+        background: conic-gradient(from 151deg at 81.98% 109.91%, var(--ocean-900, #002C33) 158.43133807182312deg, var(--ocean-600, #006A7A) 360deg);
+        opacity: 1;
+    }    
+    
+    iframe.figjam {
+        height: 220px;
+    }
+    
+    a.btn.btn-lg {
+        width: 100%;
+        height: auto;
+        line-height: 2;
+        white-space: wrap;
+        padding: 8px;
+    }
+    
+    ul.menu li p {
+        color: #292929;
+    }
+}
+
 

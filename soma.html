@@ -77,13 +77,13 @@
         <!--- end nav bar --->
         <!--- header --->
         <div class="main-container">
-            <section class="image-bg parallax overlay pt180 pb180 pt-xs-80 pb-xs-80">
+            <section class="image-bg parallax overlay fulloverlay pt180 pb180 pt-xs-80 pb-xs-40">
                 <div class="background-image-holder">
-                    <img alt="Emotilink Schedule page" class="background-image" src="img/soma-banner.jpg" />
+                    <img alt="SOMA search page" src="img/soma-banner.jpg" />
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-12 col-md-5">
+                        <div class="col-xs-10 col-xs-offset-1 col-sm-12 col-md-5">
                             <h1>SOMA</h1>
                             <p class="lead mb48 mb-xs-32">
                                 Supplier Onboarding and Management Application (SOMA), <br>streamlines JPMorgan Chase's supplier management and selection processes.
@@ -165,7 +165,7 @@
                                 <h2 class="color-primary mb40 mb-xs-24">Challenge</h2>
                                 <div class="mb40 mb-xs-24">
                                     <div class="mb40 mb-xs-24">
-                                        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" title="Experience Map" src="https://embed.figma.com/board/JqB3XsMI3jiQ4qgOeBNiKG/SOMA-UX-Research?node-id=70-6900&embed-host=share" allowfullscreen>
+                                        <iframe class="figjam" title="Experience Map" src="https://embed.figma.com/board/JqB3XsMI3jiQ4qgOeBNiKG/SOMA-UX-Research?node-id=70-6900&embed-host=share" allowfullscreen>
                                         </iframe>
                                     </div>
                                 </div>
@@ -215,7 +215,7 @@
                                     <li>A streamlined request form for adding new suppliers to the vetted list.</li>
                                 </ul>
                                 <!--- Try the Interactive Prototype --->
-                                <div class="col-sm-12 text-center mt80">
+                                <div class="col-sm-12 text-center mt-sm-40 mt80">
                                     <a class="btn btn-lg inner-link" href="https://www.figma.com/proto/BbzTReuVdr1op7Vxv0oj9N/SOMA?page-id=2001%3A2888&node-id=2109-1463&viewport=-23%2C-667%2C0.3&t=LR6vRExZlnfQfznt-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2109%3A1480&hide-ui=1" target="_blank">Try the Interactive Prototype</a>
                                 </div>
                             </div>
@@ -225,7 +225,7 @@
 
                     <!--- SECTION: Process  --->
                     <!--- banner --->
-                    <section id="Process" class="section page-title page-title-1 image-bg overlay parallax mb56">
+                    <section id="Process" class="section page-title page-title-1 image-bg overlay parallax">
                         <div class="background-image-holder">
                             <img class="background-image" alt="A whiteboard with an initial user flow diagram." src="img/soma-whiteboard.jpeg">
                         </div>
@@ -240,59 +240,62 @@
                     <!--- END OF banner --->
 
                     <!--- SUB-SECTION: Discovery Research --->
-                    <div id="Discovery-Research" class="section mb56">
-                        <div class="container v-align-children text-left">
-                            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
-                                <h3>Discovery Research</h3>
-                                <div class="mb40 mb-xs-24">
-                                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://embed.figma.com/board/JqB3XsMI3jiQ4qgOeBNiKG/SOMA-UX-Research?node-id=9-2&embed-host=share" title="process flow" allowfullscreen></iframe>
-                                </div>
-                                <ul class="lead" data-bullet="ti-arrow-right">
-                                    <li>Conducted user interviews to understand pain points in supplier tracking and selection.</li>
-                                    <li>Gathered input from the SMT and leadership to align the tool with business goals such as sustainability, inclusivity, and negotiated rates.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!--- END OF SUB-SECTION: Discovery Research--->
-                   
-                   <!--- SUB-SECTION: Information Architecture --->
-                    <div id="Information-Architecture" class="section mb56">
-                        <div class="container v-align-children text-left pt-sm-80">
-                            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
-                                <h3>Information Architecture</h3>
-                                <div class="mb40 mb-xs-24">
-                                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://embed.figma.com/board/JqB3XsMI3jiQ4qgOeBNiKG/SOMA-UX-Research?node-id=93-3064&embed-host=share" title="Average Importance of Data Field per Respondents by User Group" allowfullscreen></iframe>
-                                </div>
-                                <ul class="lead" data-bullet="ti-arrow-right">
-                                    <li>Conducted workshops and surveys to obtain a ranked list of the information needed to help us outline the data anticipated for searching and filtering and organize the suppliers’ profiles.</li>
-                                    <li>Calculated survey respondents' Importance Score to rank data fields in order of priority.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!--- END OF SUB-SECTION: Information Architecture--->
-                   
-                   <!--- SUB-SECTION: Design Testing --->
-                    <div id="Design-Testing" class="section mb56">
-                        <div class="container v-align-children text-left">
-                            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
-                                <h3>Design Testing</h3>
-                                <ul class="lead" data-bullet="ti-arrow-right">
-                                    <li>Created wireframes and user flow diagrams to visualize navigation and usability.</li>
-                                    <li>Designed the interface using an internal design system to ensure consistency and expedite development.</li>
-                                    <li>Conducted usability testing sessions with internal users to gather feedback.</li>
-                                    <li>Iterated designs to improve workflows, search filters, and the display of supplier profiles.</li>
-                                </ul>
-                                <!--- Try the Interactive Prototype --->
-                                <div class="col-sm-12 text-center mt80">
-                                    <a class="btn btn-lg inner-link" href="https://www.figma.com/proto/BbzTReuVdr1op7Vxv0oj9N/SOMA?page-id=2001%3A2888&node-id=2109-1463&viewport=-23%2C-667%2C0.3&t=LR6vRExZlnfQfznt-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2109%3A1480&hide-ui=1" target="_blank">Try the Interactive Prototype</a>
+                    <section class="section">
+
+                        <div id="Discovery-Research" class="mb20">
+                            <div class="container v-align-children text-left">
+                                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+                                    <h3>Discovery Research</h3>
+                                    <div class="mb40 mb-xs-24">
+                                        <iframe class="figjam" src="https://embed.figma.com/board/JqB3XsMI3jiQ4qgOeBNiKG/SOMA-UX-Research?node-id=9-2&embed-host=share" title="process flow" allowfullscreen></iframe>
+                                    </div>
+                                    <ul class="lead" data-bullet="ti-arrow-right">
+                                        <li>Conducted user interviews to understand pain points in supplier tracking and selection.</li>
+                                        <li>Gathered input from the SMT and leadership to align the tool with business goals such as sustainability, inclusivity, and negotiated rates.</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!--- END OF SUB-SECTION: Testing and Iteration--->
-                   
+                        <!--- END OF SUB-SECTION: Discovery Research--->
+
+                       <!--- SUB-SECTION: Information Architecture --->
+                        <div id="Information-Architecture" class="mb20">
+                            <div class="container v-align-children text-left pt-sm-20">
+                                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+                                    <h3>Information Architecture</h3>
+                                    <div class="mb40 mb-xs-24">
+                                        <iframe class="figjam" src="https://embed.figma.com/board/JqB3XsMI3jiQ4qgOeBNiKG/SOMA-UX-Research?node-id=93-3064&embed-host=share" title="Average Importance of Data Field per Respondents by User Group" allowfullscreen></iframe>
+                                    </div>
+                                    <ul class="lead" data-bullet="ti-arrow-right">
+                                        <li>Conducted workshops and surveys to obtain a ranked list of the information needed to help us outline the data anticipated for searching and filtering and organize the suppliers’ profiles.</li>
+                                        <li>Calculated survey respondents' Importance Score to rank data fields in order of priority.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- END OF SUB-SECTION: Information Architecture--->
+
+                       <!--- SUB-SECTION: Design Testing --->
+                        <div id="Design-Testing" class="mb20">
+                            <div class="container v-align-children text-left">
+                                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+                                    <h3>Design Testing</h3>
+                                    <ul class="lead" data-bullet="ti-arrow-right">
+                                        <li>Created wireframes and user flow diagrams to visualize navigation and usability.</li>
+                                        <li>Designed the interface using an internal design system to ensure consistency and expedite development.</li>
+                                        <li>Conducted usability testing sessions with internal users to gather feedback.</li>
+                                        <li>Iterated designs to improve workflows, search filters, and the display of supplier profiles.</li>
+                                    </ul>
+                                    <!--- Try the Interactive Prototype --->
+                                    <div class="col-sm-12 text-center mt-sm-40 mt80">
+                                        <a class="btn btn-lg inner-link" href="https://www.figma.com/proto/BbzTReuVdr1op7Vxv0oj9N/SOMA?page-id=2001%3A2888&node-id=2109-1463&viewport=-23%2C-667%2C0.3&t=LR6vRExZlnfQfznt-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2109%3A1480&hide-ui=1" target="_blank">Try the Interactive Prototype</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- END OF SUB-SECTION: Testing and Iteration--->
+
+                    </section>
                     <!--- SECTION: Scenario: Finding the Right Vendor for a High-Stakes Project--->
                     <section id="Scenario" class="section bg-secondary">
                         <div class="container text-left v-align-children">
@@ -333,7 +336,7 @@
                             <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
                                 <h2 class="color-primary mb32 mb-xs-24">Result</h2>
                                 <div class="mb40 mb-xs-24">
-                                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="350" src="https://embed.figma.com/board/JqB3XsMI3jiQ4qgOeBNiKG/SOMA-UX-Research?node-id=90-904&embed-host=share" title="User Journey before and after soma" allowfullscreen></iframe>
+                                    <iframe class="figjam" src="https://embed.figma.com/board/JqB3XsMI3jiQ4qgOeBNiKG/SOMA-UX-Research?node-id=90-904&embed-host=share" title="User Journey before and after soma" allowfullscreen></iframe>
                                 </div>
                                 <p class="lead">
                                     User feedback highlighted several benefits:
