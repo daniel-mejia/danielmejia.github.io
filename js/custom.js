@@ -6,6 +6,7 @@ window.addEventListener("scroll", function () {
   if (window.scrollY > 584) {
     sidebar.style.position = "fixed";
     sidebar.style.top = "0px";
+    sidebar.style.height = "100%";
   } else {
     sidebar.style.position = "relative";
     sidebar.style.top = "0px";
@@ -17,6 +18,7 @@ const footer = document.querySelector('footer');
 const data = {
   footerHeight: footer.getBoundingClientRect().height,
 };
+
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -113,34 +115,6 @@ setElementStyles(mainContent, {
   marginLeft: originalWidth,
 });
 
-// Add scroll event listener
-window.addEventListener('scroll', handleScroll);
-
-// Get the modal, image, modal content, and caption
-const modal = document.getElementById("image-modal");
-const img = document.getElementById("image");
-const modalImg = document.getElementById("modal-img");
-const captionText = document.getElementById("caption");
-const closeBtn = document.querySelector(".close");
-
-// When the user clicks on the image, open the modal
-img.onclick = function () {
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-};
-
-// When the user clicks on the close button, close the modal
-closeBtn.onclick = function () {
-  modal.style.display = "none";
-};
-
-// Close the modal when the user clicks anywhere outside the image
-window.onclick = function (event) {
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
-};
 
 
 
@@ -148,12 +122,58 @@ window.onclick = function (event) {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("image-modal");
+    const modalImage = document.getElementById("modal-image");
+    const closeBtn = document.querySelector(".close");
 
+    // Select all images in different sections
+    const images = document.querySelectorAll(".clickable-image");
 
+    // Open modal and update image
+    function openModal(event) {
+        const image = event.target; // Get the clicked image
+        modal.style.display = "flex";
+        modal.setAttribute("aria-hidden", "false");
+        modalImage.src = image.src; // Set modal image
+        modalImage.alt = image.alt; // Preserve accessibility
+        closeBtn.focus();
+    }
 
+    // Attach event listeners to each image
+    images.forEach(img => {
+        img.addEventListener("click", openModal);
 
+        // Enable "Enter" or "Space" key to open modal
+        img.addEventListener("keydown", function (event) {
+            if (event.key === "Enter" || event.key === " ") {
+                openModal(event);
+            }
+        });
+    });
 
+    // Close modal function
+    function closeModal() {
+        modal.style.display = "none";
+        modal.setAttribute("aria-hidden", "true");
+        modalImage.src = ""; // Clear image source
+        images[0].focus(); // Return focus to the first image
+    }
 
+    // Close modal when clicking the close button
+    closeBtn.addEventListener("click", closeModal);
 
+    // Close modal when clicking outside the modal content
+    modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
 
-
+    // Close modal using the Escape key
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && modal.style.display === "flex") {
+            closeModal();
+        }
+    });
+});

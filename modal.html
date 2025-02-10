@@ -1,43 +1,71 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Image Modal</title>
-        <!--- stylesheets --->
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
-        <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
-    </head>
-    <body>        
-        <section class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        
-                        <!-- Modal -->
-                        <div id="image-modal" class="modal">
-                          <span class="close">&times;</span>
-                          <img src="img/soma-desktop-mockup.png" alt="Journey Map" class="modal-content" loading="lazy">
-                        </div>
-                        <!-- Image with caption -->
-                        <figure class="image-container">
-                            <img src="img/soma-desktop-mockup.png" alt="Journey Map" id="image" class="clickable-image" caption="Journey Map" loading="lazy">
-                            <figcaption>
-                            View the FigJam file: 
-                                <a href="https://www.figma.com/file/your-figjam-link" target="_blank" rel="noopener noreferrer">
-                              Open in FigJam
-                                </a>  
-                            </figcaption>
-                        </figure>
-                    
-                    </div>
-                </div>
-            </div>
-        </section>        
-        <script src="js/custom.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Image Modal</title>
+     <!--- stylesheets --->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+
+    <!-- Clickable Image -->
+    <div class="image-section">
+        <figure>
+            <img src="img/soma-experience-map.png" alt="Experience map showing the process to find a supplier." id="thumbnail" class="clickable-image">
+            <figcaption>
+                View experience map in FigJam. 
+                <a href="https://www.figma.com/file/your-figjam-link" target="_blank" rel="noopener noreferrer">
+                    Open in FigJam
+                </a>
+            </figcaption>
+        </figure>
+    </div>
+
+    <!-- Modal -->
+    <div id="image-modal" class="modal" role="dialog" aria-labelledby="Experience map" aria-hidden="true">
+        <div class="modal-content img-modal">
+            <button class="close" aria-label="Close image">&times;</button>
+            <h2 id="modal-title" class="sr-only">Expanded Image</h2>
+            <img src="img/soma-experience-map.png" alt="" id="modal-image">
+        </div>
+    </div>
+    
+     <section class="section">
+        <h2>First Section</h2>
+        <img src="img/image1.png" alt="Description of image 1" class="clickable-image">
+    </section>
+
+    <section class="section">
+        <h2>Second Section</h2>
+        <img src="img/image2.png" alt="Description of image 2" class="clickable-image">
+    </section>
+
+    <section class="section">
+        <h2>Third Section</h2>
+        <img src="img/image3.png" alt="Description of image 3" class="clickable-image">
+    </section>
+
+    <!-- Modal (One modal for all images) -->
+    <div id="image-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close" aria-label="Close image">&times;</button>
+            <h2 id="modal-title" class="sr-only">Expanded Image</h2>
+            <img src="" alt="" id="modal-image">
+        </div>
+    </div>
+
+
+
+    <script src="js/custom.js"></script>
+    <script src="js/custom.min.js"></script>
+
+</body>
 </html>
