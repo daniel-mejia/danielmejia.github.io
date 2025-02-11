@@ -1,6 +1,5 @@
 
 // Navbar
-
 window.addEventListener("scroll", function () {
   var sidebar = document.querySelector(".sidebar");
   if (window.scrollY > 584) {
@@ -69,6 +68,7 @@ const handleScroll = () => {
   }
 };
 
+/*
 // Add scroll event listener
 window.addEventListener('scroll', handleScroll);
 
@@ -91,13 +91,11 @@ document.addEventListener("DOMContentLoaded", function () {
       $('body').scrollspy({ target: '#navbar-example', offset: 50 });
       toggleButton.textContent = "Disable Scrollspy";
     }
-
     isScrollspyEnabled = !isScrollspyEnabled;
   });
 });
 
 
-/*
 const subLinks = ['Discovery Research', 'Information Architecture', 'Design Testing'];
 const links = navbar.querySelectorAll('li');
 
@@ -117,12 +115,6 @@ async function setElementStyles(el, styles) {
 setElementStyles(mainContent, {
   marginLeft: originalWidth,
 });
-
-
-
-
-
-
 
 
 document.addEventListener("DOMContentLoaded", function () {

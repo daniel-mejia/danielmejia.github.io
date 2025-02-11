@@ -130,16 +130,21 @@ section ul.lead {
 
 div.lead li,
 div.lead p,
-ul.lead li {
+ul.lead li,
+ol.lead > li {
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
-    padding-bottom: 32px;
+}
+
+ol.lead > li {
+    font-weight: 600;
 }
 
 ol.marker {
     list-style: none;
     counter-reset: num;
+    padding-left: 60px;
 }
 
 ol.marker li {
@@ -150,7 +155,7 @@ ol.marker li:before {
     content: counter(num) "";
     color: white;
     font-weight: bold;
-    padding: 8px 18px;
+    padding: 8px 16px;
     background-color: #0F6D7D;
     border-radius: 100%;
     text-align: center;
@@ -325,7 +330,7 @@ nav.transparent.fixed ul.menu li p {
 
 .main-content {
     float: right;
-    padding-left: 0;
+    padding: 60px 0 0 0;
     margin-bottom: 0;
 }
 
@@ -427,7 +432,7 @@ figcaption {
 }
 
 section {
-    padding: 64px;
+    padding: 48px 160px;
 }
 
 footer {
@@ -490,7 +495,7 @@ footer {
         padding: 0;
     }
     
-    p.lead {
+    p.lead, ol.lead > li > p {
         font-size: 16px;
         line-height: 24px;
     }
