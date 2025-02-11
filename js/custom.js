@@ -96,6 +96,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
+/*
 const subLinks = ['Discovery Research', 'Information Architecture', 'Design Testing'];
 const links = navbar.querySelectorAll('li');
 
@@ -104,6 +106,7 @@ links.forEach((link) => {
     link.classList.add('sub-link');
   }
 });
+*/
 
 // Function to set element styles
 async function setElementStyles(el, styles) {
