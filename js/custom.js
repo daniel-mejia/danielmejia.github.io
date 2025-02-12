@@ -3,6 +3,7 @@
 window.addEventListener("scroll", function () {
   var sidebar = document.querySelector(".sidebar");
   if (window.scrollY > 584) {
+    sidebar.style.display = "block";
     sidebar.style.position = "fixed";
     sidebar.style.top = "0px";
     sidebar.style.height = "100%";
@@ -53,6 +54,16 @@ setElementStyles(mainContent, {
   marginLeft: originalWidth,
 });
 
+// Function to set element styles
+async function setElementStyles(el, styles) {
+  Object.assign(el.style, styles);
+}
+
+// Initially set the margin-left to the main content
+setElementStyles(mainContent, {
+  marginLeft: originalWidth,
+});
+
 // Function to handle scroll event
 const handleScroll = () => {
   const overviewTop = overviewSection.getBoundingClientRect().top;
@@ -68,10 +79,9 @@ const handleScroll = () => {
   }
 };
 
-/*
-// Add scroll event listener
-window.addEventListener('scroll', handleScroll);
 
+/*// Add scroll event listener
+window.addEventListener('scroll', handleScroll);
 document.addEventListener("DOMContentLoaded", function () {
   var isScrollspyEnabled = true;
   var toggleButton = document.getElementById("toggle-scrollspy");
@@ -93,9 +103,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     isScrollspyEnabled = !isScrollspyEnabled;
   });
-});
+});*/
 
-
+/*
 const subLinks = ['Discovery Research', 'Information Architecture', 'Design Testing'];
 const links = navbar.querySelectorAll('li');
 
@@ -106,17 +116,8 @@ links.forEach((link) => {
 });
 */
 
-// Function to set element styles
-async function setElementStyles(el, styles) {
-  Object.assign(el.style, styles);
-}
 
-// Initially set the margin-left to the main content
-setElementStyles(mainContent, {
-  marginLeft: originalWidth,
-});
-
-
+// Image modal
 document.addEventListener("DOMContentLoaded", function () {
     const modal = document.getElementById("image-modal");
     const modalImage = document.getElementById("modal-image");
