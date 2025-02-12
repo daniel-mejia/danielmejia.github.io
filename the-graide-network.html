@@ -19,7 +19,6 @@
         <!--- Fonts --->
         <link href="css/font-roboto.css" rel="stylesheet" type="text/css">
     </head>
-    
     <!--- body --->
     <body class="scroll-assist" data-spy="scroll" data-target="#navbar-example" data-offset="50">
         <!--- nav bar --->
@@ -103,19 +102,15 @@
         
         <div class="container-fluid">
            <div class="row">
-              
-               <!-- Side Navigation -->
-                <nav id="navbar-example" class="col-md-2 bg-secondary sidebar" data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="50">
+               
+               <!-- Side Navigation
+                <nav id="navbar-example" class="text-left col-md-3 sidebar" data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="50">
                   <ul class="nav nav-pills">
                     <li class="active "><a href="#brief">The Brief</a></li>
                     <li><a href="#the-research">The Research</a></li>
-                    <li>
-                        <ul class="sub-nav custom-vertical-nav">
-                            <li><a href="#usability-testing">Usability Testing</a></li>
-                            <li><a href="#findings">Findings</a></li>
-                            <li><a href="#usability-testing">Usability Testing</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="#usability-testing">Usability Testing</a></li>
+                    <li><a href="#findings">Findings</a></li>
+                    <li><a href="#usability-testing">Usability Testing</a></li>
                     <li><a href="#concept-testing">Design and Concept Testing </a></li>
                     <li><a href="#converging">Converging And Refining Results</a></li>
                     <li><a href="#further-testing">Further Testing</a></li>
@@ -125,15 +120,15 @@
                     <li><a href="#top"><i class="icon fa fa-arrow-circle-up icon-xs"></i>Top</a></li>
                   </ul>
                 </nav>
-                <!--- END of Side Navigation --->
+                END of Side Navigation --->
  
                 <!-- Main Content -->
-                <main class="col-md-10 col-sml-12 main-content">
-                    <!--- The Brief section --->
+                <main class="main-content col-xs-12 col-sm-9">
+                    <!--- SECTION: The Brief --->
                     <section id="brief">
-                        <div class="container">
-                            <div class="row v-align-children text-left">
-                                <div class="col-md-8 col-md-offset-0 col-sm-10 col-sm-offset-1 mb-xs-48">
+                        <div class="text-left v-align-children">
+                            <div>
+                                <div>
                                     <h2 class="color-primary mb40 mb-xs-24">The Brief</h2>
                                     <p class="lead">
                                         Launched September 2015, <a href="https://www.thegraidenetwork.com/" target="_blank">The Graide Network (TGN)</a> connects teachers with undergraduate education majors. These undergraduates help teachers grade their students’ work. Currently, the grading takes place off-platform, via downloadable Excel templates. Our task was to prepare low- to mid-fidelity interaction designs focused on the teacher's side of the platform. We conducted user interviews and usability testing, as well as broader field research, in order to find and improve pain points in the current process, know how our client compares with competitions, and determine their value in the education technology ecosystem.  
@@ -142,47 +137,48 @@
                             </div>
                         </div>
                     </section>
-                    <!--- END OF The Brief section --->
+                    <!--- END OF SECTION: The Brief section --->
 
-                    <!--- BANNER: The Research --->
-                    <section id="the-research" class="page-title page-title-1 image-bg overlay parallax">
+                    <!--- BANNER: User Research --->
+                    <section id="user-research" class="page-title page-title-1 image-bg overlay parallax">
                         <div class="background-image-holder">
                             <img class="background-image" alt="User experience designers in front of a wall of sticky notes with user quotes and grouping them by theme." src="img/TGN-audrey-mildrey-me.jpg">
                         </div>
                         <div class="container">
                             <div class="row">
-                                <div class="col-sm-12 text-center">
-                                    <h2 class="uppercase mb0">The Research</h2>
+                                <div class="col-sm-11 text-center">
+                                    <h2 class="uppercase mb0">User Research</h2>
                                 </div>
                             </div>
                         </div>
-                    </section>	
-                    <!--- END OF BANNER: The Research --->
+                    </section>
+                    <!--- END OF BANNER: User Research --->
                     
-                    <!-- SECTION: Findings -->
+                    <!-- SECTION: User Research -->
                     <section>
-                        <div class="container">
-                            <!--- First paragraph, root causes and quote --->
-                            <div class="row"> 
-                                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                        <div class="text-left v-align-children">
+                            <div> 
+                                <div>
                                     <p class="lead">
                                         In our first round of testing, we interviewed seven teachers who had never used the platform. We wanted to know their daily struggles as educators and determine how TGN can be useful to them. I studied the educational technology ecosystem and made a strengths, weaknesses, opportunities, and threats (SWOT) analysis. This analysis aimed to define what sets our client apart from competitors. The official name for undergrad students who help teachers grade assignments in this platform is "Graiders". But for clarity, I will use the term "graders" instead. 
                                     </p>
                                 </div>
                             </div>
-                            <!-- Usability Testing section -->
-                            <div id="usability-testing" class="row pt96">
-                                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                                    <div class="col-sm-12 text-center">
-                                        <h2 class="mb64">Usability Testing</h2>
+                        </div>
+                            <!-- SUBSECTION: User Interviews -->
+                        <div id="user-interviews" class="text-left v-align-children">
+                            <div class="lead pt96">
+                                <div>
+                                    <div>
+                                        <h2 class="mb64">User Interviews</h2>
                                     </div>
-                                    <p class="lead mb36">
+                                    <p class="mb36">
                                     First, we interviewed teachers to learn about their grading process without assistants or tools. Then we had teachers use The Graide Network while sharing their thoughts aloud. They also used our client's competitor to draw comparison between both products. From this test, we got educators’ insight about how we can improve their grading process. We listed pain points and preferences they had with the interface.    
                                     </p>
-                                    <p class="lead mb36">
+                                    <p class="mb36">
                                     During our initial meeting with our client, we a found few assumptions we needed to confirm or deny. It was essential for us to have a clear idea of what teachers wanted and found helpful from the platform.   
                                     </p>
-                                    <ul class="lead" data-bullet="ti-arrow-right">
+                                    <ul data-bullet="ti-arrow-right">
                                         <li>Adding personalized notes about particular students.</li>
                                         <li>Viewing and tracking students' performance.</li> 
                                         <li>Reusing and pre-populating rubrics.</li>  
@@ -190,39 +186,37 @@
                                     </ul>
                                 </div>
                             </div>
-                            <!--end of row-->
+                            <!-- END OF SUBSECTION: User Interviews-->
                         </div>
-                        <!--end of container-->
-                        <!-- END OF Usability Testing section-->            
-
-                        <!-- Findings section -->
-                        <div id="findings" class="row pt96">
-                            <div class="col-md-12 col-sm-12 text-center">
-                                <h3 class="mb64">Findings</h3>
-                                <div class="tabbed-content button-tabs mb64">
-                                    <ul class="tabs mb64">
+                        
+                        <!-- SUBSECTION: Findings -->
+                        <div id="findings" class="text-left v-align-children mb40">
+                            <div>
+                                <h3>Findings</h3>
+                                <div class="tabbed-content text-tabs">
+                                    <ul class="tabs mb16 mt24">
                                         <li class="active">
                                             <div class="tab-title">
-                                                <span>Cover Page</span>
+                                                <span>Cover</span>
                                             </div>
                                             <div class="tab-content">
-                                                <div class="container">
-                                                    <div class="row v-align-children text-left">
-                                                        <div class="col-md-7 col-sm-6 mb-xs-24">
+                                                <div>
+                                                    <div>
+                                                        <div class="mb40">
                                                             <img class="cast-shadow" alt="Screenshot" src="img/cover-page.png" />
                                                         </div>
-                                                        <div class="col-md-4  col-sm-offset-1 col-sm-5">
+                                                        <div  class="lead">
                                                             <div class="feature feature-3">
-                                                                <h4>Cover Page</h4>
+                                                                <h4>Cover page</h4>
                                                                 <div class="left">
-                                                                    <img class="finding-icon" alt="findings 1" src="img/finding-icons-svg/findings-icon-1.svg">
+                                                                    <img class="finding-icon" alt="First finding" src="img/finding-icons-svg/findings-icon-1.svg">
                                                                 </div>
-                                                                <p>
-                                                                    <strong>Graders miss or skip the directions on the Cover Page.</strong> 
-                                                                </p> 
-                                                                <p>
-                                                                    This causes them to use the spreadsheet incorrectly or use other resources, such as a Google Docs, to record grades and feedback.
-                                                                </p>
+                                                                <div class="right">
+                                                                    <p><strong>Graders miss the directions on the Cover Page.</strong></p>
+                                                                    <p>
+                                                                        This causes them to use the spreadsheet incorrectly or use other resources, such as a Google Docs, to record grades and feedback.
+                                                                    </p>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -233,17 +227,17 @@
                                         </li>
                                         <li>
                                             <div class="tab-title">
-                                                <span>Individual Grade Summary</span>
+                                                <span>Individual</span>
                                             </div>
                                             <div class="tab-content">
-                                                <div class="container">
-                                                    <div class="row v-align-children text-left">
-                                                        <div class="col-md-7 col-sm-6 text-center mb-xs-24">
+                                                <div>
+                                                    <div>
+                                                        <div class="mb40">
                                                             <img class="cast-shadow" alt="Screenshot" src="img/individual-grade-summary.png" />
                                                         </div>
-                                                        <div class="col-md-4 col-sm-offset-1 col-sm-5">
+                                                        <div>
                                                             <div class="feature feature-3">
-                                                                <h4>Individual Grade Summary</h4>
+                                                                <h4>Individual grade summary</h4>
                                                                 <p>
                                                                    Graders download the rubric attachment, then manually populates the spreadsheet with the rubric’s criteria and scoring per the criteria. Teachers wanted to see how students are doing on each rubric criteria by looking at the scores.<strong>The scores tell educators where to focus their efforts to help students who are struggling in a particular subject.</strong>
                                                                 </p>
@@ -269,17 +263,17 @@
                                         </li>
                                         <li>
                                             <div class="tab-title">
-                                                <span>Class Summary</span>
+                                                <span>Class</span>
                                             </div>
                                             <div class="tab-content">
-                                                <div class="container">
-                                                    <div class="row v-align-children text-left">
-                                                        <div class="col-md-7 col-sm-6 text-center mb-xs-24">
+                                                <div>
+                                                    <div>
+                                                        <div class="mb40">
                                                             <img class="cast-shadow" alt="Screenshot" src="img/class-summary.png" />
                                                         </div>
-                                                        <div class="col-md-4 col-md-offset-1 col-sm-5">
+                                                        <div>
                                                             <div class="feature feature-3">
-                                                                <h4>Class Summary</h4>
+                                                                <h4>Class summary</h4>
                                                                 <p>
                                                                    Educators like knowing which students need help with assignments, while at the same time ensuring top-performers are motivated and engaged.
                                                                 </p> 
@@ -289,12 +283,14 @@
                                                                 <div class="left">
                                                                     <img class="finding-icon" alt="findings 4" src="img/finding-icons-svg/findings-icon-4.svg">
                                                                 </div>
-                                                                <blockquote class="small right">
-                                                                    “I would like to see the overall grade as opposed to the average for one criteria in the rubric.”
-                                                                </blockquote>
-                                                                <blockquote class="small right">
-                                                                    “I’ll want to know what to do with the data.”
-                                                                </blockquote>
+                                                                <div class="right">
+                                                                    <blockquote class="small">
+                                                                        “I would like to see the overall grade as opposed to the average for one criteria in the rubric.”
+                                                                    </blockquote>
+                                                                    <blockquote class="small">
+                                                                        “I’ll want to know what to do with the data.”
+                                                                    </blockquote>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -305,29 +301,31 @@
                                         </li>
                                         <li>
                                             <div class="tab-title">
-                                                <span>Student Page</span>
+                                                <span>Student</span>
                                             </div>
                                             <div class="tab-content">
-                                                <div class="container">
-                                                    <div class="row v-align-children text-left">
-                                                        <div class="col-md-7 col-sm-6 text-center mb-xs-24">
+                                                <div>
+                                                    <div>
+                                                        <div class="mb40">
                                                             <img class="cast-shadow" alt="Screenshot" src="img/student-page.png" />
                                                         </div>
-                                                        <div class="col-md-4 col-md-offset-1 col-sm-5">
+                                                        <div>
                                                             <div class="feature feature-3">
-                                                                <h4>Student Page</h4>
+                                                                <h4>Student page</h4>
                                                                 <p>
                                                                     <strong>Users suggested a graph</strong> to see student's needs across each rubric criteria. Interviewers <strong>wanted to print</strong> this page to share with students.   
                                                                 </p> 
                                                                 <div class="left">
                                                                     <img class="finding-icon" alt="findings 5" src="img/finding-icons-svg/findings-icon-5.svg">
                                                                 </div>
-                                                                <blockquote class="small right">
-                                                                    “Teachers struggle to know individual student needs, graph could help teachers on that.”
-                                                                </blockquote>
-                                                                <blockquote class="small right">
-                                                                    “I would print this page for the students.”
-                                                                </blockquote>
+                                                                <div class="right">
+                                                                    <blockquote class="small">
+                                                                        “Teachers struggle to know individual student needs, graph could help teachers on that.”
+                                                                    </blockquote>
+                                                                    <blockquote class="small">
+                                                                        “I would print this page for the students.”
+                                                                    </blockquote>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -338,85 +336,59 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <!--end of button tabs-->
                             </div>
-                            <!--end of row-->
                         </div>
-                        <!--end of container-->
-                    </section>
-                    <!-- END OF Findings section-->
-
-                    <!-- Usability Testing Takeaway -->
-                    <section class="bg-secondary">
-                       <div class="container">
-                            <div class="row mb64">
-                                <div class="col-sm-12 text-center mb18">
-                                    <h4>Takeaways from usability testing</h4>
-                                </div>
-                                <div class="col-md-8 col-md-offset-2">
+                        <!-- END OF SUBSECTION: Findings -->
+                       
+                        <!-- SUBSECTION: Takeaways -->
+                        <div id="takeaways" class="text-left v-align-children">
+                            <div >
+                                <h3>Takeaways</h3>
+                                <div>
                                     <ul class="lead" data-bullet="ti-arrow-right">
-                                        <li>We gathered a list of pain points to address on our initial prototypes. </li>
+                                        <li>We gathered a list of pain points to address on our initial designs. </li>
                                         <li>We validated that “The Graide Network” help teachers save time. </li>
                                         <li>Educators are willing to use a new and improved technology that replaces the current one</li>
                                     </ul>
                                 </div>
+                                <div>
+                                    <blockquote>
+                                    "This saves a lot of time, I would definitely use this."   
+                                    </blockquote>
+                                </div>
                             </div>
-                            <!--end of row-->
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-10 col-md-offset-1 text-center">
-                                        <blockquote>
-                                        "This saves a lot of time, I would definitely use this."   
-                                        </blockquote>
+                        </div>
+                        <!-- END OF SUBSECTION: Takeaways -->
+                    </section>    
+                    <!-- END OF SECTION: User Research-->
+                    
+                    <!-- SECTION: The Education Environment -->
+                    <section id="education-environment" class="bg-secondary">
+                        <div class="text-left v-align-children">
+                            <div>
+                                <div>
+                                    <h3>The Education Environment</h3>
+                                    <div class="lead mb36">
+                                        <p>
+                                        To further determine our client's potential value, we studied the education ecosystem and found the following:   
+                                        </p>
+                                        <ul class="lead mb40" data-bullet="ti-plus">
+                                            <li>Timely feedback is essential to a student’s progress. (<a href="https://www.edutopia.org/blog/tips-providing-students-meaningful-feedback-marianne-stenger" target="_blank">source</a>)</li> 
+                                            <li>Student comprehension of recently read material improves with more immediate feedback. (<a href="https://www.edutopia.org/blog/tips-providing-students-meaningful-feedback-marianne-stenger" target="_blank">source</a>)</li> 
+                                            <li>Teachers spend an exhausting amount of time performing instructional duties and non-compensated school-related activities such as grading, tutoring, bus duty, or club advising (<a href="http://www.nea.org/home/12661.htm" target="_blank">source</a>)</li>
+                                        </ul>
+                                        <img alt="SWOT analysis" src="img/swot-analysis.png" />
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!--end of container-->
-                    </section>
-                    <!-- END OF Usability Testing Takeaways-->
-
-
-                    <!-- competitive analysis section -->
-                    <section>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                                    <div class="col-sm-12 text-center">
-                                        <h3 class="mb64">The education environment</h3>
-                                    </div>
-                                    <p class="lead mb36">
-                                    To further determine our client's potential value, we studied the education ecosystem and found the following:   
-                                    </p>
-                                    <ul class="lead mb80" data-bullet="ti-plus">
-                                        <li>Timely feedback is essential to a student’s progress. (<a href="https://www.edutopia.org/blog/tips-providing-students-meaningful-feedback-marianne-stenger" target="_blank">source</a>)</li> 
-                                        <li>Student comprehension of recently read material improves with more immediate feedback. (<a href="https://www.edutopia.org/blog/tips-providing-students-meaningful-feedback-marianne-stenger" target="_blank">source</a>)</li> 
-                                        <li>Teachers spend an exhausting amount of time performing instructional duties and non-compensated school-related activities such as grading, tutoring, bus duty, or club advising (<a href="http://www.nea.org/home/12661.htm" target="_blank">source</a>)</li>
-                                    </ul>
-                                    <div class="row mb80 mb-xs-24">
-                                        <div class="col-sm-12 text-center">
-                                            <img alt="SWOT analysis" src="img/swot-analysis.png" />
-                                        </div>
-                                    </div>
-
-                                    <!--- View complete SWOT analysis --->
-                                    <div class="col-sm-12 text-center">
-                                        <a class="btn btn-lg mb0 inner-link" href="https://docs.google.com/document/d/1T2SaRXUpXm3hWPXMkyVysLvyVMnHzDnFBdku3g_0CY0/edit?usp=sharing" target="_blank">View complete SWOT analysis</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--end of row-->
-                        </div>
-                        <!--end of container-->
-                    </section>
-
-
-                    <!-- Domain Research Takeaway -->
-                    <section class="bg-secondary">
-                       <div class="container">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                                    <div class="col-sm-12 text-center mb18">
+                        <!-- END OF SUBSECTION: Domain Research Takeaway -->
+                        
+                        <!-- SUBSECTION: Domain Research Takeaway -->
+                        <div class="text-left v-align-children">
+                            <div>
+                                <div>
+                                    <div class="text-center mb18">
                                         <h4>Takeaways from domain research</h4>
                                     </div>
                                     <ul class="lead" data-bullet="ti-arrow-right">
@@ -431,15 +403,16 @@
                                     </p>
                                 </div>
                             </div>
-                            <!--end of row-->
                         </div>
-                        <!--end of container-->
+                        <!-- END OF SUBSECTION: Domain Research Takeaway -->
                     </section>
-                    <!-- END OF Domain Research Takeaway-->
+                    <!-- END OF SECTION: The Education Environment -->
+
+
 
                     <!-- PERSONAS --> 
-                    <section class="bg-dark">
-                        <div class="container">
+                    <section id="personas" class="bg-dark">
+                        <div class="text-left v-align-children">
                             <div class=" slider-all-controls controls-inside">
                                 <ul class="slides">
                                     <li>
@@ -516,11 +489,10 @@
                     <!-- END OF PERSONAS-->
 
                     <!-- Journey Map --> 
-
-                    <section>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                    <section id="Journey-map">
+                        <div class="text-left v-align-children">
+                            <div>
+                                <div>
                                     <p class="lead mb36">
                                     We created a Journey Map to illustrate teachers’ pain points when using the platform. Then counter these pain points with opportunities for improvement.    
                                     </p>
@@ -536,10 +508,10 @@
                     <!-- END OF Journey Map-->
 
                     <!-- Problem Statement-->
-                    <section class="page-title page-title-3 bg-secondary"> 
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-8 col-sm-offset-2 text-center">
+                    <section id="problem-statement"> 
+                        <div class="text-left v-align-children">
+                            <div>
+                                <div>
                                     <h3 class="mb36">Defining the Problem</h3>
                                     <p class="lead">
                                         “Although The Graide Network helps teachers save a lot of time grading, the platform could be improved by making it an effective means of communication between teachers and graders, and by providing intuitive tools and immediate results to teachers of all experience levels.”
@@ -549,11 +521,9 @@
                             <!--end of row-->
                         </div>
                         <!--end of container-->
-                    </section>
-                    <section>
-                        <div class="container mb80">
-                            <div class="row">  
-                               <div class="col-sm-8 col-sm-offset-2">              
+                        <div class=" b80">
+                            <div>  
+                               <div class="col-sm-8 col-sm-offset-2">           
                                     <p class="lead">
                                     Teachers do not have time to provide timely, actionable, and personalized feedback to students. They need support giving students valuable feedback, and tracking a student’s progress.
                                     </p>
@@ -563,11 +533,14 @@
                                 </div>
                             </div>
                         </div>
+                    </section>
                         <!-- END OF Problem Statement-->
-
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-8 col-sm-offset-2">
+                    
+                    <!-- Section: Design principles -->
+                    <section id="designprinciplees">
+                        <div class="text-left v-align-children">
+                            <div>
+                                <div>
                                     <h3 class="mb64 text-center">Design principles</h3>
                                     <div class="mb48">
                                         <h4 class="uppercase">Personal</h4>
@@ -613,7 +586,7 @@
                         </div>
                         <div class="container">
                             <div class="row">
-                                <div class="col-sm-12 text-center">
+                                <div class="col-sm-10 text-center">
                                     <h2 class="uppercase mb0">Design and Concept Testing </h2>
                                 </div>
                             </div>
@@ -621,10 +594,10 @@
                     </section>	
 
                     <!--- First paragraph --->
-                    <section class="pb24">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 mb80">
+                    <section>
+                        <div>
+                            <div>
+                                <div>
                                     <p class="lead mb36">
                                        We created our designs around <strong>three essential tasks: adding a new class, posting an assignment, and analyzing the grade report.</strong> The team adopted a multivariate testing approach. We had seven teachers use and compare how each or our prototypes managed the three essential tasks. By thinking aloud, they informed us about their preferences. Three of the seven teachers interviewed have used The Graide Network before. Our focus was on how teachers interacted with the platform, so actual grading was not tested
                                     </p>
@@ -877,8 +850,8 @@
 
                     <!-- Usability Testing Takeaway -->
                     <section class="bg-secondary">
-                       <div class="container">
-                            <div class="row">
+                       <div class="text-left v-align-children">
+                            <div>
                                 <div class="col-sm-12 text-center mb18">
                                     <h4>Takeaways from concept testing</h4>
                                 </div>
@@ -1102,7 +1075,7 @@
                                 </div>
                             </div>
                     </section>
-            
+                    
                 </main>
                 <!--- END OF MAIN--->
             </div>    
