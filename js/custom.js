@@ -1,18 +1,5 @@
 
 // Navbar
-window.addEventListener("scroll", function () {
-  var sidebar = document.querySelector(".sidebar");
-  if (window.scrollY > 584) {
-    sidebar.style.display = "block";
-    sidebar.style.position = "fixed";
-    sidebar.style.top = "0px";
-    sidebar.style.height = "100%";
-  } else {
-    sidebar.style.position = "relative";
-    sidebar.style.top = "0px";
-  }
-});
-
 const navbar = document.querySelector('nav#navbar-example');
 const footer = document.querySelector('footer');
 const data = {
@@ -30,40 +17,6 @@ const observer = new IntersectionObserver(entries => {
     });
 observer.observe(footer);
 
-const overviewSection = document.querySelector('section#Overview');
-const mainContent = document.querySelector('main.col-md-12 col-sml-12 main-content');
-const navbarComputedStyle = window.getComputedStyle(navbar);
-const originalWidth = navbarComputedStyle.width;
-
-// Function to set element styles
-async function setElementStyles(el, styles) {
-  Object.assign(el.style, styles);
-}
-
-// Initially hide the navbar
-setElementStyles(navbar, {
-  display: 'none',
-  position: 'fixed',
-  top: '0',
-  left: '0',
-  width: '',
-});
-
-// Add a left margin to the main content to make space for the fixed navbar
-setElementStyles(mainContent, {
-  marginLeft: originalWidth,
-});
-
-// Function to set element styles
-async function setElementStyles(el, styles) {
-  Object.assign(el.style, styles);
-}
-
-// Initially set the margin-left to the main content
-setElementStyles(mainContent, {
-  marginLeft: originalWidth,
-});
-
 // Function to handle scroll event
 const handleScroll = () => {
   const overviewTop = overviewSection.getBoundingClientRect().top;
@@ -78,6 +31,43 @@ const handleScroll = () => {
     }
   }
 };
+
+const overviewSection = document.querySelector('section#Overview');
+const mainContent = document.querySelector('main.col-md-12 col-sml-12 main-content');
+const navbarComputedStyle = window.getComputedStyle(navbar);
+const originalWidth = navbarComputedStyle.width;
+
+// Initially hide the navbar
+setElementStyles(navbar, {
+  display: 'none',
+  position: 'fixed',
+  top: '0',
+  left: '0',
+  width: '',
+});
+
+// Function to set element styles
+async function setElementStyles(el, styles) {
+  Object.assign(el.style, styles);
+}
+
+// Add a left margin to the main content to make space for the fixed navbar
+setElementStyles(mainContent, {
+  marginLeft: originalWidth,
+});
+
+window.addEventListener("scroll", function () {
+  var sidebar = document.querySelector(".sidebar");
+  if (window.scrollY > 584) {
+    sidebar.style.display = "block";
+    sidebar.style.position = "fixed";
+    sidebar.style.top = "0px";
+    sidebar.style.height = "100%";
+  } else {
+    sidebar.style.position = "relative";
+    sidebar.style.top = "0px";
+  }
+});
 
 
 /*// Add scroll event listener
