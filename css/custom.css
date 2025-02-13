@@ -99,6 +99,10 @@ button[type="submit"] {
     background: #13313E;
 }
 
+.overlay:before {
+    opacity: 0.6;
+}
+
 .home > .overlay:before {
     background: rgba(19,49,62, 0.7 ) 0%; 
     opacity: 1;
@@ -342,7 +346,7 @@ nav.transparent.fixed ul.menu li p {
 
 nav.sidebar {
     display: block;
-    width: 256px;
+    width: 320px;
     overflow-y: auto;
     padding: 0;
     background-color: #fff;
@@ -355,15 +359,11 @@ ul.nav.nav-pills element {
     padding-top: 0;
 }
 
-.nav-pills li.sub-link {
-    margin-left: 20px; /* Adjust the indentation as needed */
-}
-
-nav.sidebar .nav li a, .nav .sub-nav li a {
+nav.sidebar .nav li a {
     color: #292929;
     opacity: .8;
     font-size: 11px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 1px;
     border-radius: 0;
     position: relative;
@@ -374,17 +374,12 @@ nav.sidebar .nav li a, .nav .sub-nav li a {
 
 nav.sidebar .nav > li.active a, 
 nav.sidebar .nav > li a:hover,
-nav.sidebar .nav > li a:focus,
-nav.sidebar .nav > ul.sub-nav > li.active > a,
-nav.sidebar .nav > ul.sub-nav > li a:hover,
-nav.sidebar .nav > ul.sub-nav > li a:focus {
+nav.sidebar .nav > li a:focus {
     background-color: #f8f8f8;
     color: #13313E;
     opacity: 1;
-}
-
-.nav ul.sub-nav {
-    margin-left: 12px;
+    font-weight: 600;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 
