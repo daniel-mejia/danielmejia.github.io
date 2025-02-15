@@ -663,13 +663,10 @@
                     </section>
                     <!--- END OF SECTION: Reflection --->
                     <!-- Modal -->
-                    <div id="image-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
-                        <div class="modal-content img-modal">
-                            <h2 id="modal-title" class="sr-only">Expanded Image</h2>
-                            <img src="" alt="" id="modal-image">
-                        </div>
-                        <button class="close" aria-label="Close image">&times;</button>
-                    </div>         
+                    <div class="image-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description" aria-hidden="true">
+                        <button class="close" role="button" aria-label="Close">&times;</button>
+                        <img id="modal-image" src="" alt="">
+                    </div>
                 </main>
                 <!--- END of Main --->
             </div>

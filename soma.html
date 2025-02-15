@@ -15,8 +15,7 @@
         <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
-    </head>
-    
+    </head> 
     <!--- body --->
     <body class="scroll-assist" data-spy="scroll" data-target="#navbar-example" data-offset="50">
         <!--- nav bar --->
@@ -435,14 +434,11 @@
                     <!--- END OF SECTION: Reflection --->
                     
                     <!-- Modal -->
-                    <div id="image-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
-                        <div class="modal-content img-modal">
-                            <h2 id="modal-title" class="sr-only">Expanded Image</h2>
-                            <img src="" alt="" id="modal-image">
-                        </div>
-                        <button class="close" aria-label="Close image">&times;</button>
+                    <div class="image-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description" aria-hidden="true">
+                        <button class="close" role="button" aria-label="Close">&times;</button>
+                        <img id="modal-image" src="" alt="">
                     </div>
-                
+                    
                 </main>
                 <!--- END of Main --->
             </div>
@@ -500,7 +496,7 @@
         <script src="js/smooth-scroll-min.js"></script>
         <script src="js/parallax.js"></script>
         <script src="js/scripts.min.js"></script>
-        <script src="js/custom.min.js"></script>
+        <script src="js/custom.js"></script>
         <script src="js/flexslider.min.js"></script>
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-V7ZXY22MTE"></script>
@@ -509,6 +505,6 @@
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-V7ZXY22MTE');
-        </script>
+        </script>    
     </body>
 </html>

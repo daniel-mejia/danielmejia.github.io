@@ -67,62 +67,13 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
-/*// Add scroll event listener
-window.addEventListener('scroll', handleScroll);
-document.addEventListener("DOMContentLoaded", function () {
-  var isScrollspyEnabled = true;
-  var toggleButton = document.getElementById("toggle-scrollspy");
-
-  // Enable Scrollspy initially
-  $('body').scrollspy({ target: '#navbar-example', offset: 50 });
-
-  // Toggle button functionality
-  toggleButton.addEventListener("click", function () {
-    if (isScrollspyEnabled) {
-      // Disable Scrollspy by removing the data-spy attribute and the plugin
-      $('body').removeData('bs.scrollspy');
-      $(window).off('scroll.bs.scrollspy'); // Remove the scroll event listener
-      toggleButton.textContent = "Enable Scrollspy";
-    } else {
-      // Enable Scrollspy by re-initializing it
-      $('body').scrollspy({ target: '#navbar-example', offset: 50 });
-      toggleButton.textContent = "Disable Scrollspy";
-    }
-    isScrollspyEnabled = !isScrollspyEnabled;
-  });
-});*/
-
-/*
-const subLinks = ['Discovery Research', 'Information Architecture', 'Design Testing'];
-const links = navbar.querySelectorAll('li');
-
-links.forEach((link) => {
-  if (subLinks.includes(link.textContent.trim())) {
-    link.classList.add('sub-link');
-  }
-});
-*/
-
-
 // Image modal
 document.addEventListener("DOMContentLoaded", function () {
-    const modal = document.getElementById("image-modal");
     const modalImage = document.getElementById("modal-image");
     const closeBtn = document.querySelector(".close");
-
-    // Select all images in different sections
     const images = document.querySelectorAll(".clickable-image");
-
-    // Open modal and update image
-    function openModal(event) {
-        const image = event.target; // Get the clicked image
-        modal.style.display = "flex";
-        modal.setAttribute("aria-hidden", "false");
-        modalImage.src = image.src; // Set modal image
-        modalImage.alt = image.alt; // Preserve accessibility
-        closeBtn.focus();
-    }
+    const modal = document.querySelector('.image-modal');
+    let focusedElementBeforeModal;
 
     // Attach event listeners to each image
     images.forEach(img => {
@@ -136,27 +87,48 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+    // Open modal and update image
+    function openModal(event) {
+        const image = event.target; // Get the clicked image
+        if (modal) {
+            focusedElementBeforeModal = document.activeElement;
+            modal.style.display = "flex";
+            modal.setAttribute("aria-hidden", "false");
+            modalImage.src = image.src; // Set modal image
+            modalImage.alt = image.alt; // Preserve accessibility
+            closeBtn.focus();
+        }
+    }
+
     // Close modal function
     function closeModal() {
-        modal.style.display = "none";
-        modal.setAttribute("aria-hidden", "true");
-        modalImage.src = ""; // Clear image source
-        images[0].focus(); // Return focus to the first image
+        if (modal) {
+            modal.style.display = "none";
+            modal.setAttribute("aria-hidden", "true");
+            modalImage.src = ""; // Clear image source
+            if (focusedElementBeforeModal) {
+                focusedElementBeforeModal.focus();
+            }
+        }
     }
 
     // Close modal when clicking the close button
-    closeBtn.addEventListener("click", closeModal);
+    if (closeBtn) {
+        closeBtn.addEventListener("click", closeModal);
+    }
 
     // Close modal when clicking outside the modal content
-    modal.addEventListener("click", function (event) {
-        if (event.target === modal) {
-            closeModal();
-        }
-    });
+    if (modal) {
+        modal.addEventListener("click", function (event) {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+    }
 
     // Close modal using the Escape key
     document.addEventListener("keydown", function (event) {
-        if (event.key === "Escape" && modal.style.display === "flex") {
+        if (event.key === "Escape" && modal && modal.style.display === "flex") {
             closeModal();
         }
     });
