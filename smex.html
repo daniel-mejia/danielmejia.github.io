@@ -13,7 +13,7 @@
         <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme-custom.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
     </head> 
     <!--- body --->
@@ -38,33 +38,33 @@
                         <div class="module left">
                             <ul class="menu">
                                 <li>
-                                    <a href="index.html#about" class="inner-link" target="_self">About Me</a>
+                                    <a href="index.html#about" target="_self">About Me</a>
                                 </li>
                                 <li class="has-dropdown toggle-sub">
                                     <p>Case Studies</p>
                                     <ul>
                                         <li class="toggle-sub">
-                                            <a href="smex.html" class="inner-link" target="_self">
+                                            <a href="smex.html" target="_self">
                                                 SMEx</a>
                                         </li>
                                         <li class="toggle-sub">
-                                            <a href="emotilink.html" class="inner-link" target="_self">
+                                            <a href="emotilink.html" target="_self">
                                                 Emotilink</a>
                                         </li>
                                         <li class="toggle-sub">
-                                            <a href="the-graide-network.html" class="inner-link" target="_self">
+                                            <a href="the-graide-network.html" target="_self">
                                                 The Graide Network</a>
                                         </li>
                                         <li class="toggle-sub">
-                                            <a href="coach.html" class="inner-link" target="_self">COACH</a>
+                                            <a href="coach.html" target="_self">COACH</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="pdf/Daniel_Mejia-UX-UI-Resume.pdf" class="inner-link">Resume</a>
+                                    <a href="pdf/Daniel_Mejia-UX-UI-Resume.pdf">Resume</a>
                                 </li>
                                 <li>
-                                    <a href="index.html#contact" class="inner-link" target="_self">Contact</a>
+                                    <a href="index.html#contact" target="_self">Contact</a>
                                 </li>
                             </ul>
                             
@@ -89,7 +89,7 @@
                             </p>
                             <!--- Try the Interactive Prototype --->
                             <div>
-                                <a class="btn btn-lg inner-link" href="https://www.figma.com/proto/BbzTReuVdr1op7Vxv0oj9N/SMEx?page-id=2001%3A2888&node-id=2109-1463&viewport=-23%2C-667%2C0.3&t=LR6vRExZlnfQfznt-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2109%3A1480&hide-ui=1" target="_blank">Try the Interactive Prototype</a>
+                                <a class="btn btn-lg" href="https://www.figma.com/proto/BbzTReuVdr1op7Vxv0oj9N/SMEx?page-id=2001%3A2888&node-id=2109-1463&viewport=-23%2C-667%2C0.3&t=LR6vRExZlnfQfznt-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2109%3A1480&hide-ui=1" target="_blank">Try the Interactive Prototype</a>
                             </div>
                         </div>
                     </div>
@@ -103,7 +103,7 @@
         <div class="container-fluid">
             <div class="row">
                 <!-- Side Navigation -->
-                <nav id="navbar-example" class="text-left sidebar" data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="50">
+                <nav id="navbar-example" class="text-left sidebar col-xs-0 col-md-2" data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="50">
                   <ul class="nav nav-pills">
                     <li class="active "><a href="#Overview">Overview</a></li>
                     <li><a href="#My-Role">My Role</a></li>
@@ -122,22 +122,19 @@
                 <!--- END of Side Navigation --->
 
                 <!-- Main Content -->
-                <main class="main-content col-xs-12 col-sm-9">
+                <main class="main-content col-xs-12 col-md-10 mb0 pt40">
                     <!--- SECTION: Overview --->
-                    <section id="Overview">
-                        <div class="text-left v-align-children">
-                            <div>
+                    <section id="Overview" class="section v-align-children">
+                        <div class="mw600">
+                            <div class="mb40">
                                 <h2 class="color-primary mb-xs-24">Overview</h2>
                                 <p class="lead">
                                     Supplier Management Expert (SMEx) is a web application designed to address inefficiencies in managing JPMorgan Chase's vetted supplier list. The tool aims to streamline supplier management processes, enabling internal teams to efficiently find, evaluate, and onboard suppliers while aligning with company goals such as sustainability and diversity. 
                                 </p>
-                            </div>    
-                        </div>
-                    <!--- END OF SECTION: Overview --->  
-
-                    <!--- SUB-SECTION: My Role --->
-                        <div id="My-Role" class="pt-sm-40 pt72">
-                            <div>
+                            </div>
+                        <!--- END OF SECTION: Overview --->
+                        <!--- SUB-SECTION: My Role --->
+                            <div id="My-Role">
                                 <h3 class="color-primary txt-sm-24 mb40 mb-xs-24 ">My Role</h3>
                                 <p class="lead">
                                     As the Lead UX/UI Designer, I:
@@ -149,29 +146,16 @@
                                     <li>Collaborated with developers to ensure the designs were implemented seamlessly.</li>
                                 </ul>
                             </div>
-                        </div>
                     <!--- END OF SECTION: My Role --->
+                        
+                        </div>
                     </section>
                     
                     <!--- SECTION: Challenge --->
                     <section id="Challenge" class="section bg-secondary">
-                        <div class="text-left v-align-children">
-                            <div>
+                        <div class="v-align-children">
+                            <div class="mw600 mb40">
                                 <h2 class="color-primary mb40 mb-xs-24">Challenge</h2>
-                                <div class="mb40 mb-xs-24">
-                                    <!-- Clickable Image -->
-                                    <div class="image-section">
-                                        <figure>
-                                            <img src="img/smex-experiencemap.png" alt="Experience map showing the process to find a supplier." class="clickable-image">
-                                            <figcaption>
-                                                View experience map in FigJam. 
-                                                <a href="https://www.figma.com/board/JqB3XsMI3jiQ4qgOeBNiKG/SMEx-UX-Research?node-id=70-6900&t=MRgWuQqVRCIHBNjY-1" target="_blank" rel="noopener noreferrer">
-                                                    Open in FigJam
-                                                </a>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                </div>
                                 <p class="lead">
                                     The Supplier Management Team (SMT) at JPMorgan Chase faced a significant challenge: they needed a centralized system for managing vetted suppliers. This fragmented approach caused inefficiencies for internal teams tasked with finding suppliers for new projects. Employees often had to:
                                 </p>
@@ -183,32 +167,32 @@
                                 <p class="lead">
                                     This process was time-consuming, inconsistent, and prone to errors. Additionally, it needed to align supplier selection with broader company goals, such as prioritizing suppliers with sustainable practices or minority-owned businesses. These inefficiencies delayed projects and risked missing out on the best suppliers.
                                 </p>
-                            </div>    
+                            </div>
+                        </div>
+                        <div>
+                            <div class="mb40 mb-xs-24">
+                                <!-- Clickable Image -->
+                                <div class="image-section">
+                                    <figure>
+                                        <img src="img/smex-experiencemap.png" alt="Experience map showing the process to find a supplier." class="clickable-image">
+                                        <figcaption class="v-align-children-column">
+                                            View experience map in FigJam. 
+                                            <a href="https://www.figma.com/board/JqB3XsMI3jiQ4qgOeBNiKG/SMEx-UX-Research?node-id=70-6900&t=MRgWuQqVRCIHBNjY-1" target="_blank" rel="noopener noreferrer">
+                                                Open in FigJam
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
                         </div>
                     </section>
                     <!--- END OF SECTION: Challenge --->  
                     
                     <!--- SECTION: Solution --->
-                    <section id="Solution" class="section bg-secondary">
-                        <div class="text-left v-align-children">
-                            <div>
-                                <h2 class="color-primary mb40 mb-xs-24">Solution</h2>
-                                <div class="mb40 mb-xs-24">
-                                
-                                    <!-- Clickable Image -->
-                                    <div class="image-section">
-                                        <figure>
-                                            <img src="img/SMEx-demo.gif" alt="An animation depicting the step-by-step process of searching for a supplier, viewing results, and accessing the supplier's profile." class="clickable-image">
-                                            <figcaption>
-                                                Try the interactive prototype in Figma. 
-                                                <a href="https://www.figma.com/proto/BbzTReuVdr1op7Vxv0oj9N/SMEx?page-id=2001%3A2888&node-id=2109-1463&viewport=-23%2C-667%2C0.3&t=LR6vRExZlnfQfznt-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2109%3A1480&hide-ui=1" target="_blank" rel="noopener noreferrer">
-                                                    Open in Figma
-                                                </a>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
-                                    
-                                </div>
+                    <section id="Solution" class="section bg-dark">
+                        <div class="v-align-children mb">
+                            <div class="mw600 mb40">
+                                <h2 class="color-white mb40 mb-xs-24">Solution</h2>
                                 <p class="lead">
                                     To address these challenges, we designed and delivered Supplier Management Expert (SMEx), a user-friendly web application that streamlined supplier management and selection processes. This software-as-a-service (SaaS) tool served two primary user groups:
                                 </p>
@@ -232,7 +216,23 @@
                                 </ul>
                                 <!--- Try the Interactive Prototype --->
                                 <div class="col-sm-12 text-center mt-sm-40 mt80">
-                                    <a class="btn btn-lg inner-link" href="https://www.figma.com/proto/BbzTReuVdr1op7Vxv0oj9N/SMEx?page-id=2001%3A2888&node-id=2109-1463&viewport=-23%2C-667%2C0.3&t=LR6vRExZlnfQfznt-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2109%3A1480&hide-ui=1" target="_blank">Try the Interactive Prototype</a>
+                                    <a class="btn btn-lg" href="https://www.figma.com/proto/BbzTReuVdr1op7Vxv0oj9N/SMEx?page-id=2001%3A2888&node-id=2109-1463&viewport=-23%2C-667%2C0.3&t=LR6vRExZlnfQfznt-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2109%3A1480&hide-ui=1" target="_blank">Try the Interactive Prototype</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="mb40 mb-xs-24">
+                                <!-- Clickable Image -->
+                                <div class="image-section">
+                                    <figure>
+                                        <img src="img/SMEx-demo.gif" alt="An animation depicting the step-by-step process of searching for a supplier, viewing results, and accessing the supplier's profile." class="clickable-image">
+                                        <figcaption class="v-align-children-column color-white pt24">
+                                            Try the interactive prototype in Figma. 
+                                            <a href="https://www.figma.com/proto/BbzTReuVdr1op7Vxv0oj9N/SMEx?page-id=2001%3A2888&node-id=2109-1463&viewport=-23%2C-667%2C0.3&t=LR6vRExZlnfQfznt-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2109%3A1480&hide-ui=1" target="_blank" rel="noopener noreferrer">
+                                                Open in Figma
+                                            </a>
+                                        </figcaption>
+                                    </figure>
                                 </div>
                             </div>
                         </div>
@@ -245,89 +245,76 @@
                         <div class="background-image-holder">
                             <img class="background-image" alt="A whiteboard with an initial user flow diagram." src="img/smex-whiteboard.jpeg">
                         </div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-10 text-center">
-                                    <h2 class="uppercase mb0">Process</h2>
-                                </div>
+                        <div class="container v-align-children-column">
+                            <div class="mw600">
+                                <h2 class="text-center uppercase mb0">Process</h2>
                             </div>
                         </div>
                     </section>
                     <!--- END OF banner --->
 
                     <!--- SUB-SECTION: Discovery Research --->
-                    <section class="section">
-                        <div id="Discovery-Research" class="mb20">
-                            <div class="v-align-children text-left">
-                                <div>
+                    <section class="section bg-secondary">
+                        <div id="Discovery-Research" class="mb80"> 
+                            <div class="v-align-children">
+                                <div class="mw600 mb40">
                                     <h3>Discovery Research</h3>
-                                    <div class="mb40 mb-xs-24">
-                                        <!-- Clickable Image -->
-                                        <div class="image-section">
-                                            <figure>
-                                                <img src="img/smex-user-journey-before.png" alt="Journey map before a solution was implemented." class="clickable-image">
-                                                <figcaption>
-                                                    View journey map in FigJam. 
-                                                    <a href="https://www.figma.com/board/JqB3XsMI3jiQ4qgOeBNiKG/SMEx-UX-Research?node-id=90-904&t=MRgWuQqVRCIHBNjY-1" target="_blank" rel="noopener noreferrer">
-                                                        Open in FigJam
-                                                    </a>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
                                     <ul class="lead" data-bullet="ti-arrow-right">
                                         <li>Conducted user interviews to understand pain points in supplier tracking and selection.</li>
                                         <li>Gathered input from the SMT and leadership to align the tool with business goals such as sustainability, inclusivity, and negotiated rates.</li>
                                     </ul>
                                 </div>
                             </div>
+                            <div class="mb40 mb-xs-24">
+                                <!-- Clickable Image -->
+                                <div class="image-section">
+                                    <figure>
+                                        <img src="img/smex-user-journey-before.png" alt="Journey map before a solution was implemented." class="clickable-image">
+                                        <figcaption class="v-align-children-column">
+                                            View journey map in FigJam. 
+                                            <a href="https://www.figma.com/board/JqB3XsMI3jiQ4qgOeBNiKG/SMEx-UX-Research?node-id=90-904&t=MRgWuQqVRCIHBNjY-1" target="_blank" rel="noopener noreferrer">
+                                                Open in FigJam
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
                         </div>
                         <!--- END OF SUB-SECTION: Discovery Research--->
 
                        <!--- SUB-SECTION: Information Architecture --->
-                        <div id="Information-Architecture" class="mb20">
-                            <div class="v-align-children text-left pt-sm-20">
-                                <div>
+                        <div id="Information-Architecture" class="mb80">
+                            <div class="v-align-children">
+                                <div class="mw600 mb40">
                                     <h3>Information Architecture</h3>
-                                    <div class="mb40 mb-xs-24">
-                                        <!-- Clickable Image -->
-                                        <div class="image-section">
-                                            <figure>
-                                                <img src="img/smex-survey-results.png" alt="Survey results." class="clickable-image">
-                                                <figcaption>
-                                                    View survey results in FigJam. 
-                                                    <a href="https://www.figma.com/board/JqB3XsMI3jiQ4qgOeBNiKG/SMEx-UX-Research?node-id=93-3064&t=MRgWuQqVRCIHBNjY-4" target="_blank" rel="noopener noreferrer">
-                                                        Open in FigJam
-                                                    </a>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
                                     <ul class="lead" data-bullet="ti-arrow-right">
                                         <li>Conducted workshops and surveys to obtain a ranked list of the information needed to help us outline the data anticipated for searching and filtering and organize the suppliers’ profiles.</li>
                                         <li>Calculated survey respondents' Importance Score to rank data fields in order of priority.</li>
                                     </ul>
                                 </div>
                             </div>
+                            <div class="mb40 mb-xs-24">
+                                <!-- Clickable Image -->
+                                <div class="image-section">
+                                    <figure>
+                                        <img src="img/smex-survey-results.png" alt="Survey results." class="clickable-image">
+                                        <figcaption class="v-align-children-column">
+                                            View survey results in FigJam. 
+                                            <a href="https://www.figma.com/board/JqB3XsMI3jiQ4qgOeBNiKG/SMEx-UX-Research?node-id=93-3064&t=MRgWuQqVRCIHBNjY-4" target="_blank" rel="noopener noreferrer">
+                                                Open in FigJam
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
                         </div>
                         <!--- END OF SUB-SECTION: Information Architecture--->
 
                        <!--- SUB-SECTION: Design Testing --->
-                        <div id="Design-Testing" class="mb20">
-                            <div class="text-left v-align-children">
-                                <div>
+                        <div id="Design-Testing" class="mb80">
+                            <div class="v-align-children">
+                                <div class="mw600 mb40">
                                     <h3>Design Testing</h3>
-                                    <!-- Clickable Image -->
-                                    <div class="image-section">
-                                        <figure>
-                                            <img src="img/smex-screen-flow.png" alt="Screen flow" class="clickable-image">
-                                            <figcaption>
-                                                View screen flow in FigJam. 
-                                                <a href="https://www.figma.com/board/JqB3XsMI3jiQ4qgOeBNiKG/SMEx-UX-Research?node-id=3670-2455&t=Py5ybZ7FZUCWDJsg-4" target="_blank" rel="noopener noreferrer">
-                                                    Open in FigJam
-                                                </a>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
                                     <ul class="lead" data-bullet="ti-arrow-right">
                                         <li>Created wireframes and user flow diagrams to visualize navigation and usability.</li>
                                         <li>To ensure consistency and expedite development, I designed the interface using <a href="https://www.saltdesignsystem.com/salt/index" target="_blank" rel="noopener noreferrer">Salt Design System</a> J.P. Morgan's design system.</li>
@@ -336,19 +323,30 @@
                                     </ul>
                                     <!--- Try the Interactive Prototype --->
                                     <div class="col-sm-12 text-center mt40">
-                                        <a class="btn btn-lg inner-link" href="https://www.figma.com/proto/BbzTReuVdr1op7Vxv0oj9N/SMEx?page-id=2001%3A2888&node-id=2109-1463&viewport=-23%2C-667%2C0.3&t=LR6vRExZlnfQfznt-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2109%3A1480&hide-ui=1" target="_blank" rel="noopener noreferrer">Try the Interactive Prototype</a>
+                                        <a class="btn btn-lg" href="https://www.figma.com/proto/BbzTReuVdr1op7Vxv0oj9N/SMEx?page-id=2001%3A2888&node-id=2109-1463&viewport=-23%2C-667%2C0.3&t=LR6vRExZlnfQfznt-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2109%3A1480&hide-ui=1" target="_blank" rel="noopener noreferrer">Try the Interactive Prototype</a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <!-- Clickable Image -->
+                            <div class="image-section">
+                                <figure>
+                                    <img src="img/smex-screen-flow.png" alt="Screen flow" class="clickable-image">
+                                    <figcaption class="v-align-children-column">
+                                        View screen flow in FigJam. 
+                                        <a href="https://www.figma.com/board/JqB3XsMI3jiQ4qgOeBNiKG/SMEx-UX-Research?node-id=3670-2455&t=Py5ybZ7FZUCWDJsg-4" target="_blank" rel="noopener noreferrer">
+                                            Open in FigJam
+                                        </a>
+                                    </figcaption>
+                                </figure>
+                            </div>
                         </div>
                         <!--- END OF SUB-SECTION: Testing and Iteration--->
                     </section>
 
                     <!--- SECTION: Scenario: Finding the Right Vendor for a High-Stakes Project--->
-                    <section id="Scenario" class="section bg-secondary">
-                        <div class="text-left v-align-children">
-                            <div>
+                    <section id="Scenario" class="section">
+                        <div class="v-align-children">
+                            <div class="mw600 mb40">
                                 <h3 class="color-primary mb40 mb-xs-24">Scenario: Finding the Right Vendor for a High-Stakes Project</h3>
                                 <h4>Before the Tool</h4>
                                 <p class="lead mb32 mb16">
@@ -380,9 +378,9 @@
                     <!--- END OF SECTION: Scenario: Finding the Right Vendor for a High-Stakes Project ---->
 
                     <!--- SECTION: Result  --->
-                    <section id="Result">
-                        <div class="text-left v-align-children">
-                            <div>
+                    <section id="Result" class="section">
+                        <div class="v-align-children">
+                            <div class="mw600 mb40">
                                 <h2 class="color-primary mb32 mb-xs-24">Result</h2>
                                 <div class="mb40 mb-xs-24">
                                     <!-- Clickable Image -->
@@ -415,9 +413,9 @@
                     <!--- END OF SECTION: Result --->
 
                     <!--- SECTION: Reflection  --->
-                    <section id="Reflection" class="bg-secondary">
-                        <div class="text-left v-align-children">
-                            <div>
+                    <section id="Reflection" class="bg-secondary section">
+                        <div class="v-align-children">
+                            <div class="mw600 mb40">
                                 <h2 class="color-primary mb32 mb-xs-24">Reflection</h2>
                                 <p class="lead">
                                     This project underscored the importance of partnership throughout the design and development process. Collaborating closely with stakeholders during discovery ensured the tool aligned with business goals like sustainability and diversity. Involving my UX colleagues during design helped maintain consistency with other internal tools, reducing user confusion and fostering adoption.
@@ -487,7 +485,7 @@
                     </div>
             </div>
             <!--end of container-->
-            <a class="btn btn-sm fade-1-4 back-to-top inner-link" href="#top">Top</a>
+            <a class="btn btn-sm fade-1-4 back-to-top" href="#top">Top</a>
         </footer>
         
         <!--- SCRIPTS --->

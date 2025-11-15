@@ -9,11 +9,6 @@ body, html {
 
 /**** Anchors ****/
 
-a {
-    color: #27627D;
-    font-weight: 600;
-}
-
 section a:hover {
     color: #13313E;
     text-decoration: underline;
@@ -21,7 +16,16 @@ section a:hover {
     -webkit-transition: all 0.3s ease;
 }
 
-.bg-primary a,
+section.section {
+    padding-left: 40px;
+    padding-right: 40px
+}
+
+.mw600 {
+    max-width: 600px;
+}
+
+
 .bg-dark a,
 footer.bg-dark span,
 footer.bg-dark span a {
@@ -46,34 +50,6 @@ footer.bg-dark span a:hover {
 .image-bg .social-list a:hover {
     color: #FFE082;
     opacity: 1;
-}
-
-
-/**** Background colors ****/
-
-.bg-primary {
-    background: #27627D !important;
-}
-
-.bg-dark {
-    background: #13313E;
-}
-
-.color-primary {
-    color: #13313E !important;
-}
-
-/**** Buttons ****/
-
-.btn,
-.btn:visited {
-    border: 2px solid #13313E;
-    color: #13313E;
-}
-
-.btn:hover {
-    background: #13313E;
-    color: #fff;
 }
 
 .bg-primary a.btn-gold,
@@ -286,8 +262,6 @@ div .lttr-spacing-2 {
 
 .main-content {
     float: right;
-    padding: 60px 0 0 0;
-    margin-bottom: 0;
 }
 
 /**** Navigation ****/
@@ -346,7 +320,6 @@ nav.transparent.fixed ul.menu li p {
 
 nav.sidebar {
     display: block;
-    width: 320px;
     overflow-y: auto;
     padding: 0;
     background-color: #fff;
@@ -433,12 +406,6 @@ figcaption {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-
-/*
-section {
-    padding: 56px 160px 40px;
-}
-*/
 
 footer {
     padding: 56px 0;
