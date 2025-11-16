@@ -406,7 +406,7 @@ figcaption {
 }
 
 footer {
-    padding: 56px 0;
+    height: 260px;
     z-index: 100;
 }
 

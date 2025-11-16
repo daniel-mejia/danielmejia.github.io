@@ -419,7 +419,7 @@ a:hover {
   outline: none;
 }
 a {
-  font-weight: 600;
+  font-weight: 400;
   color: #333347;
   transition: all 0.3s ease;
   cursor: poitner;
