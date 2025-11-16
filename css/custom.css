@@ -13,7 +13,6 @@ section a:hover {
     color: #13313E;
     text-decoration: underline;
     transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
 }
 
 section.section {
@@ -289,7 +288,6 @@ ul.menu li button {
     color: #fff;
     margin: 0;
     transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
     max-width: 100%;
     white-space: normal;
 }

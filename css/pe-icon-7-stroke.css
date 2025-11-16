@@ -12,16 +12,11 @@
 [class^="pe-7s-"], [class*=" pe-7s-"] {
 	display: inline-block;
 	font-family: 'Pe-icon-7-stroke';
-	speak: none;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 }
 
 .pe-7s-album:before {

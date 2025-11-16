@@ -57,7 +57,7 @@
   margin:0!important;
   padding:0!important;
   -moz-transform: none!important;
-  -webkit-transform: none!important;
+   transform: none!important;
   -o-transform: none!important;
   transform: none!important;
 }
@@ -76,7 +76,7 @@
 .mb_YTPBar{
   transition: opacity 1s;
   -moz-transition: opacity 1s;
-  -webkit-transition: opacity 1s;
+   transition: opacity 1s;
   -o-transition: opacity 1s;
   display:block;
   width:100%;
@@ -87,7 +87,7 @@
   bottom:0;
   left:0;
   -moz-box-sizing:padding-box;
-  -webkit-box-sizing:border-box;
+   box-sizing:border-box;
   text-align:left;
   z-index: 1000;
   font: 14px/16px sans-serif;
@@ -101,7 +101,7 @@
 
 .mb_YTPBar .buttonBar{
   -moz-transition: all 1s;
-  -webkit-transition: all 1s;
+   transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
   background:transparent;
@@ -112,7 +112,7 @@
   padding: 5px;
   width:100%;
   -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+   box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -194,8 +194,8 @@
 
 .YTPOverlay{
   backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform-style: "flat";
+   backface-visibility: hidden;
+   transform-style: "flat";
   box-sizing: border-box;
 }
 

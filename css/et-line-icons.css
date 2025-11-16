@@ -13,13 +13,10 @@
 [data-icon]:before {
 	font-family: 'et-line';
 	content: attr(data-icon);
-	speak: none;
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 	display:inline-block;
 }
 
@@ -31,14 +28,11 @@ you can use the generic selector below, but it's slower:
 */
 .et-line-mobile, .et-line-laptop, .et-line-desktop, .et-line-tablet, .et-line-phone, .et-line-document, .et-line-documents, .et-line-search, .et-line-clipboard, .et-line-newspaper, .et-line-notebook, .et-line-book-open, .et-line-browser, .et-line-calendar, .et-line-presentation, .et-line-picture, .et-line-pictures, .et-line-video, .et-line-camera, .et-line-printer, .et-line-toolbox, .et-line-briefcase, .et-line-wallet, .et-line-gift, .et-line-bargraph, .et-line-grid, .et-line-expand, .et-line-focus, .et-line-edit, .et-line-adjustments, .et-line-ribbon, .et-line-hourglass, .et-line-lock, .et-line-megaphone, .et-line-shield, .et-line-trophy, .et-line-flag, .et-line-map, .et-line-puzzle, .et-line-basket, .et-line-envelope, .et-line-streetsign, .et-line-telescope, .et-line-gears, .et-line-key, .et-line-paperclip, .et-line-attachment, .et-line-pricetags, .et-line-lightbulb, .et-line-layers, .et-line-pencil, .et-line-tools, .et-line-tools-2, .et-line-scissors, .et-line-paintbrush, .et-line-magnifying-glass, .et-line-circle-compass, .et-line-linegraph, .et-line-mic, .et-line-strategy, .et-line-beaker, .et-line-caution, .et-line-recycle, .et-line-anchor, .et-line-profile-male, .et-line-profile-female, .et-line-bike, .et-line-wine, .et-line-hotairballoon, .et-line-globe, .et-line-genius, .et-line-map-pin, .et-line-dial, .et-line-chat, .et-line-heart, .et-line-cloud, .et-line-upload, .et-line-download, .et-line-target, .et-line-hazardous, .et-line-piechart, .et-line-speedometer, .et-line-global, .et-line-compass, .et-line-lifesaver, .et-line-clock, .et-line-aperture, .et-line-quote, .et-line-scope, .et-line-alarmclock, .et-line-refresh, .et-line-happy, .et-line-sad, .et-line-facebook, .et-line-twitter, .et-line-googleplus, .et-line-rss, .et-line-tumblr, .et-line-linkedin, .et-line-dribbble {
 	font-family: 'et-line';
-	speak: none;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 	display:inline-block;
 }
 .et-line-mobile:before {
