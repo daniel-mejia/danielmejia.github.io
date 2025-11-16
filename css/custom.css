@@ -25,7 +25,8 @@ section.section {
 }
 
 footer.bg-dark span,
-footer.bg-dark span a {
+footer.bg-dark span a,
+.bg-dark a {
     color: #FFE082;
 }
 

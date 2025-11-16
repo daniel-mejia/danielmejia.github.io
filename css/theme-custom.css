@@ -91,7 +91,7 @@ hr.short-thick {
   opacity: 1;
 }
 .bg-dark hr {
-  border-color: #555;
+  border-color: #fff;
 }
 .inline-block {
   display: inline-block;
@@ -533,7 +533,7 @@ ul.lead li {
   color: #666;
 }
 .color-primary {
-  color: #13313E !important;
+  color: #27627D !important;
 }
 .color-red {
   color: #e31d3b !important;
@@ -764,8 +764,8 @@ footer.bg-dark li,
 .btn-white:hover,
 .image-bg .btn:hover,
 .image-bg .btn:visited:hover {
-  background: #fff;
-  color: #222;
+  background: #FFE082;
+  color: #13313E;
 }
 .image-bg .btn.btn-filled,
 .image-bg .btn-filled:visited {
@@ -797,7 +797,7 @@ body.btn-rounded .btn {
 }
 .btn-white:visited,
 .btn:visited:hover {
-  color: #fff;
+  color: #13313E;
 }
 .btn-white:visited:hover {
   color: #222;
@@ -810,7 +810,7 @@ body.btn-rounded .btn {
   border-color: #FFE082;
 }
 .btn.bg-dark:hover {
-  background: #434343;
+  background: #FFE082;
 }
 .bg-primary .btn {
   color: #fff;
@@ -818,7 +818,7 @@ body.btn-rounded .btn {
 }
 .bg-primary .btn:hover {
   background: #fff;
-  color: #333347;
+  color: #13313E;
 }
 /*!---------- 7. NAVIGATION ----------*/
 .nav-container {
