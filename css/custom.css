@@ -24,8 +24,6 @@ section.section {
     max-width: 600px;
 }
 
-
-.bg-dark a,
 footer.bg-dark span,
 footer.bg-dark span a {
     color: #FFE082;
@@ -350,7 +348,7 @@ nav.sidebar .nav > li a:focus {
     color: #13313E;
     opacity: 1;
     font-weight: 600;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: cubic-bezier(-0.03, 0.82, 0.165, 1);
 }
 
 
@@ -429,7 +427,7 @@ footer {
     }
     
     .text-center-sm {
-    text-align: center;
+        text-align: center;
     }
     
     .txt-sm-48 {

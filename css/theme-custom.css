@@ -806,8 +806,8 @@ body.btn-rounded .btn {
   color: #fff;
 }
 .btn.bg-dark {
-  color: #fff;
-  border-color: #292929;
+  color: #FFE082;
+  border-color: #FFE082;
 }
 .btn.bg-dark:hover {
   background: #434343;
