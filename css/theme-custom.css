@@ -518,7 +518,7 @@ ul.lead li {
 }
 /*!---------- 4. COLOURS ----------*/
 .bg-primary {
-  background: #13313E !important;
+  background: #27627D !important;
 }
 .bg-secondary {
   background: #f8f8f8;
@@ -527,7 +527,7 @@ ul.lead li {
   background: #fff;
 }
 .bg-dark {
-  background: #27627D;
+  background: #13313E;
 }
 .color-body {
   color: #666;
@@ -2307,7 +2307,6 @@ button[type="submit"] .form-loading {
   font-size: 12px;
   line-height: 24px;
   font-weight: 400;
-  font-size: 11px;
 }
 .progress-2 {
   height: auto;
