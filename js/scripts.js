@@ -11,25 +11,7 @@ var mr_firstSectionHeight,
 $(document).ready(function() { 
     "use strict";
 
-    // Smooth scroll to inner links
-        var innerLinks = $('a.inner-link');
-
-        if(innerLinks.length){
-            innerLinks.each(function(){
-                var link = $(this);
-                var href = link.attr('href');
-                if(href.charAt(0) !== "#"){
-                    link.removeClass('inner-link');
-                }
-            });
-
-            var offset = 0;
-            if($('body[data-smooth-scroll-offset]').length){
-                offset = $('body').attr('data-smooth-scroll-offset');
-                offset = offset*1;
-            }
-        }
-
+   
     // Update scroll variable for scrolling functions
 
     addEventListener('scroll', function() {
@@ -125,7 +107,6 @@ $(document).ready(function() {
     });
 
     // Mobile Menu
-
     $('.mobile-toggle').click(function() {
         $('.nav-bar').toggleClass('nav-open');
         $(this).toggleClass('active');
@@ -138,12 +119,6 @@ $(document).ready(function() {
             $(this).toggleClass('toggle-sub');
         } else {
             $(this).parents('.toggle-sub').removeClass('toggle-sub');
-        }
-    });
-
-    $('.menu li a').click(function() {
-        if ($(this).hasClass('inner-link')){
-            $(this).closest('.nav-bar').removeClass('nav-open');
         }
     });
 
