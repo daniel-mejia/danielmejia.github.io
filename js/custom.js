@@ -1,73 +1,93 @@
-// Navbar
-const navbar = document.querySelector('nav#navbar-example');
-const footer = document.querySelector('footer');
-const data = {
-  footerHeight: footer.getBoundingClientRect().height,
-};
-
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          navbar.style.maxHeight = `calc(100vh - ${data.footerHeight}px)`;
-        } else {
-          navbar.style.maxHeight = '100vh';
-        }
-      });
-    });
-observer.observe(footer);
-
-// Function to handle scroll event
-const handleScroll = () => {
-  const overviewTop = overviewSection.getBoundingClientRect().top;
-  // Check if the screen width is greater than 990px
-  if (window.innerWidth > 990) {
-    if (overviewTop <= 50) {
-      // Show the navbar
-      navbar.style.display = 'block';
-    } else {
-      // Hide the navbar
-      navbar.style.display = 'none';
-    }
-  }
-};
-
-const overviewSection = document.querySelector('section#Overview');
-const mainContent = document.querySelector('main.col-md-12 col-sml-12 main-content');
-const navbarComputedStyle = window.getComputedStyle(navbar);
-const originalWidth = navbarComputedStyle.width;
-
-// Add a left margin to the main content to make space for the fixed navbar
-setElementStyles(mainContent, {
-  marginLeft: originalWidth,
-});
-
-// Initially hide the navbar
-setElementStyles(navbar, {
-  display: 'none',
-  position: 'fixed',
-  top: '0',
-  left: '0',
-});
-
-// Function to set element styles
+// Define setElementStyles at the top
 async function setElementStyles(el, styles) {
   Object.assign(el.style, styles);
 }
 
+// Navbar
+const navbar = document.querySelector('nav#navbar-example');
+const footer = document.querySelector('footer');
+const overviewSection = document.querySelector('section#Overview'); // Make sure this exists
+const mainContent = document.querySelector('main.col-md-10.col-sml-12.main-content'); // Corrected selector syntax assuming multiple classes
+
+// Check if critical elements exist before proceeding
+if (navbar && footer && overviewSection && mainContent) {
+
+  const data = {
+    footerHeight: footer.getBoundingClientRect().height,
+  };
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navbar.style.maxHeight = `calc(100vh - ${data.footerHeight}px)`;
+      } else {
+        navbar.style.maxHeight = '100vh';
+      }
+    });
+  });
+  observer.observe(footer);
+
+  // Function to handle scroll event
+  const handleScroll = () => {
+    const overviewTop = overviewSection.getBoundingClientRect().top;
+    // Check if the screen width is greater than 990px
+    if (overviewTop <= 50) {
+      if (window.innerWidth > 990) {
+        // Show the navbar
+        navbar.style.display = 'block';
+      } else if (window.innerWidth < 989) {
+        // Hide the navbar
+        navbar.style.display = 'none';
+      }
+    } 
+  };
+
+  const navbarComputedStyle = window.getComputedStyle(navbar);
+  const originalWidth = navbarComputedStyle.width;
+
+  // Add a left margin to the main content to make space for the fixed navbar
+  setElementStyles(mainContent, {
+    marginLeft: originalWidth,
+  });
+
+  // Initially set navbar styles
+  setElementStyles(navbar, {
+    display: 'none', // This will hide it by default
+    position: 'fixed',
+    top: '0',
+    left: '0',
+  });
+
+  // Attach handleScroll to the scroll event
+  window.addEventListener("scroll", handleScroll);
+  // Also call it once on load to set initial state based on scroll position
+  handleScroll();
+
+  // You might also want to re-evaluate handleScroll on resize
+  window.addEventListener("resize", handleScroll);
+
+} else {
+  console.warn("One or more critical elements (navbar, footer, overviewSection, mainContent) not found.");
+}
+
+
+// Sidebar scroll logic (already has its own scroll listener)
 window.addEventListener("scroll", function () {
   var sidebar = document.querySelector(".sidebar");
-  if (window.scrollY > 584) {
-    sidebar.style.display = "block";
-    sidebar.style.position = "fixed";
-    sidebar.style.top = "0px";
-    sidebar.style.height = "100%";
-  } else {
+  if (sidebar) { // Add a check for sidebar
+    if (window.scrollY > 584) {
+      //sidebar.style.display = "block";
+      sidebar.style.position = "fixed";
+      sidebar.style.top = "0px";
+      sidebar.style.height = "100%";
+    } else {
     sidebar.style.position = "relative";
     sidebar.style.top = "0px";
+    }
   }
 });
 
-// Image modal
+// Image modal (already wrapped in DOMContentLoaded)
 document.addEventListener("DOMContentLoaded", function () {
     const modalImage = document.getElementById("modal-image");
     const closeBtn = document.querySelector(".close");
@@ -75,6 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const modal = document.querySelector('.image-modal');
     let focusedElementBeforeModal;
 
+    // ... rest of the modal code
     // Attach event listeners to each image
     images.forEach(img => {
         img.addEventListener("click", openModal);

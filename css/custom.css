@@ -443,15 +443,9 @@ footer {
         padding: 0;
     }
     
-    nav.sidebar, nav#navbar-example::before {
+    nav.sidebar {
         display: none;        
     }    
-    
-    .fulloverlay:before {
-        background: conic-gradient(from 151deg at 81.98% 109.91%, var(--ocean-900, #002C33) 158.43133807182312deg, var(--ocean-600, #006A7A) 360deg);
-        opacity: 1;
-    } 
-   
 }
 
 /************ max-width: 767px ************/
@@ -485,6 +479,10 @@ footer {
     ul.menu li p {
         color: #292929;
     }
+    
+    nav.sidebar {
+        display: none;        
+    } 
 }
 
 /* Clickable Image */
