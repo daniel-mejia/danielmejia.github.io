@@ -822,14 +822,12 @@ body.btn-rounded .btn {
 }
 /*!---------- 7. NAVIGATION ----------*/
 .nav-container {
-  backface-visibility: hidden;
-   backface-visibility: hidden;
+  backface-visibility: hidden; 
   max-width: 100%;
 }
 nav {
   background: #fff;
-  backface-visibility: hidden;
-   backface-visibility: hidden;
+  backface-visibility: hidden; 
   max-width: 100%;
 }
 nav ul {
@@ -2974,7 +2972,6 @@ img {
   position: relative;
   transform: translate3d(0, -50%, 0);top: 50%;
   z-index: 2;
-  position: absolute;
   transition: all 0.3s ease;
   opacity: 0;
   width: 100%;
@@ -4267,17 +4264,10 @@ animation: spin 0.7s linear infinite;
   color: #333347;
   text-align: center;
   transition: all 0.3s ease;
-  margin-right: 8px;
   margin-bottom: 24px;
-  height: 30px;
-  font-size: 11px;
-  line-height: 27px;
-  min-width: 0;
   border-color: rgba(255, 255, 255, 0);
   opacity: .7;
-  border-radius: 25px;
   user-select: none;
-  display: inline-block;
 }
 .filters li.active {
   border-color: #333347;
@@ -4402,8 +4392,6 @@ section + .portfolio-pullup {
   font-size: 80px;
   line-height: 88px;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 56px;
-  line-height: 64px;
   font-weight: 100;
   text-transform: uppercase;
 }

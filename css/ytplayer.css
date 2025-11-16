@@ -193,8 +193,7 @@
 }
 
 .YTPOverlay{
-  backface-visibility: hidden;
-   backface-visibility: hidden;
+  backface-visibility: hidden; 
    transform-style: "flat";
   box-sizing: border-box;
 }
