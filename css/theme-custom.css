@@ -810,6 +810,7 @@ body.btn-rounded .btn {
   border-color: #FFE082;
 }
 .btn.bg-dark:hover {
+  color: #13313E;
   background: #FFE082;
 }
 .bg-primary .btn {

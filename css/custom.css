@@ -9,12 +9,6 @@ body, html {
 
 /**** Anchors ****/
 
-section a:hover {
-    color: #13313E;
-    text-decoration: underline;
-    transition: all 0.3s ease;
-}
-
 section.section {
     padding-left: 40px;
     padding-right: 40px
@@ -33,7 +27,6 @@ footer.bg-dark span a,
 .bg-primary a:hover,
 .bg-dark a:hover,
 footer.bg-dark span a:hover {
-    color: #FFE082;
     opacity: 1;
     text-decoration: underline;
 }
