@@ -13,7 +13,7 @@
         <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme-custom.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
     </head>
     <!--- body --->
@@ -75,20 +75,28 @@
         <!--- end nav bar --->
         <!--- header --->
         <div class="main-container">
-            <section class="image-bg parallax overlay overlay fulloverlay pt240 pb180 pt-xs-80 pb-xs-80">
+            <section class="image-bg parallax overlay pt180 pb160 pt-xs-80 pb-xs-80">
                 <div class="background-image-holder">
-                    <img alt="Emotilink Schedule page" class="background-image" src="img/emotilink-banner.jpg" />
+                    <img alt="Emotilink Schedule page" src="img/emotilink-banner.jpg" />
                 </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-10 col-md-6">
                             <h1>Emotilink</h1>
-                            <p class="lead mb48 mb-xs-32">
+                            <p class="lead mb32 mb-xs-24">
                                 Talk with a therapist online.
                             </p>
+                            <!--- Try the Interactive Prototype --->
+                            <!--
+                            <div>
+                                <a class="btn btn-lg" href="https://www.figma.com/proto/BbzTReuVdr1op7Vxv0oj9N/SMEx?page-id=2001%3A2888&node-id=2109-1463&viewport=-23%2C-667%2C0.3&t=LR6vRExZlnfQfznt-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2109%3A1480&hide-ui=1" target="_blank">Try the Interactive Prototype</a>
+                            </div>
+                            -->
                         </div>
                     </div>
+                    <!--end of row-->
                 </div>
+                <!--end of container-->
             </section>
         </div>
         <!--- END of header --->
@@ -96,15 +104,17 @@
         <div class="container-fluid">
             <div class="row">    
                 <!-- Side Navigation -->
-                <nav id="navbar-example" class="text-left col-md-3 sidebar" data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="50">
+                <nav id="navbar-example" class="text-left sidebar col-xs-0 col-md-2" data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="50">
                   <ul class="nav nav-pills">
-                    <li class="active "><a href="#brief">The Brief</a></li>
+                    <li class="active "><a href="#about-emotilink">About Emotilink</a></li>
+                    <li><a href="#my-role">My Role</a></li>
                     <li><a href="#problem-statement">Problem Statement</a></li>
                     <li><a href="#user-research">User Research</a></li>
                     <li><a href="#findings">Findings</a></li>
                     <li><a href="#competitive-analysis">Competitive Analysis</a></li>
-                    <li><a href="#design-process">Solution</a></li>
-                    <li><a href="#Navigation">1. Navigation header</a></li>
+                    <li><a href="#design-process">Designing a Solution</a></li>
+                    <li><a href="#our-solution">Our Solution</a></li>
+                    <li><a href="#Navigation">1. Navigation</a></li>
                     <li><a href="#Schedule">2. Schedule</a></li>
                     <li><a href="#In-Session">3. In Session</a></li>
                     <li><a href="#Notifications">4. Notifications</a></li>
@@ -114,20 +124,24 @@
                   </ul>
                 </nav>
                 <!--- END of Side Navigation --->
-
                 <!-- Main Content -->
-                <main class="main-content col-xs-12 col-sm-9 col-md-9">
-                    <!--- SECTION: Brief --->
-                    <section id="brief">
-                        <div class="text-left v-align-children">
-                            <div>
-                                <h2 class="color-primary mb-xs-24">The Brief</h2>
+                <main class="main-content col-xs-12 col-sml-12 col-md-10 mb0 pt40">
+                    <!--- SECTION: About Emotilink --->
+                    <section id="about-emotilink" class="section v-align-children">
+                        <div class="mw600">
+                            <div class="mb40">
+                                <h2 class="mb-xs-24">About Emotilink</h2>
                                 <p class="lead">
                                     Emotilink, a groundbreaking healthcare technology startup in the MATTER healthcare incubator, aims to transform mental health support. Their pioneering mobile app and platform are designed to eliminate barriers to emotional support by providing real-time, HIPAA-compliant telemedicine encounters with mental health therapists. This innovative approach, which includes unique features such as [specific unique features], is poised to usher in a new era of mental health support.  
                                 </p>
                                 <p class="lead">
                                     The Emotilink team contacted my UX team and me for a consultation. Our task was identifying potential user concerns and opportunities and creating an initial design for their mobile and desktop applications. We conducted extensive user and domain research to inform our design process. Upon completing the project, we delivered low—to mid-fidelity interaction designs that provided a secure, focused, and seamless user experience for therapists and patients.
                                 </p>
+                            </div>
+                            <!--- END OF SECTION: About SMEx --->
+                            <!--- SUB-SECTION: My Role --->
+                            <div id="my-role">
+                                <h3 class="txt-sm-24 mb40 mb-xs-24 ">My Role</h3>
                                 <p class="lead">
                                     My role in the project was as a UX designer. My responsibilities included planning and conducting user interviews and surveys with my colleagues. We took turns moderating user interviews and taking notes. Afterward, we analyzed and synthesized the research results as a team and brainstormed design solutions. I took ownership of the competitive analysis because finding existing design patterns and opportunities to give my client an edge over their competitors was essential.
                                 </p>
@@ -137,13 +151,12 @@
                             </div>    
                         </div>
                     </section>
-                    <!--- END OF SECTION: The Brief --->  
-
+                    <!--- END OF SECTION: About Emotilink --->  
                     <!--- SECTION: Problem Statement --->
                     <section id="problem-statement" class="section bg-secondary">
-                        <div class="text-left v-align-children">
-                            <div>
-                                <h2 class="color-primary mb40 mb-xs-24">Problem Statement</h2>
+                        <div class="v-align-children">
+                            <div class="mw600 mb40">
+                                <h2 class="mb40 mb-xs-24">Problem Statement</h2>
                                 <p class="lead">
                                     A lot of individuals go through emotional distress and need support but often struggle to access mental health services due to various barriers. These barriers can include not knowing about available resources, having trouble finding an in-person therapist, and feeling uncomfortable when choosing a therapist. 
                                 </p>
@@ -178,20 +191,20 @@
                         </div>
                     </section>
                     <!--- END OF banner --->
-
                     <!--- SECTION: Findings --->
-                    <section id="findings" class="section">
-                        <div class="v-align-children text-left">
-                            <div>
-                                <p class="lead  mb32">
-                                    Our user research was comprehensive and thorough. We aimed to understand user needs, test our assumptions, and pinpoint design opportunities. We distributed a survey with open-ended questions, interviewed various user segments, and performed a competitive analysis to grasp the telehealth landscape for therapy. This extensive research provided a solid foundation for our design process.
-                                </p>
+                    <section id="findings" class="section bg-secondary">
+                        <div class="v-align-children">
+                            <div class="mw600 mb40">
                                 <h3>Findings</h3>
                                 <p class="lead mb32">
-                                    We gathered enough data in two weeks to help our stakeholders answer their primary inquiries about our users, needs, and concerns.
+                                   Over a two-week period, we conducted thorough user research. We tested our assumptions, and our insights helped stakeholders address their main questions about our needs and concerns while identifying design opportunities.
                                 </p>
-
-                                <div class="mb32">
+                                <ul class="lead" data-bullet="ti-arrow-right">
+                                    <li>We conducted a survey with open-ended questions.</li>
+                                    <li>Interviewed various user segments.</li>
+                                    <li>Conducted a competitive analysis of the telehealth therapy landscape.</li>
+                                </ul>
+                                <div class="mt32 mb32">
                                     <h4>Patients</h4>
                                     <ul>
                                         <li>
@@ -241,8 +254,7 @@
                                         </li>
                                     </ul>
                                 </div>
-
-                                <div>
+                                <div class="mt32">
                                     <h4>Therapist</h4>
                                     <ul>
                                         <li>
@@ -280,10 +292,10 @@
                     <!--- END OF Findings--->
 
                     <!--- SECTION: Competitive Analysis --->
-                    <section id="competitive-analysis" class="section bg-secondary">
-                        <div class="text-left v-align-children">
-                            <div>
-                                <h3 class="color-primary mb40 mb-xs-24">Competitive Analysis</h3>
+                    <section id="competitive-analysis" class="section">
+                        <div class="v-align-children">
+                            <div class="mw600 mb40">
+                                <h3 class="mb40 mb-xs-24">Competitive Analysis</h3>
                                 <p class="lead mb32">
                                 We meticulously studied five of Emotilink’s competitors (Amwell, Breakthrough, Doctor on Demand, Talkspace, and Teladoc) at the time (2016) and analyzed their features and offerings. This comprehensive analysis involved examining user interfaces, reading user reviews, and understanding their business models. It gave us a clear understanding of the market landscape and helped us identify areas where Emotilink could differentiate itself. 
                                 </p>
@@ -335,15 +347,15 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-10 text-center">
-                                    <h2 class="uppercase mb0">Solution</h2>
+                                    <h2 class="uppercase mb0">Designing a Solution</h2>
                                 </div>
                             </div>
                         </div>
                     </section>
                     <!--- END OF banner --->
-                    <section>
-                       <div class="text-left v-align-children">
-                            <div>
+                    <section id="our-solution" class="section bg-dark">
+                       <div class="v-align-children">
+                            <div class="mw600 mb40">
                                 <div>
                                     <p class="lead mb32 mb16">
                                     After gathering and analyzing our research findings, we embarked on the design process with a user-centric approach. We brainstormed solutions to each problem expressed by our users and did rough wireframing on features that address critical user needs. We then conducted two rounds of user testing and iteratively refined our design based on users’ feedback. We focused on the user's experience, ensuring the application's usability and effectiveness.  
@@ -353,9 +365,11 @@
                                     An application for desktop and mobile devices that connects patients with available therapists who work flexible schedules to help them with ongoing or immediate issues.
                                     </p>
                                     <h4>For therapists</h4>
-                                    <blockquote class="small">
+                                    <blockquote class="bg-dark small">
+                                        <span>
                                        “I would never schedule back-to-back sessions. My hand would get too tired. I wouldn’t do it for one session; I would have it sit on my laptop.” 
                                        <br>– Interviewed Therapist
+                                        </span>
                                     </blockquote>
                                     <p class="lead mb32">
                                     We designed a desktop application for Therapists, giving them enough space to manage their patients' information comfortably and efficiently. We ensured that patients’ personal and sensitive information was protected and gave users complete control over what they shared upfront to foster a sense of trust and confidence in the platform. 
@@ -367,135 +381,123 @@
                             </div>
                         </div>
 
-                        <!--- SUB-SECTION: Navigation header --->
-                        <div id="Navigation" class="pt-sm-40">
-                            <div>
-                                <div>
-                                    <h4>1. Navigation</h4>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="mb40">
-                                    <!-- Clickable Image -->
-                                    <div class="image-section">
-                                        <figure>
-                                            <img src="img/1-Navigation-emotilink-therapist.png" alt="Navigation" class="clickable-image">
-                                        </figure>
+                        <!--- SUB-SECTION: Navigation --->
+                        <div id="Navigation" class="mb40">
+                            <div class="v-align-children">
+                                <div class="mw600 mb40">
+                                    <h4 class="mb40 mb-xs-24">1. Navigation</h4>
+                                    <div class="mb40 mb-xs-24">
+                                        <!-- Clickable Image -->
+                                        <div class="image-section">
+                                            <figure>
+                                                <img src="img/1-Navigation-emotilink-therapist.png" alt="Navigation" class="clickable-image">
+                                                <figcaption> 
+                                                    <p>Therapist</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
                                     </div>
+                                    <ol class="marker lead">
+                                        <li>Emotilink logo<br>
+                                            <p>
+                                            Helps users identify our application and easily navigate back to the home screen from anywhere in the app.
+                                            </p>
+                                        </li>
+                                        <li>Schedule<br>
+                                            <p>
+                                            This page is where therapists see all appointments they accept and confirm with patients. It emphasizes the next appointment and allows therapists to see records for the following appointments.
+                                            </p>
+                                        </li>
+                                        <li>Notifications<br>
+                                            <p>
+                                            This page is where therapists manage notifications for appointment requests and confirmations. 
+                                            </p>
+                                        </li>
+                                        <li>Calendar<br>
+                                            <p>
+                                            It gives the therapist a complete view of their appointments so they can manage their availability. They can view confirmed and scheduled appointments and pending requests and confirmations. It also allows them to plan their time, schedule, reschedule, or cancel appointments.
+                                            </p>
+                                        </li>
+                                        <li>Settings<br>
+                                            <p>
+                                            The therapist can change settings for receiving notifications (via email, mobile, or web), necessary documents, and payment methods. 
+                                            </p>
+                                        </li>
+                                        <li>Search<br>
+                                            <p>
+                                            Therapists can search for other therapists by name, specialty, counseling method, popularity, or experience. 
+                                            </p>
+                                        </li>
+                                        <li>Profile<br>
+                                            <p>
+                                            This is used by therapists to manage and view their profile as it appears on the Emotilink platform, both from the therapists' and users' sides.
+                                            </p>
+                                        </li>
+                                    </ol>
                                 </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <div>
-                                        <ol class="marker lead">
-                                            <li>Emotilink logo<br>
-                                                <p>
-                                                For branding purposes.
-                                                </p>
-                                            </li>
-                                            <li>Schedule<br>
-                                                <p>
-                                                This page is where therapists see all appointments they accept and confirm with patients. It emphasizes the next appointment and allows therapists to see records for the following appointments.
-                                                </p>
-                                            </li>
-                                            <li>Notifications<br>
-                                                <p>
-                                                This page is where therapists manage notifications for appointment requests and confirmations. 
-                                                </p>
-                                            </li>
-                                            <li>Calendar<br>
-                                                <p>
-                                                It gives the therapist a complete view of their appointments so they can manage their availability. They can view confirmed and scheduled appointments and pending requests and confirmations. It also allows them to plan their time, schedule, reschedule, or cancel appointments.
-                                                </p>
-                                            </li>
-                                            <li>Settings<br>
-                                                <p>
-                                                The therapist can change settings for receiving notifications (via email, mobile, or web), necessary documents, and payment methods. 
-                                                </p>
-                                            </li>
-                                            <li>Search<br>
-                                                <p>
-                                                Therapists can search for other therapists by name, specialty, counseling method, popularity, or experience. 
-                                                </p>
-                                            </li>
-                                            <li>Profile<br>
-                                                <p>
-                                                This is used by therapists to manage and view their profile as it appears on the Emotilink platform, both from the therapists' and users' sides.
-                                                </p>
-                                            </li>
-                                        </ol>
-                                    </div>
-                                </div>
-                            </div>         
+                            </div>     
                         </div>
                         <!--- END OF SUB-SECTION: Navigation header --->
 
                         <!--- SUB-SECTION: Schedule  --->
-                        <div id="Schedule" class="pt-sm-40">
-                            <div>
-                                <h4>2. Schedule</h4>
-                            </div>
-                            <div>
-                               <div class="mb40">
-                                    <!-- Clickable Image -->
-                                    <div class="image-section">
-                                        <figure>
-                                            <img src="img/2-Schedule-emotilink-therapist.png" alt="Schedule screen" class="clickable-image">
-                                        </figure>
+                        <div id="Schedule" class="mb40">
+                            <div class="v-align-children">
+                                <div class="mw600 mb40">
+                                    <h4 class="mb40 mb-xs-24">2. Schedule</h4>
+                                    <div class="mb40 mb-xs-24">
+                                        <!-- Clickable Image -->
+                                        <div class="image-section">
+                                            <figure>
+                                                <img src="img/2-Schedule-emotilink-therapist.png" alt="Schedule screen" class="clickable-image">
+                                                <figcaption>                                             
+                                                        <p>Schedule screen</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <div>
-                                        <ol class="marker lead">
-                                            <li>Waiting Room alert<br>
-                                                <p>
-                                                A Waiting Room notification alerts the therapist when a patient has joined the call and is ready for their session. The therapist can then enter the call or message the patient if something unexpected happens.
-                                                </p>
-                                            </li>
-                                            <li>Next Appointment<br>
-                                                <p>
-                                                The Next Appointment section displays the next patient’s essential information and actions to help the therapist prepare and keep the patient in mind.
-                                                </p>
-                                            </li>
-                                            <li>Patient’s Details<br>
-                                                <p>
-                                                In the Patient’s Details section, the therapist can view notes from previous sessions, add new ones, and schedule more appointments.
-                                                </p>
-                                            </li>
-                                            <li>Following Appointment<br>
-                                                <p>
-                                                The Following Appointment section provides a quick overview of the upcoming sessions for the day, including essential information like the number of previous sessions and the scheduled time. It also includes a date selector for therapists to view their list of sessions for future days.
-                                                </p>
-                                            </li>
-                                        </ol>
-                                    </div>
-                                </div>
-                            </div>         
+                                    <ol class="marker lead">
+                                        <li>Waiting Room alert<br>
+                                            <p>
+                                            A Waiting Room notification alerts the therapist when a patient has joined the call and is ready for their session. The therapist can then enter the call or message the patient if something unexpected happens.
+                                            </p>
+                                        </li>
+                                        <li>Next Appointment<br>
+                                            <p>
+                                            The Next Appointment section displays the next patient’s essential information and actions to help the therapist prepare and keep the patient in mind.
+                                            </p>
+                                        </li>
+                                        <li>Patient’s Details<br>
+                                            <p>
+                                            In the Patient’s Details section, the therapist can view notes from previous sessions, add new ones, and schedule more appointments.
+                                            </p>
+                                        </li>
+                                        <li>Following Appointment<br>
+                                            <p>
+                                            The Following Appointment section provides a quick overview of the upcoming sessions for the day, including essential information like the number of previous sessions and the scheduled time. It also includes a date selector for therapists to view their list of sessions for future days.
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </div>  
+                            </div>       
                         </div>
                         <!--- END OF SUB-SECTION: Schedule  --->
 
                         <!-- SUB-SECTION: In Session  --->
-                        <div id="In-Session" class="pt-sm-40">
-                            <div>
-                                <div>
-                                    <div>
-                                        <h4>3. In Session</h4>
+                        <div id="In-Session" class="mb40">
+                            <div class="v-align-children">
+                                <div class="mw600 mb40">
+                                    <h4 class="mb24 mb-xs-24">3. In Session</h4>
+                                    <div class="mb40 mb-xs-24">
+                                        <!-- Clickable Image -->
+                                        <div class="image-section">
+                                            <figure>
+                                                <img src="img/3-In_session-emotilink-therapist.png" alt="In session screen" class="clickable-image">
+                                                <figcaption>
+                                                    <p>In session screen.</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>   
-                            <div class="mb40">
-                                <!-- Clickable Image -->
-                                <div class="image-section">
-                                    <figure>
-                                        <img src="img/3-In_session-emotilink-therapist.png" alt="In session screen" class="clickable-image">
-                                    </figure>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <div>
                                         <ol class="marker lead">
                                             <li>In session with [patient_name]<br>
                                                 <p>
@@ -533,89 +535,66 @@
                                                 </p>
                                             </li>
                                         </ol>
-                                    </div>
                                 </div>
-                            </div>         
+                            </div>
                         </div>
                         <!-- END OF SUB-SECTION: In Session  --->
 
                         <!-- SUB-SECTION: Notifications  --->
-                        <div id="Notifications" class="pt-sm-40">
-                            <div>
-                                <div>
+                        <div id="Notifications" class="mb40">
+                            <div class="v-align-children">
+                                <div class="mw600 mb40">
+                                    <h4 class="mb24 mb-xs-24">4. Notifications</h4>
+                                    <div class="mb40 mb-xs-24">
+                                        <!-- Clickable Image -->
+                                        <div class="image-section">
+                                            <figure>
+                                                <img src="img/4-1-Notifications-Requests-emotilink-therapist.png" alt="Notification screen request appointment section" class="clickable-image">
+                                                <figcaption>
+                                                    <p>In the Notifications / Requests the therapist can manage appointment requests.</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
                                     <div>
-                                        <h4>4. Notifications</h4>
+                                        <div>
+                                            <h5>Requests</h5>
+                                            <ol class="marker lead">
+                                                <li>Requests<br>
+                                                    <p>
+                                                    A quick overview of session requests. Therapists can view general details, including the patient’s name, the requested session count, and the time of the session.
+                                                    </p>
+                                                </li>
+                                                <li>Filter<br>
+                                                    <p>
+                                                    To view requests by the date requested, patient’s name, time of the session, etc.
+                                                    </p>
+                                                </li>
+                                                <li>Message, Decline, or Accept [buttons]<br>
+                                                    <p>
+                                                    Therapists can message the patient to reschedule if needed. They can also view the patient’s records before accepting or declining. Option for therapists to choose who he will attend or who he will need to refer to another therapist if required.
+                                                    </p>
+                                                </li>
+                                            </ol>
+                                        </div>
                                     </div>
-                                </div>
-                                <div>
-                                   <div>
-                                        <p class="lead">For the therapist to manage appointment requests and confirmations.</p>
+                                    <div class="mb40 mb-xs-24">
+                                        <!-- Clickable Image -->
+                                        <div class="image-section">
+                                            <figure>
+                                                <img src="img/4-2-Notifications-Confirmations-emotilink-therapist.png" alt="Notification screen appointment confirmation section" class="clickable-image">
+                                                <figcaption>
+                                                    <p>In the Notifications / Confirmations tab the therapist can manage confirmations.</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
                                     </div>
-                                </div>
-                                <div>
                                     <div>
-                                        <h5>4.1 Requests</h5>
-                                    </div>
-                                </div>
-                            </div>   
-                            <div>
-                                <div class="mb40">
-                                    <!-- Clickable Image -->
-                                    <div class="image-section">
-                                        <figure>
-                                            <img src="img/4-1-Notifications-Requests-emotilink-therapist.png" alt="Notification screen request appointment section" class="clickable-image">
-                                        </figure>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <div>
-                                        <ol class="marker lead">
-                                            <li>Requests<br>
-                                                <p>
-                                                A quick overview of session requests. Therapists can view general details, including the patient’s name, the requested session count, and the time of the session.
-                                                </p>
-                                            </li>
-                                            <li>Requests filter<br>
-                                                <p>
-                                                To view requests by the date requested, patient’s name, time of the session, etc.
-                                                </p>
-                                            </li>
-                                            <li>Message, Decline, or Accept [buttons]<br>
-                                                <p>
-                                                Therapists can message the patient to reschedule if needed. They can also view the patient’s records before accepting or declining. Option for therapists to choose who he will attend or who he will need to refer to another therapist if required.
-                                                </p>
-                                            </li>
-                                        </ol>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div id="Confirmations" class="pt-sm-40">
-                                <div>
-                                    <div>
-                                        <h5>4.2 Confirmations</h5>
-                                    </div>
-                                </div>
-                            </div>   
-                            <div>
-                                <div class="mb40">
-                                    <!-- Clickable Image -->
-                                    <div class="image-section">
-                                        <figure>
-                                            <img src="img/4-2-Notifications-Confirmations-emotilink-therapist.png" alt="Notification screen appointment confirmation section" class="clickable-image">
-                                        </figure>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div>
-                                    <div >
+                                        <h5 class="mb24 mb-xs-24">Confirmations</h5>
                                         <ol class="marker lead">
                                             <li>Confirmations<br>
                                                 <p>
-                                                In the Confirmations section, therapists can see who has confirmed or declined their appointments.
+                                                In the Confirmations tab, therapists can see who has confirmed or declined their appointments.
                                                 </p>
                                             </li>
                                             <li>End of list message<br>
@@ -631,17 +610,17 @@
                                         </ol>
                                     </div>
                                 </div>
-                            </div>         
+                            </div>           
                         </div>
                         <!--3 END OF SUB-SECTION: Notifications  --->
                     </section>  
                     <!--- END OF SECTION: Design Process --->    
 
                     <!--- SECTION: Results  --->
-                    <section id="results">
-                        <div class="text-left v-align-children">
-                            <div>
-                                <h2 class="color-primary mb32 mb-xs-24">Results</h2>
+                    <section id="results" class="section">
+                        <div class="v-align-children">
+                            <div class="mw600 mb40">
+                                <h2 class="mb32 mb-xs-24">Results</h2>
                                 <p class="lead">
                                     The project outcomes were discussed, including metrics and user feedback. The Emotilink team was satisfied with the result. The solutions we provided were aligned with the data gathered from users themselves. We recommended further user testing to ensure that the design satisfies user needs. We informed them that evaluation research will uncover potential issues with our designs before the technology makes it into production. Additionally, we plan to talk with engineers to review the feasibility of our recommendations so that the business can adjust to budget considerations by prioritizing and downscaling as needed.  
                                 </p>
@@ -651,10 +630,10 @@
                     <!--- END OF SECTION: Results --->
 
                     <!--- SECTION: Reflection  --->
-                    <section id="reflection" class="bg-secondary">
-                        <div class="text-left v-align-children">
-                            <div>
-                                <h2 class="color-primary mb32 mb-xs-24">Reflection</h2>
+                    <section id="reflection" class="bg-secondary section">
+                        <div class="v-align-children">
+                            <div class="mw600 mb40">
+                                <h2 class="mb32 mb-xs-24">Reflection</h2>
                                 <p class="lead">
                                     Everyone benefits from talking with a therapist, including the therapist. Technology has been pivotal in improving humanity’s livelihood and longevity, but strides are still being made to help people’s emotional well-being. It was great to be part of this landmark effort and to use my design skills to play a small part in making mental and emotional health accessible to more people using current technology.
                                 </p>
@@ -662,6 +641,12 @@
                         </div>
                     </section>
                     <!--- END OF SECTION: Reflection --->
+                    <!-- Modal -->
+                    <div class="image-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description" aria-hidden="true">
+                        <button class="close" role="button" aria-label="Close">&times;</button>
+                        <img id="modal-image" src="" alt="">
+                    </div>
+
                     <!-- Modal -->
                     <div class="image-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description" aria-hidden="true">
                         <button class="close" role="button" aria-label="Close">&times;</button>
