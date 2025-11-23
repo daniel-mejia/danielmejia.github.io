@@ -111,7 +111,57 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     }
 
-    // --- Image modal code (keep as is or merge into this DOMContentLoaded block) ---
-    // ... (modal code)
+    // --- Image modal code ---
+    const modalImage = document.getElementById("modal-image");
+    const closeBtn = document.querySelector(".close");
+    const images = document.querySelectorAll(".clickable-image");
+    const modal = document.querySelector('.image-modal');
+    let focusedElementBeforeModal;
+
+    // Move function declarations to the top of this scope (outside the if block)
+    function openModal(event) {
+        const image = event.target;
+        focusedElementBeforeModal = document.activeElement;
+        modal.style.display = "flex";
+        modal.setAttribute("aria-hidden", "false");
+        modalImage.src = image.src;
+        modalImage.alt = image.alt;
+        closeBtn.focus();
+    }
+
+    function closeModal() {
+        modal.style.display = "none";
+        modal.setAttribute("aria-hidden", "true");
+        modalImage.src = "";
+        if (focusedElementBeforeModal) {
+            focusedElementBeforeModal.focus();
+        }
+    }
+
+    // Now, the conditional block where they are used
+    if (modal && modalImage && closeBtn) { // Basic check for modal elements
+        images.forEach(img => {
+            img.addEventListener("click", openModal);
+            img.addEventListener("keydown", function (event) {
+                if (event.key === "Enter" || event.key === " ") {
+                    openModal(event);
+                }
+            });
+        });
+
+        closeBtn.addEventListener("click", closeModal);
+        modal.addEventListener("click", function (event) {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape" && modal.style.display === "flex") {
+                closeModal();
+            }
+        });
+    } else {
+        console.warn("Image modal elements not found.");
+    }
 
 }); // End of main DOMContentLoaded
