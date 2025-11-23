@@ -4,7 +4,7 @@ async function setElementStyles(el, styles) {
 }
 
 // Navbar
-const navbar = document.querySelector('nav#navbar-example');
+const navbar = document.querySelector('#navbar');
 const footer = document.querySelector('footer');
 const about = document.querySelector('section#about'); // Make sure this exists
 const mainContent = document.querySelector('main.col-md-10.col-sml-12.main-content'); // Corrected selector syntax assuming multiple classes
