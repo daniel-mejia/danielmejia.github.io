@@ -6,11 +6,11 @@ async function setElementStyles(el, styles) {
 // Navbar
 const navbar = document.querySelector('nav#navbar-example');
 const footer = document.querySelector('footer');
-const overviewSection = document.querySelector('section#Overview'); // Make sure this exists
+const about = document.querySelector('section#about'); // Make sure this exists
 const mainContent = document.querySelector('main.col-md-10.col-sml-12.main-content'); // Corrected selector syntax assuming multiple classes
 
 // Check if critical elements exist before proceeding
-if (navbar && footer && overviewSection && mainContent) {
+if (navbar && footer && about && mainContent) {
 
   const data = {
     footerHeight: footer.getBoundingClientRect().height,
@@ -29,9 +29,9 @@ if (navbar && footer && overviewSection && mainContent) {
 
   // Function to handle scroll event
   const handleScroll = () => {
-    const overviewTop = overviewSection.getBoundingClientRect().top;
+    const aboutTop = about.getBoundingClientRect().top;
     // Check if the screen width is greater than 990px
-    if (overviewTop <= 50) {
+    if (aboutTop <= 50) {
       if (window.innerWidth > 990) {
         // Show the navbar
         navbar.style.display = 'block';
@@ -67,7 +67,7 @@ if (navbar && footer && overviewSection && mainContent) {
   window.addEventListener("resize", handleScroll);
 
 } else {
-  console.warn("One or more critical elements (navbar, footer, overviewSection, mainContent) not found.");
+  console.warn("One or more critical elements (navbar, footer, about, mainContent) not found.");
 }
 
 
