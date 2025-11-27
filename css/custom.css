@@ -28,7 +28,6 @@ footer.bg-dark span a,
 .bg-dark a:hover,
 footer.bg-dark span a:hover {
     opacity: 1;
-    text-decoration: underline;
 }
 
 .bg-dark .social-list a, 
@@ -107,10 +106,6 @@ ol.lead > li {
     font-weight: 400;
     line-height: 32px;
     padding: 4px 0;
-}
-
-ol.lead > li {
-    font-weight: 600;
 }
 
 ol.marker {
