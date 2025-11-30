@@ -62,9 +62,15 @@ body.boxed-layout,
   left: 0;
   right: 0;
 }
-ul {
-  list-style: none;
+
+ol {
+  list-style: decimal inside;
 }
+
+ul {
+  list-style: disc inside;
+}
+
 ul.bullets {
   list-style: inside;
 }

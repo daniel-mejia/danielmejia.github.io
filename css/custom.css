@@ -95,10 +95,6 @@ section.cover .list-inline > li {
     font-style: italic;
 }
 
-section ul.lead {
-    list-style-position: outside;
-}
-
 div.lead li,
 div.lead p,
 ul.lead li,
@@ -257,7 +253,11 @@ div .lttr-spacing-2 {
 
 /**** Navigation ****/
 
-.menu > li ul,
+ul.menu li {
+    list-style: none;
+}
+
+ul.menu li ul,
 ul.menu li button {
     background: #13313E;
 }
