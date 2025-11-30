@@ -13,11 +13,8 @@
         <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme-custom.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
-        
-        <!--- Fonts --->
-        <link href="css/font-roboto.css" rel="stylesheet" type="text/css">
     </head>
     <!--- body --->
     <body class="scroll-assist" data-spy="scroll" data-target="#navbar-example" data-offset="50">
@@ -79,7 +76,7 @@
         <!--- end nav bar --->   
         <!--- header --->
         <div class="main-container">
-            <section class="image-bg parallax overlay pt240 pb180 pt-xs-80 pb-xs-80">
+            <section class="image-bg parallax overlay pt240 pb120 pt-xs-80 pb-xs-80">
                 <div class="background-image-holder">
                     <img alt="The Graide Network dashboard image" class="background-image" src="img/tgn-dashboard.jpg" />
                 </div>
@@ -87,12 +84,18 @@
                     <div class="row">
                         <div class="col-sm-10 col-md-6">
                             <h1>The Graide Network</h1>
-                            <p class="lead mb48 mb-xs-32">
+                            <p class="lead mb32 mb-xs-24">
                                 Connecting teachers with a professional workforce.
                             </p>
+                            <!--- Try the Interactive Prototype --->
+                            <div>
+                                <a class="btn btn-lg" href="http://sknx4o.axshare.com/#c=2" target="_blank">Try the Interactive Prototype</a>
+                            </div>
                         </div>
                     </div>
+                    <!--end of row-->
                 </div>
+                <!--end of container-->
             </section>
         </div>
         <!--- END of header --->
@@ -102,471 +105,406 @@
                <!-- Side Navigation --->
                 <nav id="navbar-example" class="text-left col-md-2 sidebar" data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="50">
                   <ul class="nav nav-pills">
-                    <li class="active "><a href="#brief">The Brief</a></li>
+                    <li class="active "><a href="#about">About The Graide Network</a></li>
                     <li><a href="#user-research">User Research</a></li>
-                    <li><a href="#user-interviews">User Interviews</a></li>
-                    <li><a href="#education-environment">The Education Environment</a></li>
-                    <li><a href="#personas">Personas</a></li>
-                    <li><a href="#journey-map">Journey Map</a></li>
-                    <li><a href="#problem-statement">Problem Statement</a></li>
-                    <li><a href="#design-principles">Design Principles</a></li>
+                    <li><a href="#defining-the-problem">Defining the Problem</a></li>
                     <li><a href="#concept-testing">Concept Testing</a></li>
-                    <li><a href="#converging">Converging and Refining</a></li>
-                    <li><a href="#further-testing">Further Testing</a></li>
-                    <li><a href="#future-considerations">Future Considerations</a></li>
+                    <li><a href="#converging">Converging</a></li>
+                    <li><a href="#next-steps-recommendations">Next Steps Recommendations</a></li>
                     <li><a href="#lessons-learned">Lessons Learned</a></li>
                     <li><a href="#final-thoughts">Final Thoughts</a></li>
                     <li><a href="#top"><i class="icon fa fa-arrow-circle-up icon-xs"></i>Top</a></li>
                   </ul>
                 </nav>
                 <!-- END of Side Navigation --->
- 
                 <!-- Main Content -->
                 <main id="mainContent" class="main-content col-xs-12 col-sm-10">
-                    <!--- SECTION: The Brief --->
-                    <section id="about">
-                        <div class="text-left v-align-children">
-                            <div>
-                                <div class="lead">
-                                    <h2 class="color-primary mb40 mb-xs-24">The Brief</h2>
-                                    <p>
-                                        Launched September 2015, <a href="https://www.thegraidenetwork.com/" target="_blank">The Graide Network (TGN)</a> connects teachers with undergraduate education majors. These undergraduates help teachers grade their students’ work. Currently, the grading takes place off-platform, via downloadable Excel templates. Our task was to prepare low- to mid-fidelity interaction designs focused on the teacher's side of the platform. We conducted user interviews and usability testing, as well as broader field research, in order to find and improve pain points in the current process, know how our client compares with competitions, and determine their value in the education technology ecosystem.  
-                                    </p>
-                                </div>
+                    <!--- SECTION: About The Graide Network (TGN) --->
+                    <section id="about" class="section v-align-children">
+                        <div class="mw600">
+                            <div class="mb40">
+                                <h2 class="mb-xs-24">About The Graide Network (TGN)</h2>
+                                <p class="lead">
+                                    Launched in September 2015, <a href="https://www.thegraidenetwork.com/" target="_blank">The Graide Network (TGN)</a> connects teachers with undergraduate education majors (Graiders) who help grade high school students’ written assignments. For clarity, I will use the term ‘graders’ when referring to Graiders.
+                                </p>
+                                <p class="lead">
+                                    At launch, TGN’s process was off-platform, relying on downloadable Excel templates that graders filled out and returned to teachers.
+                                </p>
+                            </div>
+                            <!--- END OF SUB-SECTION: About The Graide Network (TGN) --->
+                            <!--- SUB-SECTION: My Role --->
+                            <div id="my-role">
+                                <h3  class="txt-sm-24 mb40 mb-xs-24">My Role</h3>
+                                <p class="lead">
+                                I conducted user interviews, usability testing, and field research to pinpoint and improve pain points in the current process. Additionally, I assessed TGN’s position in the education technology ecosystem and designed low- to mid-fidelity teacher-facing platform interactions.
+                                </p>
                             </div>
                         </div>
                     </section>
-                    <!--- END OF SECTION: The Brief section --->
-
+                    <!--- END OF SECTION: About The Graide Network (TGN) --->
                     <!--- BANNER: User Research --->
-                    <section id="user-research" class="page-title page-title-1 image-bg overlay parallax">
+                    <section id="user-research" class="section page-title page-title-1 image-bg overlay parallax">
                         <div class="background-image-holder">
                             <img class="background-image" alt="User experience designers in front of a wall of sticky notes with user quotes and grouping them by theme." src="img/TGN-audrey-mildrey-me.jpg">
                         </div>
                         <div class="container">
                             <div class="row">
-                                <div class="col-sm-11 text-center">
+                                <div class="col-sm-10 text-center">
                                     <h2 class="uppercase mb0">User Research</h2>
                                 </div>
                             </div>
                         </div>
                     </section>
                     <!--- END OF BANNER: User Research --->
-                    
-                    <!-- SECTION: User Research -->
-                    <section>
-                        <div class="text-left v-align-children">
-                            <div> 
-                                <div>
-                                    <p class="lead">
-                                        In our first round of testing, we interviewed seven teachers who had never used the platform. We wanted to know their daily struggles as educators and determine how TGN can be useful to them. I studied the educational technology ecosystem and made a strengths, weaknesses, opportunities, and threats (SWOT) analysis. This analysis aimed to define what sets our client apart from competitors. The official name for undergrad students who help teachers grade assignments in this platform is "Graiders". But for clarity, I will use the term "graders" instead. 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                            <!-- SUBSECTION: User Interviews -->
-                        <div id="user-interviews" class="text-left v-align-children">
-                            <div>
-                                <div class="lead pt40">
-                                    <div>
-                                        <h2>User Interviews</h2>
-                                    </div>
-                                    <p>
-                                    First, we interviewed teachers to learn about their grading process without assistants or tools. Then we had teachers use The Graide Network while sharing their thoughts aloud. They also used our client's competitor to draw comparison between both products. From this test, we got educators’ insight about how we can improve their grading process. We listed pain points and preferences they had with the interface.    
-                                    </p>
-                                    <p>
-                                    During our initial meeting with our client, we a found few assumptions we needed to confirm or deny. It was essential for us to have a clear idea of what teachers wanted and found helpful from the platform.   
-                                    </p>
-                                    <ul data-bullet="ti-arrow-right">
-                                        <li>Adding personalized notes about particular students.</li>
-                                        <li>Viewing and tracking students' performance.</li> 
-                                        <li>Reusing and pre-populating rubrics.</li>  
-                                        <li>An easier way to share grades and provide feedback to the class. </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- END OF SUBSECTION: User Interviews-->
-                        </div>
-                        
-                        <!-- SUBSECTION: Findings -->
-                        <div id="findings" class="text-left v-align-children mb40">
-                            <div>
-                                <h3>Findings</h3>
-                                <div class="tabbed-content text-tabs">
-                                    <ul class="tabs mb24 mt24">
-                                        <li class="active">
-                                            <div class="tab-title">
-                                                <span>Cover</span>
-                                            </div>
-                                            <div class="tab-content">
-                                                <div>
-                                                    <div>
-                                                        <div class="mb40">
-                                                            <img class="cast-shadow" alt="Screenshot" src="img/cover-page.png" />
-                                                        </div>
-                                                        <div  class="lead">
-                                                            <div class="feature feature-3">
-                                                                <h4>Cover page</h4>
-                                                                <div class="left">
-                                                                    <img class="finding-icon" alt="First finding" src="img/finding-icons-svg/findings-icon-1.svg">
-                                                                </div>
-                                                                <div class="right">
-                                                                    <p><strong>Graders miss the directions on the Cover Page.</strong></p>
-                                                                    <p>
-                                                                        This causes them to use the spreadsheet incorrectly or use other resources, such as a Google Docs, to record grades and feedback.
-                                                                    </p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--end of row-->
-                                                </div>
-                                                <!--end of container-->
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="tab-title">
-                                                <span>Individual</span>
-                                            </div>
-                                            <div class="tab-content">
-                                                <div>
-                                                    <div>
-                                                        <div class="mb40">
-                                                            <img class="cast-shadow" alt="Screenshot" src="img/individual-grade-summary.png" />
-                                                        </div>
-                                                        <div>
-                                                            <div class="feature feature-3">
-                                                                <h4>Individual grade summary</h4>
-                                                                <p>
-                                                                   Graders download the rubric attachment, then manually populates the spreadsheet with the rubric’s criteria and scoring per the criteria. Teachers wanted to see how students are doing on each rubric criteria by looking at the scores.<strong>The scores tell educators where to focus their efforts to help students who are struggling in a particular subject.</strong>
-                                                                </p>
-                                                                <div class="left">
-                                                                    <img class="finding-icon" alt="findings 2" src="img/finding-icons-svg/findings-icon-2.svg">
-                                                                </div>
-                                                                <blockquote class="small right">
-                                                                    “It’ll be good to know which particular students are not doing well in this component."
-                                                                </blockquote>
-                                                                <div class="left">
-                                                                    <img class="finding-icon" alt="findings 3" src="img/finding-icons-svg/findings-icon-3.svg">
-                                                                </div>
-                                                                <blockquote class="small right">
-                                                                    “I would tally the bottom to show what I need to focus on.”
-                                                                </blockquote>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="tab-title">
-                                                <span>Class</span>
-                                            </div>
-                                            <div class="tab-content">
-                                                <div>
-                                                    <div>
-                                                        <div class="mb40">
-                                                            <img class="cast-shadow" alt="Screenshot" src="img/class-summary.png" />
-                                                        </div>
-                                                        <div>
-                                                            <div class="feature feature-3">
-                                                                <h4>Class summary</h4>
-                                                                <p>
-                                                                   Educators like knowing which students need help with assignments, while at the same time ensuring top-performers are motivated and engaged.
-                                                                </p> 
-                                                                <p>
-                                                                    Some teachers said that an overall grade is more useful than an average per each rubric measure.
-                                                                </p>
-                                                                <div class="left">
-                                                                    <img class="finding-icon" alt="findings 4" src="img/finding-icons-svg/findings-icon-4.svg">
-                                                                </div>
-                                                                <div class="right">
-                                                                    <blockquote class="small">
-                                                                        “I would like to see the overall grade as opposed to the average for one criteria in the rubric.”
-                                                                    </blockquote>
-                                                                    <blockquote class="small">
-                                                                        “I’ll want to know what to do with the data.”
-                                                                    </blockquote>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--end of row-->
-                                                </div>
-                                                <!--end of container-->
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="tab-title">
-                                                <span>Student</span>
-                                            </div>
-                                            <div class="tab-content">
-                                                <div>
-                                                    <div>
-                                                        <div class="mb40">
-                                                            <img class="cast-shadow" alt="Screenshot" src="img/student-page.png" />
-                                                        </div>
-                                                        <div>
-                                                            <div class="feature feature-3">
-                                                                <h4>Student page</h4>
-                                                                <p>
-                                                                    <strong>Users suggested a graph</strong> to see student's needs across each rubric criteria. Interviewers <strong>wanted to print</strong> this page to share with students.   
-                                                                </p> 
-                                                                <div class="left">
-                                                                    <img class="finding-icon" alt="findings 5" src="img/finding-icons-svg/findings-icon-5.svg">
-                                                                </div>
-                                                                <div class="right">
-                                                                    <blockquote class="small">
-                                                                        “Teachers struggle to know individual student needs, graph could help teachers on that.”
-                                                                    </blockquote>
-                                                                    <blockquote class="small">
-                                                                        “I would print this page for the students.”
-                                                                    </blockquote>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--end of row-->
-                                                </div>
-                                                <!--end of container-->
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END OF SUBSECTION: Findings -->
-                       
-                        <!-- SUBSECTION: Takeaways -->
-                        <div id="takeaways" class="text-left v-align-children">
-                            <div >
-                                <h3>Takeaways</h3>
-                                <div>
-                                    <ul class="lead" data-bullet="ti-arrow-right">
-                                        <li>We gathered a list of pain points to address on our initial designs. </li>
-                                        <li>We validated that “The Graide Network” help teachers save time. </li>
-                                        <li>Educators are willing to use a new and improved technology that replaces the current one</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <blockquote>
-                                    "This saves a lot of time, I would definitely use this."   
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END OF SUBSECTION: Takeaways -->
-                    </section>    
-                    <!-- END OF SECTION: User Research-->
-                    
-                    <!-- SECTION: The Education Environment -->
-                    <section id="education-environment" class="bg-secondary">
-                        <div class="text-left v-align-children">
-                            <div>
-                                <h3>The Education Environment</h3>
-                                <div class="lead mb36">
-                                    <p>
-                                    To further determine our client's potential value, we studied the education ecosystem and found the following:   
-                                    </p>
-                                    <ul class="lead mb40" data-bullet="ti-plus">
-                                        <li>Timely feedback is essential to a student’s progress. (<a href="https://www.edutopia.org/blog/tips-providing-students-meaningful-feedback-marianne-stenger" target="_blank">source</a>)</li> 
-                                        <li>Student comprehension of recently read material improves with more immediate feedback. (<a href="https://www.edutopia.org/blog/tips-providing-students-meaningful-feedback-marianne-stenger" target="_blank">source</a>)</li> 
-                                        <li>Teachers spend an exhausting amount of time performing instructional duties and non-compensated school-related activities such as grading, tutoring, bus duty, or club advising (<a href="http://www.nea.org/home/12661.htm" target="_blank">source</a>)</li>
-                                    </ul>
-                                    <div class="mb40">
-                                        <img alt="SWOT analysis" src="img/swot-analysis.png" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- END OF SUBSECTION: Domain Research Takeaway -->
-                        
-                        <!-- SUBSECTION: Domain Research Takeaway -->
-                        <div class="text-left v-align-children">    
-                            <div class="lead">
-                                <div>
-                                    <h4>Takeaways from domain research</h4>
-                                </div>
-                                <ul data-bullet="ti-arrow-right">
-                                    <li>The Grade Network improves the grading process and eases a teacher’s workload.</li>
-                                    <li>Graiders give The Graide Network an edge over its competitors.</li>
-                                    <li>It provides reliable quantitative data about student and teacher productivity.</li>
-                                    <li>It gives real education experience to undergraduate students who aspire to become teachers.</li>
-                                    <li>There is plenty of room for growth.</li>
-                                </ul>
-                                <p>
-                                From our conversations with teachers, we were able to see two trending mindsets. Defining these trends helped us stay focused on their needs. We framed these mindsets as: <strong>The Experienced Educator</strong> and  <strong>The Resigned Teacher. </strong>
+                    <!--- SECTION: User Research --->
+                    <section class="section bg-secondary">
+                        <div class="v-align-children">
+                           <div class="mw600">
+                                <p class="lead mb32">
+                                We interviewed seven teachers who had never used TGN to understand their daily challenges and also analyzed the educational technology ecosystem, performing a SWOT analysis to determine TGN’s unique value.
                                 </p>
+                                <!-- SUBSECTION: User Interviews -->
+                                <div id="user-interviews" class="mt32 mb32">
+                                    <h3 class="txt-sm-24 mb40 mb-xs-24">User Interviews</h3>
+                                    <p class="lead mb40">
+                                    Teachers tested both TGN and a competitor and provided feedback on improvements to the grading process.
+                                    </p>
+                                    <h4>
+                                    They needed:
+                                    </h4>
+                                    <ul class="lead">
+                                        <li>To view and track each student’s performance</li>
+                                        <li>An easier method to share grades and feedback</li> 
+                                        <li>Reusable and pre-populatable rubrics</li>  
+                                        <li>Personalized notes for students</li>
+                                    </ul>
+                                </div>
+                                <!-- END OF SUBSECTION: User Interviews-->
+                                <!-- SUBSECTION: Findings -->
+                                <div id="findings mb56">
+                                    <h4 class="mb-xs-24">Findings</h4>
+                                    <div class="tabbed-content text-tabs">
+                                        <ul class="tabs mb24 mt24">
+                                            <li class="active">
+                                                <div class="tab-title">
+                                                    <span>Cover page</span>
+                                                </div>
+                                                <div class="tab-content">
+                                                    <div class="mb40">
+                                                       <!-- Clickable Image -->
+                                                        <div class="image-section">
+                                                            <figure>
+                                                                <img class="cast-shadow clickable-image" alt="Screenshot" src="img/cover-page.png" />
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="feature feature-3">
+                                                            <div class="left">
+                                                                <img class="finding-icon" alt="First finding" src="img/finding-icons-svg/findings-icon-1.svg">
+                                                            </div>
+                                                            <div class="right">
+                                                                <h5 class="font-size-24 pt8">Cover page</h5>
+                                                            </div>
+                                                            <p class="lead">
+                                                            Graders often missed directions, leading to spreadsheet errors or the use of external tools.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="tab-title">
+                                                    <span>Individual grade</span>
+                                                </div>
+                                                <div class="tab-content">
+                                                    <div class="mb40">
+                                                        <!-- Clickable Image -->
+                                                        <div class="image-section">
+                                                            <figure>
+                                                                <img class="cast-shadow clickable-image" alt="Screenshot" src="img/individual-grade-summary.png" />
+                                                            </figure>
+                                                        </div>                                                        
+                                                    </div>
+                                                    <div class="lead">
+                                                        <div class="feature feature-3">
+                                                            <div class="left">
+                                                                <img class="finding-icon" alt="Second finding" src="img/finding-icons-svg/findings-icon-2.svg">
+                                                            </div>
+                                                            <div class="right">
+                                                                <h5 class="font-size-24 pt8">Individual grade</h5>
+                                                            </div>
+                                                            <p class="lead">
+                                                                Teachers wanted quick insights by rubric criteria to identify student needs. 
+                                                            </p>
+                                                            <blockquote>
+                                                                “It’ll be good to know which particular students are not doing well in this component."
+                                                            </blockquote>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="tab-title">
+                                                    <span>Focused support</span>
+                                                </div>
+                                                <div class="tab-content">
+                                                    <div class="mb40">
+                                                        <!-- Clickable Image -->
+                                                        <div class="image-section">
+                                                            <figure>
+                                                                <img class="cast-shadow clickable-image" alt="Screenshot" src="img/individual-grade-summary.png" />
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                    <div class="lead">
+                                                        <div class="feature feature-3">
+                                                            <div class="left">
+                                                                <img class="finding-icon" alt="Third findings" src="img/finding-icons-svg/findings-icon-3.svg">
+                                                            </div>
+                                                            <div class="right">
+                                                                <h5 class="font-size-24 pt8">Focused support</h5>
+                                                            </div>
+                                                            <p class="lead">
+                                                                Teachers need to recognize both individual and group struggles.
+                                                            </p>
+                                                            <blockquote>
+                                                                “I would tally the bottom to show what I need to focus on.”
+                                                            </blockquote>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="tab-title">
+                                                    <span>Class summary</span>
+                                                </div>
+                                                <div class="tab-content">
+                                                    <div class="mb40">
+                                                        <!-- Clickable Image -->
+                                                        <div class="image-section">
+                                                            <figure>
+                                                                <img class="cast-shadow clickable-image" alt="Screenshot" src="img/class-summary.png" />
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                    <div class="lead">
+                                                        <div class="feature feature-3">
+                                                            <div class="left">
+                                                                <img class="finding-icon" alt="findings 4" src="img/finding-icons-svg/findings-icon-4.svg">
+                                                            </div>
+                                                            <div class="right">
+                                                                <h5 class="font-size-24 pt8">Class Summary</h5>
+                                                            </div>
+                                                            <p class="lead">
+                                                               Educators preferred overall grades to averages by criteria for actionable instruction planning.
+                                                            </p> 
+                                                            <blockquote >
+                                                                “I would like to see the overall grade as opposed to the average for one criteria in the rubric.”
+                                                            </blockquote>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="tab-title">
+                                                    <span>Student page</span>
+                                                </div>
+                                                <div class="tab-content">
+                                                    <div class="mb40">
+                                                        <!-- Clickable Image -->
+                                                        <div class="image-section">
+                                                            <figure>
+                                                                <img class="cast-shadow clickable-image" alt="Screenshot" src="img/student-page.png" />
+                                                            </figure>
+                                                        </div>
+                                                    </div>
+                                                    <div class="lead">
+                                                        <div class="feature feature-3">
+                                                            <div class="left">
+                                                                <img class="finding-icon" alt="findings 5" src="img/finding-icons-svg/findings-icon-5.svg">
+                                                            </div>
+                                                            <div class="right">
+                                                                <h5 class="font-size-24 pt8">Student page</h5>
+                                                            </div>
+                                                            <p class="lead">
+                                                                Visual graphs of student performance across criteria, with printable results, were highly valued.
+                                                            </p> 
+                                                            <blockquote >
+                                                                “I would print this page for the students.”
+                                                            </blockquote>
+                                                        </div>    
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- END OF SUBSECTION: Findings -->
+                                <!-- SUBSECTION: Takeaways -->
+                                <div id="takeaways">
+                                        <h4 class="mb-xs-24">Takeaways</h4>
+                                        <p class="lead" >
+                                        We identified pain points for redesign, validated time-saving benefits, and confirmed educator willingness to adopt improved technology. 
+                                        </p>
+                                        <blockquote>
+                                        "This saves a lot of time, I would definitely use this."   
+                                        </blockquote>
+                                </div>
+                                <!-- END OF SUBSECTION: Takeaways -->
+                            </div>
+                        </div>
+                    </section>    
+                    <!-- END OF SECTION: User Research-->        
+                    <!-- SECTION: The Education Environment -->
+                    <section id="education-environment" class="section v-align-children">
+                        <div class="mw600">
+                            <div class="mb40">
+                                <h3 class="txt-sm-24 mb40 mb-xs-24">The Education Environment</h3>
+                                <p  class="lead mb36">
+                                Domain research found that:
+                                </p>
+                                <ul class="lead mb40">
+                                    <li>Timely feedback is vital. (<a href="https://www.edutopia.org/blog/tips-providing-students-meaningful-feedback-marianne-stenger" target="_blank">source</a>)</li> 
+                                    <li>Student comprehension of recently read material improves with more immediate feedback. (<a href="https://www.edutopia.org/blog/tips-providing-students-meaningful-feedback-marianne-stenger" target="_blank">source</a>)</li> 
+                                    <li>Teachers spend excessive, uncompensated time on tasks like grading. (<a href="http://www.nea.org/home/12661.htm" target="_blank">source</a>)</li>
+                                    <li>TGN can streamline this by providing quantitative productivity data and hands-on experience for future teachers.</li>
+                                </ul>
+                                <div class="mb-xs-24">
+                                    <!-- Clickable Image -->
+                                    <div class="image-section">
+                                        <figure>
+                                            <img src="img/swot-analysis.png" alt="SWOT analysis" class="clickable-image">
+                                            <figcaption class="v-align-children-column"> 
+                                                <p>
+                                                SWOT analysis.
+                                                </p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- END OF SUBSECTION: Domain Research Takeaway -->
                     </section>
                     <!-- END OF SECTION: The Education Environment -->
-
                     <!-- SECTION: Personas --> 
-                    <section id="personas" class="bg-dark">
-                        <div class="text-left v-align-children">
-                            <div class=" slider-all-controls controls-inside">
-                                <ul class="slides">
-                                    <li>
-                                        <div>
-                                            <div class="text-center mb48">
-                                                <h4>The Experienced Educator</h4>
-                                                <h5>Tenacious - Resourceful - Committed </h5>
-                                                <p class="italic">
-                                                    "I would like an assistant only if it has the same mindset as me on giving feedback."  
-                                                </p>
-                                            </div>
-                                            <div class="left">
-                                                <p>
-                                                This type of teacher is tenacious, resourceful, and very committed to their work. They get the most out of their class and enjoy helping students learn, challenging and motivating top-performers while assisting and encouraging struggling students. 
-                                                </p>
-                                                <p>  
-                                                They work hard to give students all the feedback they need, inspiring them to succeed. Their biggest frustration is not having more time to help students. Unfortunately, giving individualized feedback is very time-consuming. So, they create strategies to provide students better ways to learn. Learning new standards and new ways to do things disrupts their methods. Especially when new, imposed techniques don't prove useful.
-                                                </p>
-                                                <div class="mb32">
-                                                    <h5>Goals:</h5>
-                                                    <ul data-bullet="ti-arrow-up">
-                                                        <li>Helping students learn.</li>
-                                                        <li>Motivate and engage students.</li>
-                                                        <li>Inspire students to succeed.</li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <h5>Frustrations:</h5>
-                                                    <ul data-bullet="ti-arrow-down">
-                                                        <li>Lack of time to help students.</li>
-                                                        <li>Politics behind the education system.</li>
-                                                        <li>Learning new standards and implementations.</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <div class="text-center">
-                                                <h4>The Resigned Teacher</h4>
-                                                <h5>Family oriented - Practical - Weary</h5>
-                                                <p class="italic">
-                                                    “I would take some training to learn how to use this.  
-                                                </p>
-                                            </div>
-                                            <div>
-                                                <p>
-                                                These are new teachers that got overwhelmed with their workload and stopped helping students individually. Now, they want to have an overview of a student’s progress instead of particular rubrics. They maneuver balancing life and work by finding ways to meet school responsibilities, like asking a friend for help grading assignments. 
-                                                </p>
-                                                <p>  
-                                                Their frustration is not spending enough time with their family. Not feeling competent to plan a strategy based on a student’s grade results. These teachers are open to learn skills that help them become better at their jobs. They became educators inspired by their parents or teachers. But now they realize that it is much more work than expected.
-                                                </p>
-                                            </div>
-                                            <div>
-                                                <div class="mb32">
-                                                    <h5>Goals:</h5>
-                                                    <ul data-bullet="ti-arrow-up">
-                                                        <li>Balancing life and work.</li> 
-                                                        <li>Know student’s progress overview.</li>
-                                                        <li>Meeting school requirements.</li>
-                                                    </ul>
-                                                </div>
-                                                <div>
-                                                    <h5>Frustrations:</h5>
-                                                    <ul data-bullet="ti-arrow-down">
-                                                        <li>Lacking time for their family.</li>  
-                                                        <li>Feeling unsuited to do a better job.</li>  
-                                                        <li>Having to grade an unmanageable amount of work.</li> 
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!--end of row-->
+                    <section id="personas" class="section bg-secondary">
+                        <div class="v-align-children">
+                            <div class="mw600">
+                                <h3 class="txt-sm-24 mb40 mb-xs-24">Personas</h3>
+                                <div class="mb80 lead">
+                                    <h4 class="mb20 mb-xs-24">The Experienced Educator</h4>
+                                    <blockquote>
+                                    "I would like an assistant only if it has the same mindset as me on giving feedback."
+                                    </blockquote>
+                                    <p>
+                                    They are <span class="bold">committed and resourceful</span>.
+                                    </p>
+                                    <p>
+                                    They want tools that match their feedback approach and more time for students. 
+                                    </p>
+                                    <p class="mb8">Major frustrations are:</p>
+                                    <ul>
+                                        <li>Lack of time to help students.</li>
+                                        <li>Frequent system changes.</li>
+                                    </ul>
+                                </div>
+                                <div class="lead">
+                                    <h4 class="mb20 mb-xs-24">The Resigned Teacher</h4>
+                                    <blockquote>
+                                    “I would take some training to learn how to use this.  
+                                    </blockquote>
+                                    <p>They are <span class="bold">practical and family-oriented</span>.
+                                    </p>
+                                    <p>
+                                    They prefer overviews over detailed rubrics and feel overwhelmed by the workload.
+                                    </p>
+                                    <p class="mb8">Major frustrations are:</p>
+                                    <ul>
+                                        <li>Insufficient family time</li>  
+                                        <li>Unmanageable grading</li>
+                                    </ul>
+                                </div>
+                            </div>  
                         </div>
                     </section> 
                     <!-- END OF SECTION: Personas -->
-
                     <!-- SECTION: Journey Map --> 
-                    <section id="journey-map">
-                        <div class="text-left v-align-children">
-                            <div>
-                                <h3 class="mb36">User Journey</h3>
+                    <section id="user-journey">
+                        <div class="v-align-children">
+                            <div class="mw600 mb40">
+                                <h3 class="txt-sm-24 mb40 mb-xs-24">User Journey</h3>
                                 <div class="lead">
                                     <p>
-                                    We created a Journey Map to illustrate teachers’ pain points when using the platform. Then counter these pain points with opportunities for improvement.    
+                                    We mapped teachers' pain points and matched them with opportunities for platform improvements.
                                     </p>
+                                    <!-- Clickable Image -->
+                                        <div class="image-section">
+                                            <figure>
+                                                <img alt="Journey Map" src="img/journey-map.png" class="clickable-image" />
+                                                <figcaption> 
+                                                    <p>Journey Map</p>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
                                     <div>
-                                        <img alt="Journey Map" src="img/journey-map.png" />
+                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
                     <!-- END OF SECTION: Journey Map-->
-
                     <!-- SECTION: Problem Statement-->
-                    <section id="problem-statement"> 
-                        <div class="text-left v-align-children">
-                            <div>
-                                <h3 class="mb36">Defining the Problem</h3>
-                                <div class="lead">
-                                    <p>
-                                    “Although The Graide Network helps teachers save a lot of time grading, the platform could be improved by making it an effective means of communication between teachers and graders, and by providing intuitive tools and immediate results to teachers of all experience levels.”
-                                    </p>
-                                    <p>
-                                    Teachers do not have time to provide timely, actionable, and personalized feedback to students. They need support giving students valuable feedback, and tracking a student’s progress.
-                                    </p>
-                                    <p>
-                                    We defined and documented teachers' problems, needs and wants from our data. We also, understood our product in the context of the education ecosystem. <strong>We then began ideating a solution to help our users reach their goals.</strong> The following set of design principles guided our decisions and choices.
-                                    </p>
-                                </div>
-                            </div>
+                    <section id="defining-the-problem" class="section bg-dark"> 
+                        <div class="v-align-children-column text-center">
+                           <div class="mw600 mb40">
+                               <h3 class="txt-sm-24 mb40 mb-xs-24">Defining the Problem</h3>
+                                <p class="lead">
+                                TGN saves teachers time grading, but needs stronger communication and more intuitive, timely, and actionable feedback tools for teachers of all experience levels.
+                                </p>
+                           </div>
                         </div>
                     </section>
                     <!-- END OF SECTION: Problem Statement-->
-                    
-                    <!-- SECTION: Design principles -->
-                    <section id="design-principles" class="bg-secondary">
-                        <div class="text-left v-align-children">
-                            <div class="lead">
-                                <h3 class="mb40">Design principles</h3>
+                    <!-- SECTION: Design Principles -->
+                    <section id="design-principles" class="bg-secondary section">
+                        <div class="v-align-children">
+                            <div class="mw600">
+                                <h3 class="txt-sm-24 mb40 mb-xs-24">Design Principles</h3>
                                 <div class="mb40">
                                     <h4>Personal</h4>
                                     <p class="lead">
-                                        Feedback is personalized and unique for every student. The platform is central for teachers and graders to interact. They need to discuss each student’s needs and performance. It is important for them to set expectations when grading assignments and providing feedback.  
+                                    Feedback tailored for each student, with collaborative discussions.
                                     </p>
                                 </div>
                                 <div class="mb40">
                                     <h4>Trustworthy</h4>
                                     <p>
-                                        Build accountable relationships with an open and transparent communication system. Teachers need to feel comfortable using The Graide Network and confident in their ability to complete their goals with the help of credible and caring teaching assistants.    
+                                    Transparent, accountable communication.
                                     </p>
                                 </div>
                                 <div class="mb40">
                                     <h4>Digestible</h4>
                                     <p class="lead">
-                                        Help teachers of all levels of expertise adapt to the platform by using familiar language and a simple interface. Every teacher should be able to see the value of The Graide Network immediately.
-                                    </p>
-                                </div>
-                                <div class="mb40">
-                                    <h4>Actionable</h4>
-                                    <p class="lead">
-                                        Help students learn and grow by delivering clear and timely feedback. Keeping feedback accessible in order for kids to learn how to improve themselves benefits everyone (students, teachers, graders and parents).    
+                                    User-friendly language, simple interface.
                                     </p>
                                 </div>
                                 <div>
+                                    <h4>Actionable</h4>
                                     <p class="lead">
-                                        Each of us designed a paper prototype with these principles in mind. The three prototypes proposed different solutions to teachers’ problems. We then tested them with users to find out which one they preferred.   
+                                    Immediate, clear feedback to foster student growth.
                                     </p>
                                 </div>
                             </div>
                         </div>                        
                     </section>
-                    <!-- END OF SECTION: Design principles -->
+                    <!-- END OF SECTION: Design Principles -->
                     
-                    <!--- BANNER: CONCEPT TESTING --->
-                    <section id="concept-testing" class="page-title page-title-1 image-bg overlay parallax">
+                    <!--- SECTION: CONCEPT TESTING --->
+                    <!--- BANNER --->
+                    <section id="concept-testing" class="section page-title page-title-1 image-bg overlay parallax">
                         <div class="background-image-holder">
                             <img class="background-image" alt="The Graide Network paper prototypes" src="img/design-concept-testing-background.png">
                         </div>
@@ -578,491 +516,281 @@
                             </div>
                         </div>
                     </section>
-                    <!--- END OF BANNER: DESIGN AND CONCEPT TESTING --->
-                    
-                    <!--- SECTION: CONCEPT TESTING --->
-                    <section>
-                        <div class="text-left v-align-children">
-                            <div class="lead">
-                                <p>
-                                   We created our designs around <strong>three essential tasks: adding a new class, posting an assignment, and analyzing the grade report.</strong> The team adopted a multivariate testing approach. We had seven teachers use and compare how each or our prototypes managed the three essential tasks. By thinking aloud, they informed us about their preferences. Three of the seven teachers interviewed have used The Graide Network before. Our focus was on how teachers interacted with the platform, so actual grading was not tested
+                    <!--- END OF BANNER --->  
+                    <!--- SECTION: FINDINGS --->
+                    <section class="bg-secondary section">
+                        <div class="v-align-children">
+                            <div class="mw600 mb40" >
+                                <p class="lead mb40">
+                                We prototyped workflows for adding classes, posting assignments, and analyzing reports. Seven teachers compared prototypes. 
                                 </p>
-                            </div>
-                        </div>
-
-                        <!-- SUBSECTION: Concept Testing Findings -->
-                        <div class="text-left v-align-children">
-                            <div>
-                                <h3>Findings</h3>
-                                <div class="tabbed-content button-tabs mb64">
-                                    <ul class="tabs">
-                                        <li class="active">
-                                            <div class="tab-title">
-                                                <span>Main Page</span>
-                                            </div>
-                                            <div class="tab-content text-left">
-                                                <div>
-                                                    <div>
-                                                        <h4>
-                                                            Main Page
-                                                        </h4>
-                                                        <div>
-                                                            <div class="cast-shadow mb40 mb-xs-32">
-                                                                <img alt="Main Page 1" src="img/paper-prototype-findings/main-page-1.png" />
-                                                            </div>
-                                                        </div>
-                                                        <div>
-                                                            <div class="cast-shadow mb40 mb-xs-32">
-                                                                <img alt="Main Page 2" src="img/paper-prototype-findings/main-page-2.png" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div>
-                                                            <div class="lead">
-                                                                <h5>Message System</h5>
-                                                                <p>
-                                                                   Teachers liked the message system on the homepage to <strong>communicate faster with grader.</strong> Students feel that <strong>the grader's input is trustworthy</strong> because it is unbiased. It adds value to the results.
-                                                                </p>
-                                                                <blockquote>
-                                                                    "Having the teacher and evaluation role separated help kids. They see graders as their evaluators and teachers as a resource to help them improve."
-                                                                </blockquote> 
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--end of row-->
-                                                </div>
-                                                <!--end of container-->
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="tab-title">
-                                                <span>Posting Assignment</span>
-                                            </div>
-                                            <div class="tab-content text-left">
-                                                <div>
-                                                    <div>
-                                                        <h4>
-                                                            Posting Assignment
-                                                        </h4>
-                                                        <div>
-                                                            <div class="cast-shadow mb40 mb-xs-32">
-                                                                <img alt="Main Page 1" src="img/paper-prototype-findings/post-assignment-option-1.png" />
-                                                            </div>
-                                                        </div>
-                                                        <div>
-                                                            <div class="cast-shadow mb40 mb-xs-32">
-                                                                <img alt="Main Page 2" src="img/paper-prototype-findings/post-assignment-option-2.png" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="lead">
-                                                            <p>
-                                                                Teachers wanted to find the class first and post the assignment from there. They would rather have their class's information cached to <strong>save time</strong> when posting.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <!--end of row-->
-                                                </div>
-                                                <!--end of container-->
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="tab-title">
-                                                <span>Assignment Page</span>
-                                            </div>
-                                            <div class="tab-content text-left">
-                                                <div>
-                                                    <div>
-                                                        <h4>
-                                                            Assignment Page
-                                                        </h4>
-                                                        <div>
-                                                            <div class="cast-shadow mb40 mb-xs-32">
-                                                                <img alt="Main Page 1" src="img/paper-prototype-findings/posting-assignment-1.png" />
-                                                            </div>
-                                                        </div>
-                                                        <div>
-                                                            <div class="cast-shadow mb40 mb-xs-32">
-                                                                <img alt="Main Page 2" src="img/paper-prototype-findings/posting-assignment-2.png" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="lead">
-                                                            <p>
-                                                                Teachers found it useful having tools like Google Drive and Dropbox. Both are helpful additions to the uploading process.  
-                                                            </p>
-                                                            <p>
-                                                                The “drag and drop” feature made loading assignments easier and saved time.
-                                                            </p>
-                                                            <p>
-                                                                Teachers reinforced wanting to write notes to graders about particular students.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <!--end of row-->
-                                                </div>
-                                                <!--end of container-->
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="tab-title">
-                                                <span>Graiders</span>
-                                            </div>
-                                            <div class="tab-content text-left">
-                                                <div>
-                                                    <div>
-                                                        <h4>
-                                                            Graiders
-                                                        </h4>
-                                                        <div>
-                                                            <div class="cast-shadow mb40 mb-xs-32">
-                                                                <img alt="Main Page 1" src="img/paper-prototype-findings/posting-assignment-graiders-1.png" />
-                                                            </div>
-                                                        </div>
-                                                        <div>
-                                                            <div class="cast-shadow mb40 mb-xs-32">
-                                                                <img alt="Main Page 2" src="img/paper-prototype-findings/posting-assignment-graiders-2.png" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div>
-                                                            <h5>
-                                                                Selecting a graider when posting an assignment
-                                                            </h5>
-                                                            <p class="lead">
-                                                                Teachers preferred browsing for a grader while filling the assignment form. According to testers, grader's profiles with picture made the selection process more personable. 
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <!--end of row-->
-                                                </div>
-                                                <!--end of container-->
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="tab-title">
-                                                <span>Class Summary</span>
-                                            </div>
-                                            <div class="tab-content text-left">
-                                                <div>
-                                                    <div>
-                                                        <h4>
-                                                            Class Summary
-                                                        </h4>
-                                                        <div>
-                                                            <div class="cast-shadow cast-shadow mb40 mb-xs-32">
-                                                                <img alt="Main Page 1" src="img/paper-prototype-findings/class-summary-1.png" />
-                                                            </div>
-                                                        </div>
-                                                        <div>
-                                                            <div class="cast-shadow mb40 mb-xs-32">
-                                                                <img alt="Main Page 2" src="img/paper-prototype-findings/class-summary-2.png" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="lead">
-                                                            <p>
-                                                                Side by side <strong>graphs made comparing results easier</strong> for teachers. 
-                                                            </p>
-                                                            <p>
-                                                                Organizing a class’s strengths and weaknesses by the rubric is helpful. Educators can use that <strong>information to plan targeted lessons</strong> focused on student struggles.  
-                                                            </p> 
-                                                            <p>
-                                                                Graders’ comments in this section add context and <strong>improve communication.</strong> 
-                                                            </p> 
-                                                        </div>
-                                                    </div>
-                                                    <!--end of row-->
-                                                </div>
-                                                <!--end of container-->
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="tab-title">
-                                                <span>Students report</span>
-                                            </div>
-                                            <div class="tab-content text-left">
-                                                <div>
-                                                    <div>
-                                                        <h4>
-                                                            Students Report
-                                                        </h4>
-                                                        <div>
-                                                            <div class="cast-shadow mb40 mb-xs-32">
-                                                                <img alt="Main Page 1" src="img/paper-prototype-findings/students-report-1.png" />
-                                                            </div>
-                                                        </div>
-                                                        <div>
-                                                            <div class="cast-shadow mb40 mb-xs-32">
-                                                                <img alt="Main Page 2" src="img/paper-prototype-findings/students-report-2.png" />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="lead">
-                                                            <p>
-                                                                According to teachers, data represented by a bar graph was clearer for students. They saw the badge section as a great addition to motivate students. 
-                                                            </p>
-                                                            <p>
-                                                                They liked being able to sort between students who are struggling in the same topic. Then save them as a group to give targeted assignments and follow up on their progress.
-                                                            </p> 
-                                                        </div>
-                                                    </div>
-                                                    <!--end of row-->
-                                                </div>
-                                                <!--end of container-->
-                                            </div>
-                                        </li>
-                                    </ul>
+                                <!-- SUBSECTION: Concept Testing Findings -->
+                                <h3 class="txt-sm-24 mb40 mb-xs-24">Key Findings</h3>
+                                <div class="mb48">
+                                    <h4>
+                                    Messaging
+                                    </h4>
+                                    <div class="mb40 mb-xs-32">
+                                        <!-- Clickable Image -->
+                                        <div class="image-section cast-shadow">
+                                            <figure>
+                                                <img alt="Main Page 2" src="img/paper-prototype-findings/main-page-2.png" class="clickable-image"/>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <p class="lead">
+                                    Homepage messaging improved teacher-grader communication
+                                    </p>
+                                    <blockquote>
+                                    "Having the teacher and evaluation role separated help kids. They see graders as their evaluators and teachers as a resource to help them improve."
+                                    </blockquote> 
                                 </div>
-                            </div>
-                        </div>
-                        <!-- END OF SUBSECTION: Concept Testing Findings -->
-                        
-                        <!-- SUBSECTION: Concept Testing Takeaways -->
-                        <div>
-                            <div>
+                                <div class="mb48">
+                                    <h4>
+                                    Posting Assignment
+                                    </h4>
+                                    <div class="mb40 mb-xs-32">
+                                       <!-- Clickable Image -->
+                                        <div class="image-section cast-shadow ">
+                                            <figure>
+                                                <img alt="Main Page 1" src="img/paper-prototype-findings/post-assignment-option-1.png" class="clickable-image"/>
+                                            </figure>
+                                        </div>
+                                    </div>                                             
+                                    <p class="lead">
+                                     Class-first assignment posting and cached class info expedited tasks
+                                    </p>
+                                </div>
+                                <div class="mb48">
+                                   <h4>
+                                    Uploads
+                                    </h4>
+                                    <div class="mb40 mb-xs-32">
+                                        <!-- Clickable Image -->
+                                        <div class="image-section cast-shadow">
+                                            <figure>
+                                                <img alt="Main Page 1" src="img/paper-prototype-findings/posting-assignment-1.png" class="clickable-image"/>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <p class="lead">
+                                    Teachers found Google Drive, Dropbox, and drag-and-drop-assisted uploads useful
+                                    </p>
+                                </div>
+                                <div class="mb48">
+                                   <h4>
+                                    Grader profiles
+                                    </h4>
+                                    <div class="mb40 mb-xs-32">
+                                        <!-- Clickable Image -->
+                                        <div class="image-section cast-shadow">
+                                            <figure>
+                                                <img alt="Main Page 1" src="img/paper-prototype-findings/posting-assignment-graiders-1.png" class="clickable-image" />
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <p class="lead">
+                                        Grader profiles (with photos) made the selection personable
+                                    </p>
+                                </div>
+                                <div class="mb48">
+                                    <h4>
+                                    Graphs and Comments
+                                    </h4>
+                                        <div class="mb40 mb-xs-32">
+                                           <!-- Clickable Image -->
+                                            <div class="cast-shadow image-section">
+                                                <figure>
+                                                    <img alt="Main Page 1" src="img/paper-prototype-findings/class-summary-1.png" class="clickable-image" />
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <p class="lead">
+                                        Comparative graphs and grader comments helped lesson planning
+                                        </p>
+                                </div>
+                                <div class="mb48">
+                                    <h4>Groupings</h4>
+                                    <div class="mb40 mb-xs-32">
+                                       <!-- Clickable Image -->
+                                        <div class="image-section cast-shadow">
+                                            <figure>
+                                                <img alt="Main Page 2" src="img/paper-prototype-findings/students-report-2.png" class="clickable-image"/>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <p class="lead">
+                                    Visual, sortable student reports and grouping recommendations
+                                    </p>
+                                </div>
+                                <div class="mb48">
+                                    <h4>Student Acomplishments</h4>
+                                    <div class="mb40 mb-xs-32">
+                                        <!-- Clickable Image -->
+                                        <div class="image-section cast-shadow">
+                                            <figure>
+                                                <img alt="Main Page 1" src="img/paper-prototype-findings/students-report-1.png" class="clickable-image"/>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                    <p class="lead">
+                                    Accomplishment badges motivated students.
+                                    </p>
+                                </div>
+                                <!-- END OF SUBSECTION: Concept Testing Findings -->
+                                <!-- SUBSECTION: Concept Testing Takeaways -->
                                 <h4>Takeaways</h4>
-                            </div>
-                            <div>
-                                <ul class="lead" data-bullet="ti-arrow-right">
-                                    <li>Teachers want an effective means of communication with graders and students.</li>
-                                    <li>Teachers loved the visual representation of data.</li>
-                                    <li>Teachers want to know where the data is coming from.</li>
-                                    <li>Teachers can use the data to plan further classroom instruction.</li>
-                                </ul>
+                                <p class="lead" >
+                                Teachers want effective communication, clear data visualization, and actionable insights for instructional planning.
+                                </p>
+                                <!-- END OF Concept Testing Takeaways-->
                             </div>
                         </div>
-                        <!-- END OF Concept Testing Takeaways-->
                     </section>
                     <!--- END OF SECTION: CONCEPT TESTING --->
 
-                    <!--- SECTION: CONVERGING AND REFINING --->
+                    <!--- SECTION: CONVERGING --->
                     <!--- banner --->
-                    <section id="converging" class="page-title page-title-1 image-bg overlay parallax">
+                    <section id="converging" class="section page-title page-title-1 image-bg overlay parallax">
                         <div class="background-image-holder">
                             <img class="background-image" alt="The Graide Network final prototypes" src="img/concept-background.gif">
                         </div>
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-8 col-sm-offset-1 text-center">
-                                    <h2 class="uppercase mb0">CONVERGING AND REFINING</h2>
+                                    <h2 class="uppercase mb0">Converging</h2>
                                 </div>
                             </div>
                         </div>
                     </section>
                     <!--- End of banner --->
-                    <section>
-                        <div>
-                            <div>
-                                <div class="mb80">
-                                    <p class="lead mb36">
-                                    My team went back to the drawing board to discuss our findings. We then listed some essential features that proved helpful for our users, then merged them into a single redesigned platform.
-                                    </p>
-                                </div>
+                    <section  class="bg-secondary section">
+                        <div class="v-align-children">
+                            <div class="mw600 mb40">
+                                <p class="lead mb36">
+                                Each finding guided a unified redesign incorporating the essential user-driven features.
+                                </p>
                                 <!--- View my prototype --->
-                                <div class="text-center mb40">
+                                <div class="v-align-children-column mt40 mb40">
                                     <a class="btn btn-lg" href="http://sknx4o.axshare.com/#c=2" target="_blank">View final prototype</a>
                                 </div>
-                            </div>
-                            <div>
                                 <div>
-                                    <h3>Prototype Walkthrough</h3>
-                                </div>
-                                <div class="lead mb40">
-                                     <h4>
-                                        Information at a glance
-                                    </h4>
-                                    <div class="mb40">
-                                        <img class="cast-shadow" alt="Adding a new class flow" src="img/new-class.gif" />
+                                    <h3 class="txt-sm-24 mb40 mb-xs-24">Prototype Walkthrough</h3>
+                                    <div class="lead mb40">
+                                        <h4>
+                                        Information at a Glance
+                                        </h4>
+                                        <div class="mb40">
+                                           <!-- Clickable Image -->
+                                            <div class="image-section">
+                                                <figure>
+                                                    <img class="cast-shadow clickable-image" alt="Classes page with option to add new class." src="img/new-class.gif" />
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <p>
+                                         The classes page acts as the dashboard, modeled after Google Classroom for familiarity.
+                                        </p>
                                     </div>
-                                    <p class="italic">
-                                    “I prefer to post assignments in the classes page.” 
-                                    </p>
-                                    <p>
-                                    The Classes page is the platform's dashboard where teachers create and manage their classes. We opted for an interface reminiscent of Google classroom to lower the learning curve. The card format and large font size makes it easy for teachers to read at a quick glance. We decided to remove the “My Profile” page and use icons at the top right corner to save space.  
-                                    </p>
-                                </div>
 
-                                <div class="lead mb40">
-                                    <h4>
-                                        Primary goal upfront
-                                    </h4>
-                                    <div class="mb40">
-                                        <img class="cast-shadow" alt="Adding a new assignment flow" src="img/add-assignment.gif" />
+                                    <div class="lead mb40">
+                                        <h4>
+                                        Primary Goal Upfront
+                                        </h4>
+                                        <div class="mb40">
+                                            <!-- Clickable Image -->
+                                            <div class="image-section">
+                                                <figure>
+                                                    <img class="cast-shadow clickable-image" alt="Classes page with option to post assignments and view status of previous assignements." src="img/add-assignment.gif" />
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <p>
+                                        Bulk assignment posting across classes, with individual student notes for graders.
+                                        </p>
+                                        <blockquote>
+                                        “I prefer to post assignments in the classes page.” 
+                                        </blockquote>
                                     </div>
-                                    <p class="italic">
-                                    “I prefer to post assignments in the classes page.” 
-                                    </p>
-                                    <p>
-                                    Teachers can add homework from their saved classes. We learned from research that sometimes teachers shared an assignment with various classes. We added the function to add multiple classes per assignment post. The prototype also included the capability to add notes about individual students. Now teachers can inform graders about a student's specific needs.  
-                                    </p>
-                                </div>
 
-                                <div class="lead mb20">
-                                    <h4>
-                                        Digestible data visualization
-                                    </h4>
-                                    <div class="mb40">
-                                        <img class="cast-shadow" alt="Journey Map" src="img/review-assignment.gif" />
+                                    <div class="lead mb20">
+                                        <h4>
+                                        Digestible Data Visualization
+                                        </h4>
+                                        <div class="mb40">
+                                            <!-- Clickable Image -->
+                                            <div class="image-section">
+                                                <figure>
+                                                    <img class="cast-shadow clickable-image" alt="Journey Map" src="img/review-assignment.gif" />
+                                                </figure>
+                                            </div>
+                                        </div>
+                                        <p>
+                                         Upfront bar graphs on grade reports for fast, actionable data.
+                                        </p> 
+                                        <blockquote>
+                                        “I can’t read small text. I like the big numbers.”  
+                                        </blockquote>
                                     </div>
-                                    <p class="italic">
-                                    “I can’t read small text. I like the big numbers.”  
-                                    </p>
-                                    <p>
-                                    From the My Assignments page teachers can post new assignments. They can also see an assignment’s status and access the ones that need reviewing.
-                                    </p>  
-                                    <p>
-                                    In interviews, teachers expressed they liked having graphs first and upfront on the Grading Report. They preferred a bar graph over a circle chart because it was easier for students to understand. Teachers reported that this data helped them create smarter lesson plans.
-                                    </p>
-                                    <p>
-                                    The Top Performers and Needs Support section can inform an educator's strategy. They can group students with similar struggles; or pair top performers with students who need support.
-                                    </p>  
-                                </div>
                             </div>
+
+                            </div>
+                            
                         </div>
                     </section>
                     <!--- END OF SECTION: CONVERGING AND REFINING OUR RESULTS --->
-            
-                    <!--- SECTION: Further testing --->
-                    <section id="further-testing" class="bg-secondary">
-                        <div>
-                            <div class="lead">
-                                <div>
-                                    <h3>Further testing</h3>
-                                    <p>
-                                       My team completed this prototype with real user input in less than three weeks. This was a great challenge and achievement. However, a complete product requires additional testing that tackles other issues brought up in the research. These are some of my team's suggestions:  
-                                    </p>
+                    <!--- SECTION: Next Steps Recommendations --->
+                    <section id="next-steps-recommendations" class="section">
+                        <div class="v-align-children">
+                            <div class="mw600">
+                                <h2 class="txt-sm-24 mb40 mb-xs-24">Next Steps Recommendations</h2>
+                                <div class="mb40">
+                                    <h4 class="mb16">Further Testing</h4>
+                                    <ul class="lead">
+                                        <li>Prioritize high-value analytics and avoid information overload.</li>
+                                        <li> Implement score-tracking over time.</li>
+                                        <li>Automate rubrics, save for reuse, and minimize manual errors.</li>
+                                        <li>Clarify the grader selection/assignment process.</li>
+                                        <li>Suggest favorite graders for ease.</li>
+                                        <li>Enable graders to request assignments.</li>
+                                        <li>Facilitate matching based on qualities and availability.</li>
+                                        <li>Add ratings and reviews for graders, improving quality and trust.</li>
+                                    </ul>
                                 </div>
                                 <div>
-                                    <div class="mb16">
-                                        <h4 class="mb16">Analytics</h4>
-                                        <p>
-                                        Other than an individual and class summary per rubric, our client should find other useful data that helps teachers, with a simple presentation for quick visualization.     
-                                        </p>
-                                    </div>
-                                    <div class="mb16">
-                                        <h4 class="mb16">Data selection </h4>
-                                        <p>
-                                        Avoid excess data. Show only essential, valuable information on graphs.     
-                                        </p>
-                                    </div>
-                                    <div class="mb16">
-                                        <h4 class="mb16">Scores over time </h4>
-                                        <p>
-                                        Having the option to see students’ grades over time is highly useful for teachers.      
-                                        </p>
-                                    </div>
-                                    <div class="mb16">
-                                        <h4 class="mb16">Rubrics</h4>
-                                        <p>
-                                        We recommended automating the process of uploading rubrics to assignments. Teachers can save time by creating and saving rubrics to reuse in the platform, eliminating the need to use external tools like Google or Rubistar. It also reduces human error when graders don't populate the rubric manually. Searching databases to find and load rubrics, such as a standard STEM rubric is also useful.     
-                                        </p>
-                                    </div>
-                                    <div class="mb16">
-                                        <h4 class="mb16">Graders</h4>
-                                        <p>
-                                        Currently, finding a grader is a confusing double opt-in process. It wasn't clear to teachers that they needed to wait for a grader to accept their request to grade an assignment. They confused sending a request to grade with assigning to grade homework. This issue highlights the importance of improving communication between teachers and graders.
-                                        </p>
-                                        <p>
-                                        We recommended showing a list of favorite or suggested graders along with their availability. This addition could make the process more social and also add a personal touch, facilitating an honest and longstanding relationship.
-                                        </p>
-                                    </div>
-                                    <div class="mb16">
-                                        <h4 class="mb16">Rate and review </h4>
-                                        <p>
-                                        A rating system can boost a grader's credibility, improving their skills with teacher's feedback and mentorship. Furthermore, teachers will make informed selection by reading colleague's recommendations and reviews.    
-                                        </p>
-                                    </div>
-                                    <div class="mb16">
-                                        <h4 class="mb16">Streamline requests</h4>
-                                        <p>
-                                        Graders should be able to request working on assignments. This way teachers and graders choose their workload based on preference and availability.      
-                                        </p>
-                                    </div>
+                                    <h4 class="mb16">Future Suggestions</h4>
+                                    <ul class="lead">
+                                        <li>Allow creation, saving, and editing of custom student groups for targeted instruction.</li>
+                                        <li>Display grader feedback directly in assignments to streamline communication.</li>
+                                        <li>Notify teachers when a grader reads their message.</li>
+                                        <li>Consider a mobile app for parents to track their child’s progress.</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </section>
                     <!--- END OF SECTION: Further testing --->
-                    
-                    <!--- SECTION: Future Considerations --->
-                    <section id="future-considerations">
-                        <div>
-                            <div>
-                                <div>
-                                    <div>
-                                        <h3>Future Considerations</h3>
-                                    </div>
-                                        <div>
-                                            <div class="lead">
-                                                <h4>Creating, saving &amp; editing groups </h4>
-                                                <p>
-                                                In our research, I identified and tested an opportunity for the The Graide Network to add value to their product. By helping teachers identify and create custom groups of struggling students to track their progress, teachers can provide targeted lessons, give relevant feedback and measure the effectiveness of their strategy. Grouping students with similar needs and creating custom lessons for them, is a common strategy between teachers. But, currently educators don't have a tool that helps them track progress on particular groups of students.      
-                                                </p>
-                                                <p>
-                                                    This tool can prove particularly valuable for teachers who get pay raises based on student performance. And again, because "grouping" is a standard practice between teachers, it makes the platform relatable and easier to sell.
-                                                </p>
-                                            </div>
-                                            <div class="lead">
-                                                <h4>Grade and feedback within TGN</h4>
-                                                <p class="lead">
-                                                    Graders could add notes straight into the assignment from within the platform, making feedback digestible for students and easier to understand. It also makes the grading process quicker, helping more students in less amount of time. Plus, teachers get their results faster and can implement changes to their curriculum immediately.        
-                                                </p>
-                                            </div>
-                                            <div class="lead">
-                                                <h4>Messaging system for teachers </h4>
-                                                <p>
-                                                    Currently, only graders have a message system in a mobile application. Teachers want a notification for when graders see their message.                      
-                                                </p>
-                                            </div>
-                                            <div class="lead">
-                                                <h4>Mobile app for parents </h4>
-                                                <p>
-                                                    Parents can use the TGN mobile app to see their children’s progress and assignment grades. 
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </section>
-                    <!--- END OF SECTION: Future Considerations --->
-                    
                     <!--- SECTION: Lessons Learned --->
-                    <section id="lessons-learned" class="bg-secondary">
-                        <div>
-                            <div>
-                                <div>
-                                    <h3>Lessons Learned</h3>
-                                </div>
-                                <div class="lead">
-                                    <p>
-                                        Scalability was one of the challenges we faced while redesigning this product. The Graide Network can change the education system by becoming a progress measuring tool for teachers and students. Although that's a good selling point, it is not the platform's minimal viable product. Being a means for teachers to find undergraduate students that can help them grade student's homework and provide actionable feedback is The Graide Network’s primary function. That's what makes the platform unique. Focusing on improving that relationship will add value to the product. In our process, we had to stay mindful and not lose track by adding too many secondary features. Nevertheless, we found that sharing with our client any opportunity for growth was essential.        
-                                    </p>
-                                </div>
+                    <section id="lessons-learned" class="section bg-secondary">
+                        <div class="v-align-children">
+                            <div class="mw600">
+                                <h2 class="txt-sm-24 mb40 mb-xs-24">Lessons Learned</h2>
+                                <p class="lead">
+                                Scalability is key; TGN’s unique value lies in connecting teachers to undergrads who can efficiently grade and provide feedback. While growth opportunities abound, focusing on refining this core function is fundamental.
+                                </p>
                             </div>
                         </div>
                     </section>
                     <!--- END OF SECTION: Lessons Learned --->
                     
                     <!--- SECTION: Final Thoughts --->
-                    <section id="final-thoughts">
-                        <div>
-                            <div>
-                                <div>
-                                    <h3>Final Thoughts</h3>
-                                </div>
-                                <div class="lead">
-                                    <p>
-                                        Being part of something that can change the education system so positively was incredibly rewarding. The Graide Network will benefit a lot of people with its success. Teachers have a tool that gives them more control over students’ progress and achievements. It improves students’ education and their chance of becoming successful, productive citizens, at the same time, bettering educators' own productivity and work-life balance. It also helps parents keep a closer look at their kid's education. And finally, The Graide Network benefits society as a whole by developing generations of more educated people.         
-                                    </p>
-                                </div>
+                    <section id="final-thoughts" class="section">
+                        <div class="v-align-children">
+                            <div class="mw600">
+                                <h2 class="txt-sm-24 mb40 mb-xs-24">Final Thoughts</h2>
+                                <p class="lead">
+                                Redesigning TGN was rewarding. It gives teachers more control and improves outcomes for students, parents, and educators alike, benefiting all involved and contributing to educational progress.
+                                </p>
                             </div>
                         </div>
                     </section>
@@ -1125,7 +853,7 @@
         <!--- SCRIPTS --->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/smooth-scroll-min.js"></script>
+        <!--<script src="js/smooth-scroll-min.js"></script>-->
         <script src="js/parallax.js"></script>
         <script src="js/scripts.min.js"></script>
         <script src="js/flexslider.min.js"></script> 
