@@ -155,16 +155,6 @@ blockquote {
     border-color: #27627D;
 }
 
-.button-tabs .active .tab-title {
-    background: #27627D;
-}
-
-.text-tabs .tab-title span, 
-.button-tabs .tab-title span {
-    text-transform: capitalize;
-    font-size: 10px;
-}
-
 .button-tabs .active .tab-title:hover {
   background:#27627D;
 }
