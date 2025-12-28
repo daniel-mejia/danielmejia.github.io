@@ -523,7 +523,7 @@ ul.lead li {
   background: #27627D !important;
 }
 .bg-secondary {
-  background: #f8f8f8;
+  background: #dedede;
 }
 .bg-white {
   background: #fff;
@@ -2421,7 +2421,7 @@ button[type="submit"] .form-loading {
 /*!---------- 18. ICON FEATURES ----------*/
 .feature.boxed {
   padding: 32px;
-  background: #f8f8f8;
+  background: #dedede;
 }
 .feature.boxed.bg-dark {
   background: #292929;
@@ -2608,7 +2608,7 @@ button[type="submit"] .form-loading {
 }
 .pricing-table.boxed,
 .pricing-table.emphasis {
-  background: #f8f8f8;
+  background: #dedede;
 }
 .pricing-table.emphasis {
   background: #333347;
@@ -3500,7 +3500,7 @@ td {
 }
 .ratings li {
   display: inline-block;
-  background: #f8f8f8;
+  background: #dedede;
   padding: 24px;
   margin-bottom: 16px;
 }
