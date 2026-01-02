@@ -954,7 +954,7 @@ nav.bg-dark .logo-dark {
 .menu > li ul {
   width: 200px;
   padding: 8px 0;
-  background: #292929;
+  background: #dedede;
   position: absolute;
   z-index: 99;
   opacity: 0;
@@ -980,7 +980,7 @@ nav.bg-dark .logo-dark {
   content: "\e649";
 }
 .menu > li > ul li a {
-  color: #fff;
+  color: #292929;
   height: auto;
   padding: 6px 24px;
 }
