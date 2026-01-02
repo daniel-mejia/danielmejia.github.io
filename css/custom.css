@@ -90,20 +90,6 @@ section.cover .list-inline > li {
     bottom: -50px;
 }
 
-.italic {
-    font-style: italic;
-}
-
-div.lead li,
-div.lead p,
-ul.lead li,
-ol.lead > li {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 32px;
-    padding: 4px 0;
-}
-
 ol.marker {
     list-style: none;
     counter-reset: num;
@@ -419,15 +405,7 @@ footer {
     
     h4 {
         font-size: 20px;
-    }  
-    
-    a.btn.btn-lg {
-        width: 100%;
-        height: auto;
-        line-height: 2;
-        white-space: wrap;
-        padding: 8px;
-    }
+    } 
     
     ul.menu li p {
         color: #292929;

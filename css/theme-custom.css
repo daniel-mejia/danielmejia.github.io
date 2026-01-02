@@ -63,12 +63,8 @@ body.boxed-layout,
   right: 0;
 }
 
-ol {
-  list-style: decimal inside;
-}
-
 ul {
-  list-style: disc inside;
+  list-style: none;
 }
 
 ul.bullets {
@@ -519,24 +515,31 @@ ul.lead li {
   line-height: 40px;
 }
 /*!---------- 4. COLOURS ----------*/
+
+/*!------------ Will make the background of an element the primary theme color (in this case green) and the text, white. ------*/
 .bg-primary {
   background: #27627D !important;
 }
+/*!------------ Will make background of an element an off-white, light grey color. ------*/
 .bg-secondary {
   background: #dedede;
 }
 .bg-white {
   background: #fff;
 }
+/*!------------ Will make the background of an element dark and the text light ------*/
 .bg-dark {
   background: #13313E;
 }
+
 .color-body {
   color: #666;
 }
+
 .color-primary {
   color: #27627D !important;
 }
+
 .color-red {
   color: #e31d3b !important;
 }
@@ -799,10 +802,10 @@ body.btn-rounded .btn {
 }
 .btn-white:visited,
 .btn:visited:hover {
-  color: #13313E;
+  color: #fff;
 }
 .btn-white:visited:hover {
-  color: #222;
+  color: #fff;
 }
 .btn-filled:visited {
   color: #fff;
