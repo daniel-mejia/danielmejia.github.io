@@ -420,7 +420,7 @@ a {
   font-weight: 400;
   color: #333347;
   transition: all 0.3s ease;
-  cursor: poitner;
+  cursor: pointer;
 }
 .image-bg a,
 .bg-primary a {
@@ -1310,7 +1310,7 @@ transform: translate3d(200%, 0, 0);
   }
   .module.widget-handle {
     border-left: none;
-    border-top: 1px solid #ccc;
+    border-top: none;
     line-height: 40px;
     min-height: 40px;
   }
