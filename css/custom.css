@@ -224,10 +224,6 @@ div .lttr-spacing-2 {
 
 /**** Navigation ****/
 
-ul.menu li {
-    list-style: none;
-}
-
 .menu li a,
 ul.menu li p {
     text-transform: none;
