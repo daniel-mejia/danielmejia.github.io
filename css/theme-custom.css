@@ -1404,6 +1404,7 @@ nav.fixed.scrolled {
   opacity: 1;
 }
 nav.transparent .menu > li > a,
+nav.transparent .menu > li > p,
 nav.transparent .module.widget-handle i,
 nav.transparent .nav-utility {
   color: #fff;
