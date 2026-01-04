@@ -111,7 +111,7 @@ hr.short-thick {
   padding-left: 0;
 }
 .bg-primary .list-inline i {
-  color: #27627D;
+  color: #f8f8f8;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -585,7 +585,13 @@ footer.bg-dark h6,
 .bg-primary h6 {
   color: #ffffff;
 }
+
 .bg-dark p,
+.bg-dark li,
+.bg-primary li {
+    color: #f8f8f8;
+}
+
 nav.bg-dark p,
 footer.bg-dark p,
 .bg-primary p,
@@ -593,12 +599,12 @@ footer.bg-dark p,
 nav.bg-dark span,
 footer.bg-dark span,
 .bg-primary span,
-.bg-dark li,
 nav.bg-dark li,
 footer.bg-dark li,
-.bg-primary li {
-  color: #fefefe;
+.bg-dark a {
+  color: #FFE082;
 }
+
 @media all and (max-width: 767px) {
   section {
     padding: 80px 0;
@@ -763,13 +769,13 @@ footer.bg-dark li,
 .btn-white,
 .image-bg .btn,
 .image-bg .btn:visited {
-  color: #FFE082;
-  border-color: #FFE082;
+  color: #fff;
+  border-color: #fff;
 }
 .btn-white:hover,
 .image-bg .btn:hover,
 .image-bg .btn:visited:hover {
-  background: #FFE082;
+  background: #fff;
   color: #13313E;
 }
 .image-bg .btn.btn-filled,
@@ -802,7 +808,7 @@ body.btn-rounded .btn {
 }
 .btn-white:visited,
 .btn:visited:hover {
-  color: #13313E;
+  color: #fff;
 }
 .btn-white:visited:hover {
   color: #13313E;
@@ -811,19 +817,20 @@ body.btn-rounded .btn {
   color: #fff;
 }
 .btn.bg-dark {
-  color: #FFE082;
-  border-color: #FFE082;
-}
-.btn.bg-dark:hover {
-  color: #13313E;
-  background: #FFE082;
-}
-.bg-primary .btn {
   color: #fff;
   border-color: #fff;
 }
-.bg-primary .btn:hover {
-  background: #fff;
+.btn.bg-dark:hover {
+  background: #434343;
+}
+.bg-primary .btn,
+.bg-dark .btn {
+  color: #FFE082;
+  border-color: #FFE082;
+}
+.bg-primary .btn:hover,
+.bg-dark .btn:hover {
+  background: #FFE082;
   color: #13313E;
 }
 /*!---------- 7. NAVIGATION ----------*/
@@ -925,7 +932,7 @@ nav.bg-dark .logo-dark {
 }
 .menu li a {
   font-size: 11px;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 600;
   letter-spacing: 1px;
   color: #292929;
@@ -1555,7 +1562,7 @@ nav.nav-centered.outOfSight .logo {
 }
 .image-bg .icon,
 .bg-dark .icon {
-  color: #fff;
+  color: #FFE082;
 }
 .icon-lg {
   font-size: 80px;
@@ -4662,7 +4669,7 @@ section + .portfolio-pullup {
 }
 /*!---------- 36. FOOTERS ----------*/
 footer.bg-dark a {
-  color: #fff;
+  color: #FFE082;
 }
 .footer-1 .logo {
   max-height: 30px;
@@ -4674,12 +4681,12 @@ footer.bg-dark a {
   margin: 0;
 }
 .image-bg .social-list a {
-  color: #fff;
+  color: #FFE082;
 }
 .bg-dark .social-list a,
 .image-bg .social-list a {
-  color: #fff;
-  opacity: .5;
+  color: #FFE082;
+  opacity: .8;
 }
 .bg-dark .social-list a:hover {
   opacity: 1;
@@ -4700,15 +4707,16 @@ footer.bg-dark a {
   opacity: 1;
 }
 .bg-dark .back-to-top {
-  border-color: #fff;
+  border-color: #FFE082;
+  color: #FFE082;
 }
 .bg-dark .back-to-top:active,
-.bg-dark .back-to-top:focus {
-  color: #fff;
-}
+.bg-dark .back-to-top:focus,
 .bg-dark .back-to-top:hover {
-  background: none;
+  color: #13313E;
+  background: #FFE082;
 }
+
 /*!---------- 36. SPACING ----------*/
 .mr0 {
   margin-right: 0;
