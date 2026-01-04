@@ -802,10 +802,10 @@ body.btn-rounded .btn {
 }
 .btn-white:visited,
 .btn:visited:hover {
-  color: #fff;
+  color: #FFE082;
 }
 .btn-white:visited:hover {
-  color: #fff;
+  color: #FFE082;
 }
 .btn-filled:visited {
   color: #fff;
