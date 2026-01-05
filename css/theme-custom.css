@@ -588,17 +588,17 @@ footer.bg-dark h6,
 
 .bg-dark p,
 .bg-dark li,
-.bg-primary li {
+.bg-primary li,
+.bg-primary p,
+.bg-dark span,
+.bg-primary span {
     color: #f8f8f8;
 }
 
 nav.bg-dark p,
 footer.bg-dark p,
-.bg-primary p,
-.bg-dark span,
 nav.bg-dark span,
 footer.bg-dark span,
-.bg-primary span,
 nav.bg-dark li,
 footer.bg-dark li,
 .bg-dark a {
