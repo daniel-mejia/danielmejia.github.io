@@ -428,7 +428,7 @@ a {
 }
 .image-bg a:hover,
 .bg-primary a:hover {
-  color: #fff;
+  color: #FFE082;
   opacity: .9;
 }
 .bg-light a {
