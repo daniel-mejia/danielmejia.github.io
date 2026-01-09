@@ -355,3 +355,10 @@ button.close:hover {
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
+.tgn {
+    background-color: #133D2A;
+}
+
+.smex {
+    background-color: #244885;
+}
