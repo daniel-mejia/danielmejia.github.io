@@ -2433,7 +2433,7 @@ button[type="submit"] .form-loading {
 /*!---------- 18. ICON FEATURES ----------*/
 .feature.boxed {
   padding: 32px;
-  background: #dedede;
+  background: #f8f8f8;
 }
 .feature.boxed.bg-dark {
   background: #292929;
