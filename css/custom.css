@@ -276,6 +276,10 @@ footer {
 
 /* Clickable Image */
 
+figure {
+    margin: 0;
+}
+
 .clickable-image {
     width: 100%; /* Adjust size as needed */
     cursor: pointer;
