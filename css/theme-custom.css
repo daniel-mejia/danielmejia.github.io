@@ -1384,7 +1384,7 @@ nav.outOfSight {
   transform: translate3d(0, -200px, 0);
 }
 nav.scrolled {
-  transform: translate3d(0);
+  transform: translate3d(0, -200px, 0);
   transition: all 0.3s ease;
 }
 nav.fixed,
