@@ -18,6 +18,36 @@ section.cover .list-inline > li {
     padding: 0 16px;
 }
 
+dl.inline-list {
+    display: table;
+    border-collapse: separate; 
+    border-spacing: 0 8px;
+    width: 100%;
+}
+
+.inline-list dt,
+.inline-list dd {
+    display: table-row;
+    width: 50%;
+}
+
+.inline-list dd {
+    height: 24px;
+}
+
+.inline-list dt:after {
+    content: ":";
+}
+
+.inline-list dd:after {
+    content: ", ";
+}
+
+.inline-list dd:last-child:after {
+    content: "";
+}
+
+
 .logo {
     height: 75px;
 }
@@ -34,23 +64,27 @@ ol.marker {
 
 ol.marker li {
     counter-increment: num;
+    position: relative;
+    margin-bottom: 32px;
 }
 
-ol.marker li:before {
+ol.marker li::before {
     content: counter(num) "";
     color: white;
     font-weight: bold;
-    padding: 6px 16px;
+    padding: 8px 16px;
     background-color: #0F6D7D;
     border-radius: 100%;
     text-align: center;
-    margin-right: 16px;
     margin-left: -60px;
-    display: inline-flex;
-    list-style-position: outside;
+    position: absolute;
+    top: 20%; /* Aligns the top of the ::before to the vertical middle of the li */
+    transform: translateY(-50%); /* Shifts the ::before up by half its own height to truly center it */
+  /* You will also need to adjust left/right positioning as needed */
+    left: -20px; /* Example value, adjust as necessary */
 }
 
-.image-caption .caption:before {
+.image-caption .caption::before {
     background: none;
 }
 
@@ -365,4 +399,8 @@ button.close:hover {
 
 .smex {
     background-color: #244885;
+}
+
+.emotilink {
+    background-color: #7B3237;
 }
