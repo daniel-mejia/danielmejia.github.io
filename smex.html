@@ -79,12 +79,12 @@
         <!--- end nav bar --->
         <!--- header --->
 		<div class="main-container">
-		    <section class="bg-dark smex pb0">
+		    <section class="bg-dark smex pb0 pt-xs-120">
 		        <div class="container pt48">
 		            <div class="row mb16 mb-xs-0">
 		                <div class="col-sm-10 col-sm-offset-1 text-center">
-		                    <h1 class="large">SMEx</h1>
-		                    <p class="lead">JPMorgan Chase's supplier selection and management.<br></p>
+		                    <h1 class="large">SMEX - Supplier Management Expert</h1>
+		                    <p class="lead">Designing a centralized supplier platform for JPMorgan Chase's Legal department - consolidating fragmented data, manual processes, and three separate databases into a single, searchable tool used by thousands of internal employees.<br></p>
 		                    <!--- Try the Interactive Prototype --->
                             <div class="mt56">
                                 <a class="btn btn-lg" href="https://www.figma.com/proto/BbzTReuVdr1op7Vxv0oj9N/SMEx?page-id=2001%3A2888&node-id=2109-1463&viewport=-23%2C-667%2C0.3&t=LR6vRExZlnfQfznt-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2109%3A1480&hide-ui=1" target="_blank">Try the Interactive Prototype</a>
@@ -106,7 +106,7 @@
         <div class="container-fluid">
             <div class="row">
                 <!-- Side Navigation -->
-                <nav id="navbar-example" class="text-left col-md-2 sidebar" data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="50">
+                <nav id="navbar-example" class="text-left col-xs-2 sidebar" data-bs-spy="scroll" data-bs-target="#navbar-example" data-bs-offset="50">
                   <ul class="nav nav-pills">
                     <li class="active "><a href="#about">About SMEx</a></li>
                     <li><a href="#my-role">My Role</a></li>
@@ -124,14 +124,45 @@
                 </nav>
                 <!--- END of Side Navigation --->
                 <!-- Main Content -->
-                <main id="mainContent" class="main-content col-xs-12 col-sm-10">
+                <main id="mainContent" class="main-content col-xs-12 col-md-push-1">
                     <!--- SECTION: About SMEx --->
                     <section id="about" class="section v-align-children bg-secondary">
                         <div class="mw600">
+                            <div class="feature bordered text-center bg-secondary mb64">
+                                <div class="row">
+                                    <div class="cell">
+                                        <div class="preview">Company</div>
+                                        <div class="text-left">JPMorganChase</div>
+                                    </div>
+                                    <div class="cell">
+                                        <div class="preview">Department</div>
+                                        <div class="text-left">Legal - Vendor Management</div>
+                                    </div>
+                                    <div class="cell">
+                                        <div class="preview">My role</div>
+                                        <div class="text-left">Lead Product Designer</div>
+                                    </div>
+                                    <div class="cell">
+                                        <div class="preview">Team</div>
+                                        <div class="text-left">UX researcher, PM, engineering</div>
+                                    </div>
+                                    <div class="cell">
+                                        <div class="preview">Deliverable</div>
+                                        <div class="text-left">End-to-end web application</div>
+                                    </div>
+                                    <div class="cell">
+                                        <div class="preview">Platform</div>
+                                        <div class="text-left">Salt Design System (J.P.Morgan)</div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="mb56">
                                 <h2 class="mb-xs-24">About SMEx</h2>
                                 <p class="lead">
-                                    Supplier Management Expert (SMEx) is a web application designed to address inefficiencies in managing JPMorgan Chase's vetted supplier list. The tool aims to streamline supplier management processes, enabling internal teams to efficiently find, evaluate, and onboard suppliers while aligning with company goals such as sustainability and diversity. 
+                                    JPMorgan Chase's Legal department managed thousands of vendor relationships but lacked a centralized system to manage them. Supplier data lived across multiple databases and a separate data repository that the company had tried to consolidate for years. Internal employees searching for approved vendors had to manually comb through external directories. They then prepared presentations to justify their choices and presented them to the Supplier Management Team for approval. This process was slow, inconsistent, and completely invisible to those trying to get work done.  
+                                </p>
+                                 <p class="lead">
+                                      I was brought in as lead designer to help fix that. SMEx, or Supplier Management Expert, is the product we built. It is a centralized, searchable web application that gives internal teams a single place to find, evaluate, and request vendors. It also provides the Supplier Management Team with a structured solution to maintain and publish a vetted supplier list that aligns with JPMorgan's sustainability, diversity, and compliance goals.  
                                 </p>
                             </div>
                         <!--- END OF SECTION: About SMEx --->
@@ -139,13 +170,23 @@
                             <div id="my-role">
                                 <h3 class="txt-sm-24 mb40 mb-xs-24 ">My Role</h3>
                                 <p class="lead">
-                                    As the Lead Senior Product Designer, I:
+                                     I led design end-to-end, from the first whiteboarding session through final delivery. I was the sole designer on a cross-functional team working with a UX researcher, product manager, and engineering.
+                                </p>
+                                <p class="lead">
+                                     One of the most complex parts of the project happened before any wireframe was drawn. The company wanted to consolidate multiple databases and a separate data repository into one unified interface. I facilitated whiteboarding sessions with business stakeholders and product and engineering teams. We mapped the existing data, identified its locations, and defined its structure in the UI. This work directly shaped the information architecture and helped engineering plan the required data integrations.
+                                </p>
+                                <p class="lead">
+                                    From there, my responsibilities included:
                                 </p>
                                 <ul class="bullets">
-                                    <li>Conducted discovery and evaluative research in collaboration with the UX Research team.</li>
-                                    <li>Designed the user interface and created prototypes for testing and feedback.</li>
-                                    <li>Partnered with stakeholders to gather requirements and prioritize features.</li>
-                                    <li>Collaborated with developers to ensure the designs were implemented seamlessly.</li>
+                                    <li>Leading discovery and evaluative research - user interviews, surveys, and an Importance Score methodology to prioritize what data fields mattered most to users.
+                                    </li>
+                                    <li>Designing the full interface using J.P. Morgan's internal design system, later replaced with Salt Design System (used for this case study), ensuring consistency with internal tools and reducing engineering effort.
+                                    </li>
+                                    <li>Creating and testing prototypes with internal users, iterating on search filters, supplier profiles. and request workflows based on feedback.
+                                    </li>
+                                    <li>Partnering with developers through implementation to ensure the delivered product matched the intended experience.
+                                    </li>
                                 </ul>
                             </div>
                     <!--- END OF SECTION: My Role --->    
@@ -269,7 +310,8 @@
                         <div id="Information-Architecture" class="mb80">
                             <div class="v-align-children">
                                 <div class="mw600 mb40">
-                                    <h3>Information Architecture</h3>
+                                    <h3>Information Architecture (IA)</h3>
+                                     <p class="lead">Before defining the IA, we needed to understand the data landscape. More than three separate databases and a data repository that each held different parts of the supplier picture. I facilitated sessions with business and engineering to map what existed, identify gaps, and determine what consolidation was required before the Ul could work as intended.</p>
                                     <ul class="lead bullets">
                                         <li>Conducted workshops and surveys to obtain a ranked list of the information needed to help us outline the data anticipated for searching and filtering and organize the suppliers’ profiles.</li>
                                         <li>Calculated survey respondents' Importance Score to rank data fields in order of priority.</li>

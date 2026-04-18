@@ -1,5 +1,56 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
 
+section#about {  
+    
+    div.feature.bordered {
+        border-radius: 0;
+        padding: 16px;
+    }
+    
+    div.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    margin: 8px 0;
+    max-width: 100%;
+    }
+    
+    div.row:before,
+    div.row:after {
+        content: none;
+    }
+    
+     div.cell {
+        border-radius: 0; 
+        border: 0.5px solid #ccc;
+        background: #fefefe;
+        padding: 16px;
+        display: flex; 
+        flex-direction: column; 
+        gap: 4px;
+        overflow-wrap: break-word;
+    }
+    
+    div.preview {
+        height: 16px; 
+        display: flex; 
+        align-items: flex-start; 
+        justify-content: flex-start;
+        font-size: 11px; 
+        font-weight: 600; 
+        flex-shrink: 0;
+        overflow-wrap: break-word;
+        line-height: 1.25;
+    }
+    
+    @media (max-width: 600px) {
+        div.row  {
+            grid-template-columns: 1fr 1fr; 
+        }
+    }
+}
+
+
 section#accessible-UI { 
     
     
@@ -132,8 +183,19 @@ section#accessible-UI {
 
 /**** Table *****/
 
+.container,
+.container-fluid {
+padding: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .mw600 {
     max-width: 600px;
+    margin: auto;
 }
 
 .overlay:before {
