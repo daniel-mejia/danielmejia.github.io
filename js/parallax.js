@@ -1,234 +1,280 @@
 function mr_parallax() {
-    "use strict";
-    function a(a) {
-        for (var b = 0; b < a.length; b++) if ("undefined" != typeof document.body.style[a[b]]) return a[b];
+    /* jshint validthis: true */
+
+    // Find the correct transform property for this browser
+    function getSupportedTransformProp(props) {
+        for (var i = 0; i < props.length; i++) {
+            if ("undefined" !== typeof document.body.style[props[i]]) {
+                return props[i];
+            }
+        }
         return null;
     }
-    function b() {
-        var a,
-            b = 0;
-        return (
-            j()
-                ? ((b = jQuery(".viu").find("nav:first").outerHeight(!0)),
-                  (a = jQuery(".viu").find("nav:first").css("position")),
-                  ("absolute" === a || "fixed" === a) && (b = 0))
-                : (b = jQuery(document).find("nav:first").outerHeight(!0)),
-            b
-        );
-    }
-    function c(a, b, c, d) {
-        var e = a - 1;
-        return (e /= d), (a /= d), e--, a--, c * (a * a * a * a * a + 1) + b - (c * (e * e * e * e * e + 1) + b);
-    }
-    function d() {
-        if (F) {
-            for (var a = k.length, b = f(); a--; ) e(k[a], b, o, p);
-            F = !1;
+
+    // Get the height of the nav bar, accounting for absolute/fixed positioning
+    function getNavHeight() {
+        var navHeight = 0;
+        if (isViuVariant()) {
+            navHeight = jQuery(".viu").find("nav:first").outerHeight(true);
+            var navPos = jQuery(".viu").find("nav:first").css("position");
+            if (navPos === "absolute" || navPos === "fixed") {
+                navHeight = 0;
+            }
+        } else {
+            navHeight = jQuery(document).find("nav:first").outerHeight(true);
         }
-        s &&
-            ((D += -v * c(u, 0, A, C)),
-            (D > B || -B > D) && (E.scrollBy(0, D), (D = 0)),
-            u++,
-            u > C && ((u = 0), (s = !1), (t = !0), (v = 0), (w = 0), (x = 0), (D = 0))),
-            l(d);
+        return navHeight;
     }
-    function e(a, b, c, d) {
-        var e = j();
-        e
-            ? b + q - r > a.elemTop &&
-              b - r < a.elemBottom &&
-              (a.isFirstSection
-                  ? (a.imageHolder.style[n] = c + b / 2 + d)
-                  : (a.imageHolder.style[n] = c + (b - a.elemTop - r) / 2 + d))
-            : b + q > a.elemTop &&
-              b < a.elemBottom &&
-              (a.isFirstSection
-                  ? (a.imageHolder.style[n] = c + b / 2 + d)
-                  : (a.imageHolder.style[n] = c + (b + q - a.elemTop) / 2 + d));
+
+    // Easing function for smooth scroll assist
+    function easeScroll(current, start, change, duration) {
+        var prev = current - 1;
+        prev /= duration;
+        current /= duration;
+        prev--;
+        current--;
+        var a = change * (current * current * current * current * current + 1) + start;
+        var b = change * (prev * prev * prev * prev * prev + 1) + start;
+        return a - b;
     }
-    function f() {
-        return E != window
-            ? E.scrollTop
-            : 0 === document.documentElement.scrollTop
-              ? document.body.scrollTop
-              : document.documentElement.scrollTop;
-    }
-    function g() {
-        F = !0;
-    }
-    function h(a) {
-        G.mr_scrollAssist === !0 &&
-            (a.preventDefault && a.preventDefault(),
-            (v = a.notRealWheel
-                ? -a.deltaY / 4
-                : 1 == a.deltaMode
-                  ? -a.deltaY / 3
-                  : 100 === Math.abs(a.deltaY)
-                    ? -a.deltaY / 120
-                    : -a.deltaY / 40),
-            (v = -y > v ? -y : v),
-            (v = v > y ? y : v),
-            (s = !0),
-            (u = z));
-    }
-    function i(a) {
-        var b = {};
-        return a && "[object Function]" === b.toString.call(a);
-    }
-    function j() {
-        return "undefined" == typeof window.mr_variant ? !1 : !0;
-    }
-    var k,
-        l =
-            window.requestAnimationFrame ||
-            window.mozRequestAnimationFrame ||
-            window.webkitRequestAnimationFrame ||
-            window.msRequestAnimationFrame,
-        m = ["transform", "msTransform", "webkitTransform", "mozTransform", "oTransform"],
-        n = a(m),
-        o = "translate3d(0,",
-        p = "px,0)",
-        q = Math.max(document.documentElement.clientHeight, window.innerHeight || 0),
-        r = 0,
-        s = !1,
-        t = !0,
-        u = 0,
-        v = 0,
-        w = 0,
-        x = 0,
-        y = 2.2,
-        z = 2,
-        A = 350,
-        B = 1,
-        C = 35,
-        D = 0,
-        E = window,
-        F = (j(), !1),
-        G = this;
-    (this.mr_scrollAssist = $("body").hasClass("scroll-assist") ? !0 : !1),
-        jQuery(document).ready(function () {
-            G.documentReady();
-        }),
-        jQuery(window).load(function () {
-            G.windowLoad();
-        }),
-        (this.getScrollingState = function () {
-            return u > 0 ? !0 : !1;
-        }),
-        (this.documentReady = function (a) {
-            return (
-                (q = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)),
-                jQuery("body").hasClass("parallax-2d") && ((o = "translate(0,"), (p = "px)")),
-                /Android|iPad|iPhone|iPod|BlackBerry|Windows Phone/i.test(
-                    navigator.userAgent || navigator.vendor || window.opera
-                )
-                    ? jQuery(".parallax").removeClass("parallax")
-                    : l && (G.profileParallaxElements(), G.setupParallax()),
-                i(a) ? void a() : void 0
-            );
-        }),
-        (this.windowLoad = function () {
-            (q = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)),
-                (r = b()),
-                window.mr_parallax.profileParallaxElements();
-        }),
-        (this.setupParallax = function () {
-            j() &&
-                ((E = jQuery(".viu").get(0)),
-                "undefined" != typeof E &&
-                    (E.scrollBy = function (a, b) {
-                        (this.scrollTop += b), (this.scrollLeft += a);
-                    })),
-                "undefined" != typeof E &&
-                    (E.addEventListener("scroll", g, !1),
-                    window.addWheelListener(E, h, !1),
-                    window.addEventListener(
-                        "resize",
-                        function () {
-                            (q = Math.max(document.documentElement.clientHeight, window.innerHeight || 0)),
-                                (r = b()),
-                                G.profileParallaxElements();
-                        },
-                        !1
-                    ),
-                    d());
-        }),
-        (this.profileParallaxElements = function () {
-            (k = []), (r = b());
-            var a = j(),
-                c =
-                    ".parallax > .background-image-holder, .parallax ul.slides > li > .background-image-holder, .parallax ul.slides .owl-item > li > .background-image-holder";
-            a &&
-                (c =
-                    ".viu .parallax > .background-image-holder, .viu .parallax ul.slides > li > .background-image-holder, .parallax ul.slides .owl-item > li > .background-image-holder"),
-                jQuery(c).each(function (b) {
-                    var c = jQuery(this).closest(".parallax"),
-                        d = a ? c.position().top : c.offset().top;
-                    k.push({
-                        section: c.get(0),
-                        outerHeight: c.outerHeight(),
-                        elemTop: d,
-                        elemBottom: d + c.outerHeight(),
-                        isFirstSection: c.is(":nth-of-type(1)") ? !0 : !1,
-                        imageHolder: jQuery(this).get(0)
-                    }),
-                        a
-                            ? a &&
-                              (c.is(":nth-of-type(1)")
-                                  ? G.mr_setTranslate3DTransform(jQuery(this).get(0), 0 === f() ? 0 : f() / 2)
-                                  : G.mr_setTranslate3DTransform(jQuery(this).get(0), (f() - d - r) / 2))
-                            : c.is(":nth-of-type(1)")
-                              ? G.mr_setTranslate3DTransform(jQuery(this).get(0), 0 === f() ? 0 : f() / 2)
-                              : G.mr_setTranslate3DTransform(jQuery(this).get(0), (f() + q - d) / 2);
-                });
-        }),
-        (this.mr_setTranslate3DTransform = function (a, b) {
-            a.style[n] = o + b + p;
-        });
-}
-(window.mr_parallax = new mr_parallax()),
-    (function (a, b) {
-        function c(b, c, g, h) {
-            b[d](
-                f + c,
-                "wheel" == e
-                    ? g
-                    : function (b) {
-                          !b && (b = a.event);
-                          var c = {
-                              originalEvent: b,
-                              target: b.target || b.srcElement,
-                              type: "wheel",
-                              deltaMode: "MozMousePixelScroll" == b.type ? 0 : 1,
-                              deltaX: 0,
-                              deltaZ: 0,
-                              notRealWheel: 1,
-                              preventDefault: function () {
-                                  b.preventDefault ? b.preventDefault() : (b.returnValue = !1);
-                              }
-                          };
-                          return (
-                              "mousewheel" == e
-                                  ? ((c.deltaY = (-1 / 40) * b.wheelDelta),
-                                    b.wheelDeltaX && (c.deltaX = (-1 / 40) * b.wheelDeltaX))
-                                  : (c.deltaY = b.detail / 3),
-                              g(c)
-                          );
-                      },
-                h || !1
-            );
+
+    // Main animation loop
+    function animationLoop() {
+        if (needsProfileUpdate) {
+            var count = parallaxElements.length;
+            var scrollPos = getScrollPosition();
+            while (count--) {
+                updateParallaxElement(parallaxElements[count], scrollPos, translatePrefix, translateSuffix);
+            }
+            needsProfileUpdate = false;
         }
-        var d,
-            e,
-            f = "";
-        a.addEventListener ? (d = "addEventListener") : ((d = "attachEvent"), (f = "on")),
-            (e =
-                "onwheel" in b.createElement("div")
-                    ? "wheel"
-                    : "undefined" != typeof b.onmousewheel
-                      ? "mousewheel"
-                      : "DOMMouseScroll"),
-            (a.addWheelListener = function (a, b, d) {
-                c(a, e, b, d), "DOMMouseScroll" == e && c(a, "MozMousePixelScroll", b, d);
+
+        if (scrollAssistActive) {
+            scrollDelta += -scrollVelocity * easeScroll(scrollStep, 0, scrollAmount, scrollDuration);
+            if (scrollDelta > scrollThreshold || -scrollThreshold > scrollDelta) {
+                scrollContainer.scrollBy(0, scrollDelta);
+                scrollDelta = 0;
+            }
+            scrollStep++;
+            if (scrollStep > scrollDuration) {
+                scrollStep = 0;
+                scrollAssistActive = false;
+                scrollComplete = true;
+                scrollVelocity = 0;
+                scrollAccum = 0;
+                scrollExtra = 0;
+                scrollDelta = 0;
+            }
+        }
+
+        requestAnimationFrame(animationLoop);
+    }
+
+    // Apply parallax transform to a single element
+    function updateParallaxElement(el, scrollPos, prefix, suffix) {
+        var viu = isViuVariant();
+        if (viu) {
+            if (scrollPos + viewportHeight - navOffset > el.elemTop && scrollPos - navOffset < el.elemBottom) {
+                if (el.isFirstSection) {
+                    el.imageHolder.style[transformProp] = prefix + scrollPos / 2 + suffix;
+                } else {
+                    el.imageHolder.style[transformProp] = prefix + (scrollPos - el.elemTop - navOffset) / 2 + suffix;
+                }
+            }
+        } else {
+            if (scrollPos + viewportHeight > el.elemTop && scrollPos < el.elemBottom) {
+                if (el.isFirstSection) {
+                    el.imageHolder.style[transformProp] = prefix + scrollPos / 2 + suffix;
+                } else {
+                    el.imageHolder.style[transformProp] = prefix + (scrollPos + viewportHeight - el.elemTop) / 2 + suffix;
+                }
+            }
+        }
+    }
+
+    // FIX: Use window.scrollY instead of deprecated document.body.scrollTop
+    function getScrollPosition() {
+        if (scrollContainer !== window) {
+            return scrollContainer.scrollTop;
+        }
+        return window.scrollY;
+    }
+
+    // Mark that parallax elements need recalculating on next frame
+    function flagUpdate() {
+        needsProfileUpdate = true;
+    }
+
+    // FIX: Handle wheel events for scroll assist
+    // Uses addEventListener with { passive: false } to allow preventDefault in Chrome
+    function handleWheel(e) {
+        if (self.mr_scrollAssist === true) {
+            if (e.preventDefault) { e.preventDefault(); }
+            if (e.deltaMode === 1) {
+                scrollVelocity = -e.deltaY / 3;
+            } else if (Math.abs(e.deltaY) === 100) {
+                scrollVelocity = -e.deltaY / 120;
+            } else {
+                scrollVelocity = -e.deltaY / 40;
+            }
+            scrollVelocity = scrollVelocity < -maxVelocity ? -maxVelocity : scrollVelocity;
+            scrollVelocity = scrollVelocity > maxVelocity ? maxVelocity : scrollVelocity;
+            scrollAssistActive = true;
+            scrollStep = scrollAssistStartStep;
+        }
+    }
+
+    function isFunction(fn) {
+        return typeof fn === "function";
+    }
+
+    // Check if we are in the Viu theme variant
+    function isViuVariant() {
+        return typeof window.mr_variant !== "undefined";
+    }
+
+    // --- State variables ---
+    var parallaxElements,
+        transformProps    = ["transform", "msTransform", "webkitTransform", "mozTransform", "oTransform"],
+        transformProp     = getSupportedTransformProp(transformProps),
+        translatePrefix   = "translate3d(0,",
+        translateSuffix   = "px,0)",
+        viewportHeight    = Math.max(document.documentElement.clientHeight, window.innerHeight || 0),
+        navOffset         = 0,
+        scrollAssistActive    = false,
+        scrollComplete        = true,
+        scrollStep            = 0,
+        scrollVelocity        = 0,
+        scrollAccum           = 0,
+        scrollExtra           = 0,
+        maxVelocity           = 2.2,
+        scrollAssistStartStep = 2,
+        scrollAmount          = 350,
+        scrollThreshold       = 1,
+        scrollDuration        = 35,
+        scrollDelta           = 0,
+        scrollContainer       = window,
+        needsProfileUpdate    = false,
+        self                  = this;
+
+    this.mr_scrollAssist = jQuery("body").hasClass("scroll-assist") ? true : false;
+
+    // FIX: Use jQuery 3.x compatible .on("ready") and .on("load")
+    jQuery(document).ready(function () {
+        self.documentReady();
+    });
+
+    jQuery(window).on("load", function () {
+        self.windowLoad();
+    });
+
+    this.getScrollingState = function () {
+        return scrollStep > 0 ? true : false;
+    };
+
+    this.documentReady = function (callback) {
+        viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+        // Use 2D translate if body has parallax-2d class
+        if (jQuery("body").hasClass("parallax-2d")) {
+            translatePrefix = "translate(0,";
+            translateSuffix = "px)";
+        }
+
+        // FIX: More reliable mobile detection using pointer and touch APIs
+        var isMobile = window.matchMedia("(pointer: coarse)").matches || navigator.maxTouchPoints > 0;
+
+        if (isMobile) {
+            jQuery(".parallax").removeClass("parallax");
+        } else {
+            self.profileParallaxElements();
+            self.setupParallax();
+        }
+
+        if (isFunction(callback)) {
+            callback();
+        }
+    };
+
+    this.windowLoad = function () {
+        viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        navOffset = getNavHeight();
+        window.mr_parallax.profileParallaxElements();
+    };
+
+    this.setupParallax = function () {
+        // Set up Viu variant scroll container
+        if (isViuVariant()) {
+            scrollContainer = jQuery(".viu").get(0);
+            if (typeof scrollContainer !== "undefined") {
+                scrollContainer.scrollBy = function (x, y) {
+                    this.scrollTop += y;
+                    this.scrollLeft += x;
+                };
+            }
+        }
+
+        if (typeof scrollContainer !== "undefined") {
+            scrollContainer.addEventListener("scroll", flagUpdate, false);
+
+            // FIX: Use native wheel event with { passive: false } to allow preventDefault
+            // This replaces the old addWheelListener polyfill which caused Chrome warnings
+            scrollContainer.addEventListener("wheel", handleWheel, { passive: false });
+
+            window.addEventListener("resize", function () {
+                viewportHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+                navOffset = getNavHeight();
+                self.profileParallaxElements();
+            }, false);
+
+            animationLoop();
+        }
+    };
+
+    this.profileParallaxElements = function () {
+        parallaxElements = [];
+        navOffset = getNavHeight();
+
+        var viu = isViuVariant();
+        var selector = ".parallax > .background-image-holder, .parallax ul.slides > li > .background-image-holder, .parallax ul.slides .owl-item > li > .background-image-holder";
+
+        if (viu) {
+            selector = ".viu .parallax > .background-image-holder, .viu .parallax ul.slides > li > .background-image-holder, .parallax ul.slides .owl-item > li > .background-image-holder";
+        }
+
+        jQuery(selector).each(function () {
+            var section  = jQuery(this).closest(".parallax");
+            var elemTop  = viu ? section.position().top : section.offset().top;
+
+            parallaxElements.push({
+                section:        section.get(0),
+                outerHeight:    section.outerHeight(),
+                elemTop:        elemTop,
+                elemBottom:     elemTop + section.outerHeight(),
+                isFirstSection: section.is(":nth-of-type(1)") ? true : false,
+                imageHolder:    jQuery(this).get(0)
             });
-    })(window, document);
+
+            var scrollPos = getScrollPosition();
+            if (viu) {
+                if (section.is(":nth-of-type(1)")) {
+                    self.mr_setTranslate3DTransform(jQuery(this).get(0), scrollPos === 0 ? 0 : scrollPos / 2);
+                } else {
+                    self.mr_setTranslate3DTransform(jQuery(this).get(0), (scrollPos - elemTop - navOffset) / 2);
+                }
+            } else {
+                if (section.is(":nth-of-type(1)")) {
+                    self.mr_setTranslate3DTransform(jQuery(this).get(0), scrollPos === 0 ? 0 : scrollPos / 2);
+                } else {
+                    self.mr_setTranslate3DTransform(jQuery(this).get(0), (scrollPos + viewportHeight - elemTop) / 2);
+                }
+            }
+        });
+    };
+
+    this.mr_setTranslate3DTransform = function (element, value) {
+        element.style[transformProp] = translatePrefix + value + translateSuffix;
+    };
+}
+
+window.mr_parallax = new mr_parallax();

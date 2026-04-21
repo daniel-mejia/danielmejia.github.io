@@ -15,7 +15,7 @@ $(document).ready(function() {
     // Update scroll variable for scrolling functions
 
     addEventListener('scroll', function() {
-        mr_scrollTop = window.pageYOffset;
+        mr_scrollTop = window.scrollY;
     }, false);
 
     // Append .background-image-holder <img>'s as CSS backgrounds
@@ -199,136 +199,6 @@ $(document).ready(function() {
             $(this).closest('.projects').find('.project').removeClass('inactive');
         }
     });
-
-    // Twitter Feed
-       $('.tweets-feed').each(function(index) {
-           jQuery(this).attr('id', 'tweets-' + index);
-       }).each(function(index) {
-           var element = $('#tweets-' + index);
-           var TweetConfig = {
-               "domId": '',
-               "maxTweets": element.attr('data-amount'),
-               "enableLinks": true,
-               "showUser": true,
-               "showTime": true,
-               "dateFunction": '',
-               "showRetweet": false,
-               "customCallback": handleTweets
-           };
-
-           if(typeof element.attr('data-widget-id') !== typeof undefined){
-                TweetConfig.id = element.attr('data-widget-id');
-            }else if(typeof element.attr('data-feed-name') !== typeof undefined && element.attr('data-feed-name') !== "" ){
-                TweetConfig.profile = {"screenName": element.attr('data-feed-name').replace('@', '')};
-            }else{
-                TweetConfig.profile = {"screenName": 'twitter'};
-            }
-
-           function handleTweets(tweets) {
-               var x = tweets.length;
-               var n = 0;
-               var element = document.getElementById('tweets-' + index);
-               var html = '<ul class="slides">';
-               while (n < x) {
-                   html += '<li>' + tweets[n] + '</li>';
-                   n++;
-               }
-               html += '</ul>';
-               element.innerHTML = html;
-
-               if ($('.tweets-slider').length) {
-                    $('.tweets-slider').flexslider({
-                        directionNav: false,
-                        controlNav: false
-                    });
-                }       
-               return html;
-           }
-           twitterFetcher.fetch(TweetConfig);
-      });
-
-    // Instagram Feed
-    
-    if($('.instafeed').length){
-    	jQuery.fn.spectragram.accessData = {
-			accessToken: '1406933036.dc95b96.2ed56eddc62f41cbb22c1573d58625a2',
-			clientID: '87e6d2b8a0ef4c7ab8bc45e80ddd0c6a'
-		};	
-
-        $('.instafeed').each(function() {
-            var feedID = $(this).attr('data-user-name');
-            $(this).children('ul').spectragram('getUserFeed', {
-                query: feedID,
-                max: 12
-            });
-        });
-    }   
-
-   
-
-    // Flickr Feeds
-
-    if($('.flickr-feed').length){
-        $('.flickr-feed').each(function(){
-            var userID = $(this).attr('data-user-id');
-            var albumID = $(this).attr('data-album-id');
-            $(this).flickrPhotoStream({ id: userID, setId: albumID, container: '<li class="masonry-item" />' });   
-            setTimeout(function(){
-                initializeMasonry();
-                window.dispatchEvent(new Event('resize'));
-            }, 1000); 
-        });
-
-    }
-
-    // Image Sliders
-    if($('.slider-all-controls, .slider-paging-controls, .slider-arrow-controls, .slider-thumb-controls, .logo-carousel').length){
-        $('.slider-all-controls').flexslider({
-            start: function(slider){
-                if(slider.find('.slides li:first-child').find('.fs-vid-background video').length){
-                   slider.find('.slides li:first-child').find('.fs-vid-background video').get(0).play(); 
-                }
-            },
-            after: function(slider){
-                if(slider.find('.fs-vid-background video').length){
-                    if(slider.find('li:not(.flex-active-slide)').find('.fs-vid-background video').length){
-                        slider.find('li:not(.flex-active-slide)').find('.fs-vid-background video').get(0).pause();
-                    }
-                    if(slider.find('.flex-active-slide').find('.fs-vid-background video').length){
-                        slider.find('.flex-active-slide').find('.fs-vid-background video').get(0).play();
-                    }
-                }
-            }
-        });
-        $('.slider-paging-controls').flexslider({
-            animation: "slide",
-            directionNav: false
-        });
-        $('.slider-arrow-controls').flexslider({
-            controlNav: false
-        });
-        $('.slider-thumb-controls .slides li').each(function() {
-            var imgSrc = $(this).find('img').attr('src');
-            $(this).attr('data-thumb', imgSrc);
-        });
-        $('.slider-thumb-controls').flexslider({
-            animation: "slide",
-            controlNav: "thumbnails",
-            directionNav: true
-        });
-        $('.logo-carousel').flexslider({
-            minItems: 1,
-            maxItems: 4,
-            move: 1,
-            itemWidth: 200,
-            itemMargin: 0,
-            animation: "slide",
-            slideshow: true,
-            slideshowSpeed: 3000,
-            directionNav: false,
-            controlNav: false
-        });
-    }
     
     // Lightbox gallery titles
     
@@ -391,13 +261,13 @@ $(document).ready(function() {
         }
     });
     
-    $('.btn-modal').unbind('click').click(function(){
+    $('.btn-modal').off('click').click(function(){
     	var linkedModal = jQuery('.foundry_modal[modal-link="' + jQuery(this).attr('modal-link') + '"]'),
             autoplayMsg = "";
         jQuery('.modal-screen').toggleClass('reveal-modal');
         if(linkedModal.find('iframe').length){
             if(linkedModal.find('iframe').attr('data-autoplay') === '1'){
-                var autoplayMsg = '&autoplay=1'
+                autoplayMsg = '&autoplay=1';
             }
         	linkedModal.find('iframe').attr('src', (linkedModal.find('iframe').attr('data-src') + autoplayMsg));
         }
@@ -476,7 +346,7 @@ $(document).ready(function() {
         }
     });
     
-    jQuery('.close-modal:not(.modal-strip .close-modal)').unbind('click').click(function(){
+    jQuery('.close-modal:not(.modal-strip .close-modal)').off('click').click(function(){
     	var modal = jQuery(this).closest('.foundry_modal');
         modal.toggleClass('reveal-modal');
         if(typeof modal.attr('data-cookie') !== "undefined"){
@@ -488,7 +358,7 @@ $(document).ready(function() {
         jQuery('.modal-screen').removeClass('reveal-modal');
     });
     
-    jQuery('.modal-screen').unbind('click').click(function(){
+    jQuery('.modal-screen').off('click').click(function(){
         if(jQuery('.foundry_modal.reveal-modal').find('iframe').length){
             jQuery('.foundry_modal.reveal-modal').find('iframe').attr('src', '');
         }
@@ -626,29 +496,6 @@ $(document).ready(function() {
         $(this).siblings('video').get(0).play();
     });
 
-    // Youtube Videos
-
-    $('section').closest('body').find('.player').each(function() {
-        var section = $(this).closest('section');
-        section.find('.container').addClass('fadeOut');
-        var src = $(this).attr('data-video-id');
-        var startat = $(this).attr('data-start-at');
-        $(this).attr('data-property', "{videoURL:'http://youtu.be/" + src + "',containment:'self',autoPlay:true, mute:true, startAt:" + startat + ", opacity:1, showControls:false}");
-    });
-
-	if($('.player').length){
-        $('.player').each(function(){
-
-            var section = $(this).closest('section');
-            var player = section.find('.player');
-            player.YTPlayer();
-            player.on("YTPStart",function(e){
-                section.find('.container').removeClass('fadeOut');
-                section.find('.masonry-loader').addClass('fadeOut');
-            });
-
-        });
-    }
 
     // Interact with Map once the user has clicked (to prevent scrolling the page = zooming the map
 
@@ -940,7 +787,7 @@ $(document).ready(function() {
     }
 
     function getURLParameter(name) {
-        return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
+        return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ""])[1].replace(/\+/g, '%20')) || null;
     }
 
     // Disable parallax on mobile
@@ -977,7 +824,7 @@ $(document).ready(function() {
 
 }); 
 
-$(window).load(function() { 
+$(window).on("load", function() { 
     "use strict";
 
     // Initialize Masonry
@@ -1236,7 +1083,7 @@ window.initializeMaps = function(){
                 }); 
         }
     }
-}
+};
 initializeMaps();
 
 // End of Maps
