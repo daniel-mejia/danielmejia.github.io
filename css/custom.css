@@ -597,3 +597,11 @@ button.close:hover {
 .emotilink {
     background-color: #7B3237;
 }
+
+.bg-primary a.btn-gold span.ti {
+    color: #FFE082;
+}
+
+.bg-primary a.btn-gold:hover span.ti {
+    color: #13313E;
+}
