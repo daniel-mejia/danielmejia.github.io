@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // 5. On resize, re-evaluate all conditions
 
     var STICKY_THRESHOLD = 584;  // px scrolled before sidebar becomes fixed
-    var SHOW_THRESHOLD   = 50;   // px from top of viewport before sidebar appears
+    var SHOW_THRESHOLD   = 0;   // px from top of viewport before sidebar appears
     var DESKTOP_WIDTH    = 989;  // min px width to show sidebar
 
     // Declared as var expression at DOMContentLoaded scope to avoid W082
