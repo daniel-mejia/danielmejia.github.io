@@ -256,6 +256,7 @@ textarea {
   margin-top: 0;
   padding: 0;
 }
+
 h1,
 h2,
 h3,
@@ -1065,7 +1066,7 @@ nav.nav-centered .module.widget-handle {
 .widget-handle .function {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   cursor: default;
-  width: 200px;
+  width: 420px;
   background: #292929;
   position: absolute;
   z-index: 99;
@@ -1078,7 +1079,6 @@ nav.nav-centered .module.widget-handle {
 }
 .module.widget-handle:hover .function {
   opacity: 1;
-  transform: translate3d(0);
   visibility: visible;
 }
 .module.widget-handle .title {

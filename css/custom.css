@@ -1,5 +1,11 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
 
+
+div.foundry_modal.fullscreen table {
+    margin-bottom: 0;
+}
+
+
 section#about {  
     
     div.feature.bordered {
