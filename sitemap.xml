@@ -1,24 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
-  <url>
-    <loc>https://danielmejia.me/</loc> 
-  </url>
-  <url>
-    <loc>https://danielmejia.me/about-me.html</loc>
-  </url>
-  <url>
-      <loc>https://danielmejia.me/smex.html</loc>
-  </url>
-  <url>
-      <loc>https://danielmejia.me/emotilink</loc>
-  </url>
-  <url>
-      <loc>https://danielmejia.me/the-graide-network.html</loc>
-  </url>
-  <url>
-      <loc>https://danielmejia.me/coach.html</loc>
-  </url>
-  <url>
-      <loc>https://danielmejia.me/pdf/Daniel_Mejia-Senior-Product-Designer-Resume.pdf</loc>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://danielmejia.me/</loc>
+    </url>
+    <url>
+        <loc>https://danielmejia.me/index.html</loc>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/smex/SMEx-Home.png</image:loc>
+            <image:title>SMEx Results Page</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/emotilink/emotilink-banner.jpg</image:loc>
+            <image:title>emotilink therapist's appointments page</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/tgn/tgn-dashboard.png</image:loc>
+            <image:title>the graide network teacher's dashboard</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/coach/coach-mockup-black.png</image:loc>
+            <image:title>coach mobile dashboard</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://danielmejia.me/about-me.html</loc>
+    </url>
+    <url>
+        <loc>https://danielmejia.me/smex.html</loc>
+         <image:image>
+            <image:loc>https://danielmejia.me/img/smex/smex-experiencemap.png</image:loc>
+            <image:title>SMEx Experience Map</image:title>
+            <image:caption>Experience map showing the process to find a supplier.</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://danielmejia.me/emotilink.html</loc>
+    </url>
+    <url>
+        <loc>https://danielmejia.me/the-graide-network.html</loc>
+    </url>
+    <url>
+        <loc>https://danielmejia.me/coach.html</loc>
+    </url>
+    <url>
+        <loc>https://danielmejia.me/pdf/Daniel_Mejia-Senior-Product-Designer-Resume.pdf</loc>
+    </url>
 </urlset>
