@@ -4555,10 +4555,12 @@ section + .portfolio-pullup {
   cursor: pointer;
   font-size: 18px;
 }
+/*
 .foundry_modal *:not(.background-image-holder):not(.close-modal) {
   z-index: 4;
   position: relative;
 }
+*/
 .foundry_modal.image-bg .close-modal,
 .foundry_modal.no-bg .close-modal {
   color: #fff;

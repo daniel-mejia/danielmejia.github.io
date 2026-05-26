@@ -1,10 +1,18 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
 
+/****** GOOGLE Programmable Search Engine  ******/
 
 div.foundry_modal.fullscreen table {
     margin-bottom: 0;
 }
 
+
+div.foundry_modal.fullscreen table.gsc-above-wrapper-area-container {
+    margin-bottom: 12px;
+}
+
+
+/****** Mine ******/
 
 section#about {  
     
