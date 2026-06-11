@@ -3,9 +3,6 @@
     xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>https://danielmejia.me/</loc>
-    </url>
-    <url>
-        <loc>https://danielmejia.me/index.html</loc>
         <image:image>
             <image:loc>https://danielmejia.me/img/smex/SMEx-Home.png</image:loc>
             <image:title>SMEx Results Page</image:title>
@@ -28,20 +25,205 @@
     </url>
     <url>
         <loc>https://danielmejia.me/smex.html</loc>
-         <image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/smex/SMEx-Home.png</image:loc>
+            <image:title>SMEx – Supplier Management Expert home page</image:title>
+            <image:caption>Hero screenshot of SMEx, the centralized supplier search tool built for JPMorgan Chase's Legal department.</image:caption>
+        </image:image>
+        <image:image>
             <image:loc>https://danielmejia.me/img/smex/smex-experiencemap.png</image:loc>
-            <image:title>SMEx Experience Map</image:title>
-            <image:caption>Experience map showing the process to find a supplier.</image:caption>
+            <image:title>SMEx experience map – supplier discovery process</image:title>
+            <image:caption>Experience map showing the fragmented process employees used to find a supplier before SMEx was built.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/smex/smex-user-journey-before.png</image:loc>
+            <image:title>SMEx user journey map – before the solution</image:title>
+            <image:caption>Journey map showing pain points in the supplier selection workflow before SMEx.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/smex/smex-survey-results.png</image:loc>
+            <image:title>SMEx UX research – importance score survey results</image:title>
+            <image:caption>Survey results used to calculate importance scores and prioritize data fields for the SMEx interface.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/smex/smex-screen-flow.png</image:loc>
+            <image:title>SMEx screen flow diagram</image:title>
+            <image:caption>Screen flow mapping the end-to-end navigation and task flows in SMEx.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/smex/smex-user-journey-after.png</image:loc>
+            <image:title>SMEx user journey map – after the solution</image:title>
+            <image:caption>Journey map showing the improved supplier selection experience after SMEx was delivered.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/smex/smex-whiteboard.jpeg</image:loc>
+            <image:title>SMEx process – initial user flow whiteboard session</image:title>
+            <image:caption>Whiteboard with an early user flow diagram from the SMEx discovery and design process.</image:caption>
         </image:image>
     </url>
     <url>
         <loc>https://danielmejia.me/emotilink.html</loc>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/emotilink/emotilink-banner.jpg</image:loc>
+            <image:title>Emotilink telehealth platform – hero banner</image:title>
+            <image:caption>Banner image for Emotilink, a HIPAA-compliant mental health telehealth platform.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/emotilink/Board-1.webp</image:loc>
+            <image:title>Emotilink storyboard panel 1 – Isolation</image:title>
+            <image:caption>Panel 1 of the Emotilink storyboard: Sara sits alone after a breakup, not yet reaching for support.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/emotilink/Board-2.webp</image:loc>
+            <image:title>Emotilink storyboard panel 2 – Discovery</image:title>
+            <image:caption>Panel 2: Sara searches for online therapy and finds Emotilink, browsing therapist profiles.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/emotilink/Board-3.webp</image:loc>
+            <image:title>Emotilink storyboard panel 3 – Request and review</image:title>
+            <image:caption>Panel 3: Therapist Gina receives Sara's session request and reviews the intake form.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/emotilink/Board-4.webp</image:loc>
+            <image:title>Emotilink storyboard panel 4 – Confirmation</image:title>
+            <image:caption>Panel 4: Sara receives the appointment confirmation notification on her phone.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/emotilink/Board-5.webp</image:loc>
+            <image:title>Emotilink storyboard panel 5 – Preparation</image:title>
+            <image:caption>Panel 5: Gina reviews Sara's patient notes before the session begins.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/emotilink/Board-6.webp</image:loc>
+            <image:title>Emotilink storyboard panel 6 – Connection</image:title>
+            <image:caption>Panel 6: Sara joins her first therapy session — the journey from isolation to support is complete.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/emotilink/1-Navigation-emotilink-therapist.png</image:loc>
+            <image:title>Emotilink therapist desktop app – navigation</image:title>
+            <image:caption>Navigation screen of the Emotilink therapist-facing desktop application.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/emotilink/2-Schedule-emotilink-therapist.png</image:loc>
+            <image:title>Emotilink therapist desktop app – schedule screen</image:title>
+            <image:caption>Schedule screen showing upcoming appointments and patient details for Emotilink therapists.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/emotilink/3-In_session-emotilink-therapist.png</image:loc>
+            <image:title>Emotilink therapist desktop app – in-session screen</image:title>
+            <image:caption>In-session screen for Emotilink therapists, featuring patient video, session notes, and emergency contact.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/emotilink/4-1-Notifications-Requests-emotilink-therapist.png</image:loc>
+            <image:title>Emotilink therapist desktop app – notifications and appointment requests</image:title>
+            <image:caption>Notifications screen where Emotilink therapists manage incoming session requests.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/emotilink/4-2-Notifications-Confirmations-emotilink-therapist.png</image:loc>
+            <image:title>Emotilink therapist desktop app – appointment confirmations</image:title>
+            <image:caption>Confirmations tab in the Emotilink notifications screen showing confirmed and declined appointments.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/emotilink/emotilink-user-research.jpg</image:loc>
+            <image:title>Emotilink user research – affinity mapping session</image:title>
+            <image:caption>Designers grouping user research quotes on a whiteboard during the Emotilink discovery phase.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/emotilink/emotilink-design-process.jpg</image:loc>
+            <image:title>Emotilink design process – paper sketches</image:title>
+            <image:caption>Early paper sketches of the Emotilink mobile experience on a desk during the design process.</image:caption>
+        </image:image>
     </url>
     <url>
         <loc>https://danielmejia.me/the-graide-network.html</loc>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/tgn/tgn-dashboard.png</image:loc>
+            <image:title>The Graide Network teacher dashboard</image:title>
+            <image:caption>Dashboard screen of The Graide Network platform connecting teachers with undergraduate graders.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/tgn/swot-analysis.png</image:loc>
+            <image:title>The Graide Network SWOT analysis</image:title>
+            <image:caption>SWOT analysis mapping The Graide Network's position in the education technology ecosystem.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/tgn/journey-map.png</image:loc>
+            <image:title>The Graide Network teacher journey map</image:title>
+            <image:caption>Journey map matching teacher pain points with platform improvement opportunities.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/tgn/cover-page.png</image:loc>
+            <image:title>The Graide Network – cover page usability finding</image:title>
+            <image:caption>Usability research finding showing how graders missed directions on the cover page spreadsheet.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/tgn/individual-grade-summary.png</image:loc>
+            <image:title>The Graide Network – individual grade summary screen</image:title>
+            <image:caption>Individual grade summary screen surfacing rubric-level student performance insights for teachers.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/tgn/class-summary.png</image:loc>
+            <image:title>The Graide Network – class report screen</image:title>
+            <image:caption>Class report screen showing overall grades and performance data across the full student roster.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/tgn/student-page.png</image:loc>
+            <image:title>The Graide Network – student performance page</image:title>
+            <image:caption>Student page with visual performance graphs across rubric criteria, designed to be printable for students.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/tgn/paper-prototype-findings/main-page-2.png</image:loc>
+            <image:title>The Graide Network paper prototype – messaging finding</image:title>
+            <image:caption>Paper prototype concept testing finding on homepage messaging and teacher-grader communication.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/tgn/paper-prototype-findings/post-assignment-option-1.png</image:loc>
+            <image:title>The Graide Network paper prototype – post assignment flow</image:title>
+            <image:caption>Paper prototype showing the class-first assignment posting flow tested with teachers.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/tgn/paper-prototype-findings/students-report-2.png</image:loc>
+            <image:title>The Graide Network paper prototype – student report groupings</image:title>
+            <image:caption>Paper prototype concept showing visual, sortable student reports with grouping recommendations.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/tgn/TGN-audrey-mildrey-me.jpg</image:loc>
+            <image:title>The Graide Network user research – affinity mapping session</image:title>
+            <image:caption>UX designers grouping user research quotes by theme on a sticky-note wall during The Graide Network project.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/tgn/design-concept-testing-background.png</image:loc>
+            <image:title>The Graide Network concept testing – paper prototypes</image:title>
+            <image:caption>Paper prototypes used during concept testing sessions with teachers for The Graide Network.</image:caption>
+        </image:image>
     </url>
     <url>
         <loc>https://danielmejia.me/coach.html</loc>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/coach/iPhone-COACH-Mockup.png</image:loc>
+            <image:title>COACH fitness app – iPhone mockup</image:title>
+            <image:caption>iPhone mockup of COACH, an app connecting users with professional personal trainers virtually and in person.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/coach/concept2-coach-mid-prototype.jpg</image:loc>
+            <image:title>COACH app – concept 2 mid-fidelity prototype</image:title>
+            <image:caption>Mid-fidelity prototype for COACH concept 2: coach pairing programs combining in-person and online support.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/coach/concept3-coach-mid-prototype.jpg</image:loc>
+            <image:title>COACH app – concept 3 mid-fidelity prototype</image:title>
+            <image:caption>Mid-fidelity prototype for COACH concept 3: gamification and accountability features for consistent workouts.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/coach/COACH-banner.jpg</image:loc>
+            <image:title>COACH app – final product evolution banner</image:title>
+            <image:caption>Banner image for the COACH final product evolution section, showing the hybrid coaching model.</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://danielmejia.me/img/tgn/TGN-audrey-mildrey-me.jpg</image:loc>
+            <image:title>COACH research – design team affinity mapping session</image:title>
+            <image:caption>UX designers organizing research insights on a sticky-note wall during the COACH user research phase.</image:caption>
+        </image:image>
     </url>
     <url>
         <loc>https://danielmejia.me/pdf/Daniel_Mejia-Senior-Product-Designer-Resume.pdf</loc>
