@@ -33,7 +33,7 @@
         <!--- nav bar --->			
 		<div id="navbar" class="nav-container">
             <a id="top"></a>
-            <nav class="absolute transparent" data-fixed-at="100">
+            <nav class="absolute transparent">
 		        <div class="nav-bar">
 		            <div class="module left">
 		                <a href="index.html">
@@ -49,7 +49,7 @@
 		            <div class="module-group right">
 		                <div class="module left">
 		                    <ul class="menu">
-		                        <li class="fade-on-hover">
+		                        <li>
 		                            <a href="about-me.html">About Me</a>
 		                        </li>
                                 <li class="has-dropdown toggle-sub">
@@ -74,10 +74,25 @@
 		                            </ul>
 		                        </li>
                                 <li>
-		                            <a href="pdf/Daniel_Mejia-Senior-Product-Designer-Resume.pdf" target="_blank">View Resume <span class="ti ti-new-window"></span></a>
-		                        </li>               
+		                            <a href="pdf/Daniel_Mejia-Senior-Product-Designer-Resume.pdf" target="_blank">View Resume <span class="glyphicon glyphicon-new-window"></span></a>
+		                        </li> 
 		                    </ul>
-                        </div>	                
+                        </div>   
+                        <!--- modal --->
+                        <div class="modal-container module widget-handle search-widget-handle left">
+                            <div class="btn-modal" href="#">
+                                <i class="ti-search"></i>
+                                <span class="title">Search Porfolio</span>
+                            </div>
+                            <div class="foundry_modal fullscreen">
+                                <h1>Search Porfolio</h1>
+                                <hr>
+                                <script async src="https://cse.google.com/cse.js?cx=92cc7c65cdbe64d64">
+                                </script>
+                                <div class="gcse-search"></div>
+                            </div>
+                        </div>
+                        <!--end modal-->
 		            </div>
 		        </div>
 		    </nav>
@@ -510,11 +525,11 @@
         <!--- END OF FOOTER --->
         <!--- SCRIPTS --->
         <!--- SCRIPTS --->
-        <script src="js/scripts.js"></script>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script src="https://code.jquery.com/jquery-migrate-3.4.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/parallax.js"></script>
+        <script src="js/scripts.js"></script>
         <script src="js/custom.js"></script>
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-V7ZXY22MTE"></script>
@@ -523,6 +538,6 @@
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-V7ZXY22MTE');
-        </script>    
+        </script> 
     </body>
 </html>
