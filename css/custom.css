@@ -642,7 +642,8 @@ button.close:hover {
     background-color: #7B3237;
 }
 
-.bg-primary a.btn-gold span.ti {
+.bg-primary a.btn-gold span.ti,
+.bg-primary a.btn-link span.ti {
     color: #FFE082;
 }
 
