@@ -67,8 +67,6 @@ section#about {
 
 section#accessible-UI { 
     
-    
-    
     .section-label {
         font-size: 11px; 
         font-weight: 500; 
@@ -338,22 +336,46 @@ section.cover h2 {
     font-weight: 200;
 }
 
-.font-size-24 {
+.strong {
+    font-weight: bold;
+}
+
+.txt-72 {
+    font-size: 72px;
+    line-height: normal;
+}
+
+.txt-60 {
+    font-size: 60px;
+    line-height: normal;
+}
+
+.txt-48 {
+    font-size: 48px;
+    line-height: normal;
+}
+
+.txt-32 {
+    font-size: 32px;
+    line-height: normal;
+}
+
+.txt-24 {
     font-size: 24px;
-    line-height: 32px;
+    line-height: normal;
 }
 
-.font-size-18 {
+.txt-18 {
     font-size: 18px; 
-    line-height: 26px;
+    line-height: normal;
 }
 
-.font-size-16 {
+.txt-16 {
     font-size: 16px; 
     line-height: 24px; 
 }
 
-.font-size-12 {
+.txt-12 {
     font-size: 12px;
     line-height: 24px;
 }
@@ -468,8 +490,16 @@ footer {
         text-align: center;
     }
     
+    .txt-sm-60 {
+        font-size: 60px;
+    }
+    
     .txt-sm-48 {
         font-size: 48px;
+    }
+    
+    .txt-sm-32 {
+        font-size: 32px;
     }
     
     .txt-sm-24 {
