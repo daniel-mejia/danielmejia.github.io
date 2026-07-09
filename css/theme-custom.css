@@ -4691,11 +4691,12 @@ footer.bg-dark a {
   color: #FFE082;
   opacity: .8;
 }
-.bg-dark .social-list a:hover {
+.bg-dark .social-list a:hover,
+.image-bg .social-list a:hover {
   opacity: 1;
 }
 .image-bg .social-list a {
-  opacity: 1;
+  opacity: .8;
 }
 .bg-light .social-list a {
   color: #222;
