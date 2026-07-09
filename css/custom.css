@@ -653,3 +653,7 @@ button.close:hover {
 .bg-primary a.btn-gold:hover span.ti {
     color: #13313E;
 }
+
+.pl8 {
+   padding-left: 8px; 
+}
